@@ -1,20 +1,20 @@
 ### [HF] Histogram
-```{r [HF] Histogram, results="asis", echo=TRUE}
-#################################################################################
-#################################################################################
+Preparation Code
+```
 # Functions
 library(dplyr)
 library(knitr)
 library(glue)
-# Data
+
+# Sample Data
 library(wooldridge)
 data(ceosal1)
 CS <- ceosal1
 CS <- CS %>% filter(salary < 1000)
-#################################################################################
-#################################################################################
-
-##### DO NOT EDIT. ENTER INPUT IN THE INPUT SECTION. #####
+```
+**Actual Code**
+1. Helper function. (Must be included. Do not edit.)
+```
 plot.Histogram.h <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table, histogram.range_of_y_values.multiplication_constant){
 
 # Graph (1/2)
@@ -38,18 +38,21 @@ kable(frequency_table, caption = glue::glue("Frequency Distribution of {subject.
 
 # Graph (2/2)
 histogram(c(0,max(frequency_table)*histogram.range_of_y_values.multiplication_constant), TRUE)}
-
-##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
+```
+2. Hyperparameter. (Must be included. Edit only if (1) is not producing the right output. Alert me if you have to edit this.)
+```
 plot.Histogram <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins = "Sturges", histogram.colour = "pink", frequency_table.bins.upper_bound = FALSE, include_frequency_table = TRUE)
   {plot.Histogram.h(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table,
   histogram.range_of_y_values.multiplication_constant = 1.2)}
-
-##### INPUTS #####
+```
+3. **Sample Input**. (Must be included. Edit this.)
+```
 plot.Histogram(CS$salary, # dataset_variable
                "Salary", # variable.text_singular ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
                "CEOs") # subject.text_plural ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
-               
-##### OPTIONAL CUSTOMISATION #####
+```
+4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+```
 #               histogram.bins = "Sturges" # ----- e.g., "Sturges" / 6
 #               histogram.colour = "pink"
 #               frequency_table.bins.upper_bound = TRUE
