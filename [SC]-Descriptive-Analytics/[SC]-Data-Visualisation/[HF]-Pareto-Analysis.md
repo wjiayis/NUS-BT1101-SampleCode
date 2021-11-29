@@ -24,4 +24,6 @@ output <- which(pareto_analysis.descending_order.percentage.cumulative > 0.8)[1]
 output.percentage <- glue::glue("{round((100*output/length(dataset_variable)),3)}%") %>% print()}
 ```
 2. **Inputs**. (Must be included. Edit this.)
+```
 calculate.ParetoAnalysis(R$rd)
+```
