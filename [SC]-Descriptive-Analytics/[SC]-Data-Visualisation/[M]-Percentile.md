@@ -5,7 +5,7 @@ Preparation Code
 library(wooldridge)
 data(gpa2)
 ```
-#### **_Sample Task: Compute the first quartile._**
+#### **_Sample Task: Compute the first quartile (Q1)._**
 **Actual Code**
 ```
 quantile(gpa2$sat, 0.25)
