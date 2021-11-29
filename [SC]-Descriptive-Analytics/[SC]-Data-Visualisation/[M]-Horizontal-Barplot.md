@@ -9,7 +9,7 @@ HEC <- HairEyeColor %>% as.data.frame()
 HEC <- sample_df[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
-Actual Code
+**Actual Code**
 ```
 hair_colour.barplot <- barplot(HEC$Freq,
         horiz = TRUE,
