@@ -44,3 +44,9 @@ plot.PieChart.Proportion(HEC, # data_df
 Additional Notes:
 1. The default palette can support up to 5 slices. If more slices are to be plotted, you must input `possible_colours`.
 2. Structure of data frame `data_df`
+
+| Discrete Variable* | Continuous Variable |
+| :---: | :---: |
+| ... | ... |
+
+\*Variable Name as Column Name
