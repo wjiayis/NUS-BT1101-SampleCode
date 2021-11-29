@@ -9,7 +9,6 @@ sample_df <- HairEyeColor %>% as.data.frame()
 sample_df <- sample_df[c("Hair", "Freq")]
 sample_df <- aggregate(Freq~Hair, sample_df, sum)
 ```
-
 Actual Code
 ```{r Vertical Barplot, echo=TRUE}
 bar <- barplot(sample_df$Freq,
@@ -20,10 +19,8 @@ bar <- barplot(sample_df$Freq,
 
 text(y = sample_df$Freq, x = bar, label = sample_df$Freq, pos = 3, cex = 1)
 ```
-
 Additional notes:
 1. Structure of `sample_df`
-
 | Discrete Variable  | Continuous Variable |
 | ------------- | ------------- |
 | ...  | ...  |
