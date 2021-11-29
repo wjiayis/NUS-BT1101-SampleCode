@@ -1,0 +1,67 @@
+### [HF] Stacked Barplot
+```{r [HF] Stacked Barplot, results="asis", echo=TRUE}
+#################################################################################
+#################################################################################
+# Functions
+library(dplyr)
+library(knitr)
+library(glue)
+# Data for Sample Inputs
+library(wooldridge)
+data(mathpnl)
+sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
+sample_df$Year <- ifelse(sample_df$y92 == 1, "1992", ifelse(sample_df$y93 == 1, "1993",
+                        ifelse(sample_df$y94 == 1, "1994", ifelse(sample_df$y95 == 1, "1995", NA))))
+sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
+#################################################################################
+#################################################################################
+
+##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
+plot.StackedBarplot.h <- function(data_df, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
+  
+grouped_stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
+
+if(include_frequency_table){
+kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()
+}
+
+grouped_stacked_barplot <- barplot(grouped_stacked_barplot.matrix,
+        beside = FALSE,
+        ylim = c(0, max(colSums(grouped_stacked_barplot.matrix))*barplot.axis_range.multiplication_constant),
+        names.arg = data_df[[1]],
+        main = glue::glue("Bar Plot of {title.text}"),
+        ylab = glue::glue("Number of {continuous_variable.text_plural}"),
+        cex.names = categories.font_size,
+        cex.main = title.font_size,
+        col = possible_colours[1:ncol(data_df)-1])
+
+if(legend.position == "PRESET"){
+legend.position <- ifelse(max(grouped_stacked_barplot.matrix[,1]) > max(grouped_stacked_barplot.matrix[,-1]), "topright", "topleft")}
+legend(legend.position,
+       fill = possible_colours[1:ncol(data_df)-1],
+       colnames(data_df)[2:ncol(data_df)],
+       cex = legend.font_size)
+
+H <- apply(grouped_stacked_barplot.matrix, 2L, cumsum) - grouped_stacked_barplot.matrix
+text(x = rep(grouped_stacked_barplot, each = nrow(H)), y = H,
+     label = round(grouped_stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
+
+##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
+plot.StackedBarplot <- function(data_df, title.text, continuous_variable.text_plural, categories.font_size = 1, title.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
+{plot.StackedBarplot.h(data_df, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
+                              barplot.axis_range.multiplication_constant = 1.2)}
+
+##### SAMPLE INPUTS #####
+plot.StackedBarplot(sample_df, # data_df
+                           "Mean Satisfaction for Math, By Year of Graduation", # title.text ----- "Bar Plot of {title.text}"
+                           "Years") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
+
+##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
+#                           legend.font_size = 1
+#                           categories.font_size = 1
+#                           title.font_size = 1
+#                           value_labels.font_size = 1
+#                           possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2")
+#                           legend.position = " PRESET" ----- e.g., "PRESET" / list(x = 1, y = 70)
+#                           include_frequency_table = TRUE
+```
