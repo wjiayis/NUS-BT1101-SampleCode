@@ -17,8 +17,7 @@ bar <- barplot(sample_df$Freq,
         names.arg = c("Black", "Brown", "Red", "Blond"),
         col="pink")
 
-text(y = sample_df$Freq, x = bar,
-     label = sample_df$Freq, pos = 3, cex = 1)
+text(y = sample_df$Freq, x = bar, label = sample_df$Freq, pos = 3, cex = 1)
      
 # Notes:
 ##### 1. Format of data_df ######
