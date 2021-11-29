@@ -1,3 +1,6 @@
 # Sample-Code-for-BT1101
-## Data Visualisation
-### [Graphs](https://github.com/WANG-JIAYIs/Sample-Code-for-BT1101/blob/0772fb3c9b07a63202a8281dbc27d9b804ed6148/Data-Visualisation)
+## Descriptive Analytics
+### Data Visualisation
+#### [Graphs](https://github.com/WANG-JIAYIs/Sample-Code-for-BT1101/blob/7a47d05e19b0ff2bb99f591371f4abd57fbf0a3b/DA-DV-Graphs)
+## Predictive Analytics
+## Prescriptive Analytics
