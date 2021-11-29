@@ -24,5 +24,4 @@ text(y = sample_df$Freq, x = bar,
 ##### 1. Format of data_df ######
 #    [Discrete Variable]    [Continuous Variable] ---- column names
 #            ...                     ...
-#################################
 ```
