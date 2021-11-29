@@ -56,7 +56,7 @@ plot.StackedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
-4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
 ```
 #                           title.font_size = 1
 #                           categories.font_size = 1
