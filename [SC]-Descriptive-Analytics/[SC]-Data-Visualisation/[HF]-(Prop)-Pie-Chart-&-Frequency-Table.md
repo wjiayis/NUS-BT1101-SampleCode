@@ -9,7 +9,7 @@ library(glue)
 # Sample Data
 data(HairEyeColor)
 HEC <- HairEyeColor %>% as.data.frame()
-HEC <- sample_df[c("Hair", "Freq")]
+HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 **Actual Code**
@@ -32,7 +32,7 @@ pie(data_df[[2]],
 ```
 3. **Inputs**. (Must be included. Edit this.)
 ```
-plot.PieChart.Proportion(sample_df, # data_df
+plot.PieChart.Proportion(HEC, # data_df
               "Hair Colour") # subject.text
 ```
 4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
