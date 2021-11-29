@@ -58,7 +58,6 @@ plot.StackedBarplot(M, # data_df
 ```
 4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
 ```
-##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
 #                           title.font_size = 1
 #                           categories.font_size = 1
 #                           value_labels.font_size = 1
