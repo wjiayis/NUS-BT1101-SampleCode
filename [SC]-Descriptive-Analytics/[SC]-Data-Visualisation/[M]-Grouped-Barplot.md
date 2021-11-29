@@ -13,7 +13,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 ```
 **Actual Code**
 ```
-satisfaction.grouped_barplot.matrix <- sample_df %>%
+satisfaction.grouped_barplot.matrix <- M %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 
 satisfaction.grouped_barplot <- barplot(satisfaction.grouped_barplot.matrix,
