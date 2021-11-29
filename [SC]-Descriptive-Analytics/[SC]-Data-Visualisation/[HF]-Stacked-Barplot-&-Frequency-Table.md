@@ -1,22 +1,22 @@
 ### [HF] Stacked Barplot
-```{r [HF] Stacked Barplot, results="asis", echo=TRUE}
-#################################################################################
-#################################################################################
+Preparation Code
+```
 # Functions
 library(dplyr)
 library(knitr)
 library(glue)
-# Data for Sample Inputs
+
+# Sample Data
 library(wooldridge)
 data(mathpnl)
-sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
-sample_df$Year <- ifelse(sample_df$y92 == 1, "1992", ifelse(sample_df$y93 == 1, "1993",
-                        ifelse(sample_df$y94 == 1, "1994", ifelse(sample_df$y95 == 1, "1995", NA))))
-sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
-#################################################################################
-#################################################################################
-
-##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
+M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
+M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
+                        ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
+M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
+```
+**Actual Code**
+1. Helper function. (Must be included. Do not edit.)
+```
 plot.StackedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
   
 stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
@@ -43,17 +43,21 @@ legend(legend.position,
 H <- apply(stacked_barplot.matrix, 2L, cumsum) - stacked_barplot.matrix
 text(x = rep(stacked_barplot, each = nrow(H)), y = H,
      label = round(stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
-
-##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
+```
+2. Hyperparameter. (Must be included. Edit only if (1) is not producing the right output. Alert me if you have to edit this.)
+```
 plot.StackedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
 {plot.StackedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
-
-##### SAMPLE INPUTS #####
-plot.StackedBarplot(sample_df, # data_df
+```
+3. **Sample Input.** (Must be included. Edit this.)
+```
+plot.StackedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
-
+```
+4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+```
 ##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
 #                           title.font_size = 1
 #                           categories.font_size = 1
@@ -62,9 +66,12 @@ plot.StackedBarplot(sample_df, # data_df
 #                           possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2")
 #                           legend.position = " PRESET" ----- e.g., "PRESET" / list(x = 1, y = 70)
 #                           include_frequency_table = TRUE
-
-# Notes:
-##### Structure of data_df #####
-#   [Discrete Variable]    [Continuous Variable 1]    [Continuous Variable 2]    [...] ----- Column Names
-#          ...                       ...                        ...               ...
 ```
+Additional Notes:
+1. Structure of data frame `data_df`
+
+| Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
+| :---: | :---: | :---: | :---: |
+| ... | ... | ... | ... |
+
+\*Variable Name as Column Name
