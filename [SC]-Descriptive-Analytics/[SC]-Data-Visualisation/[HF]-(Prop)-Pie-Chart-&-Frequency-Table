@@ -14,6 +14,7 @@ sample_df <- aggregate(Freq~Hair, sample_df, sum)
 #################################################################################
 #################################################################################
 
+##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
 plot.PieChart.Proportion <- function(data_df, subject.text, title.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), include_frequency_table = TRUE){
 
 # Frequency Table
