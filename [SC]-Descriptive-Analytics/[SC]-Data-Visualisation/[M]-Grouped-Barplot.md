@@ -1,7 +1,6 @@
 ### Grouped Barplot
-```{r Grouped Barplot, echo=TRUE}
-#################################################################################
-#################################################################################
+Preparation Code
+```
 # Functions
 library(dplyr)
 # Data for Sample Inputs
@@ -11,9 +10,9 @@ sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
 sample_df$Year <- ifelse(sample_df$y92 == 1, "1992", ifelse(sample_df$y93 == 1, "1993",
                         ifelse(sample_df$y94 == 1, "1994", ifelse(sample_df$y95 == 1, "1995", NA))))
 sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
-#################################################################################
-#################################################################################
-
+```
+Actual Code
+```
 grouped_barplot.matrix <- sample_df %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 
@@ -34,9 +33,9 @@ legend("topleft",
 
 text(y = grouped_barplot.matrix, x = grouped_barplot,
      label = round(grouped_barplot.matrix,2), pos = 3, cex = 0.9)
+```
+Additional Notes:
+1. Structure of `sample_df`
 
-# Notes:
-##### Structure of sample_df #####
 #   [Discrete Variable]    [Continuous Variable 1]    [Continuous Variable 2]    [...] ----- Column Names
 #          ...                       ...                        ...               ...
-```
