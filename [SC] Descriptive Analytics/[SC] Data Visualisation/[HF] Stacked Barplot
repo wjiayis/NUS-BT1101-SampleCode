@@ -52,7 +52,7 @@ plot.StackedBarplot <- function(data_df, title.text, continuous_variable.text_pl
 ##### SAMPLE INPUTS #####
 plot.StackedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text ----- "Bar Plot of {title.text}"
-                           "Years") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
+                           "Mean Satisfaction") # continuous_variable.text_plural ----- "{continuous_variable.text_plural}"
 
 ##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
 #                           legend.font_size = 1
