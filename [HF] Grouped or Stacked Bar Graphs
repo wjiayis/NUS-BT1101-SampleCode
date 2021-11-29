@@ -60,13 +60,13 @@ plot.StackedGroupedBarplot <- function(data_df, is_grouped_barplot, title.text, 
 {plot.StackedGroupedBarplot.h(data_df, is_grouped_barplot, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 
-##### INPUTS #####
+##### SAMPLE INPUTS #####
 plot.StackedGroupedBarplot(sample_df, # data_df
                            TRUE, # is_grouped_barplot
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text ----- "Bar Plot of {title.text}"
                            "Years") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
 
-##### OPTIONAL CUSTOMISATION #####
+##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
 #                           legend.font_size = 1
 #                           categories.font_size = 1
 #                           title.font_size = 1
