@@ -3,7 +3,6 @@
 ### Data Visualisation
 - [Base R Graphics](1-1.md)
 - [Tables](1-2.md)</br>
-
-(Percentile & Quartile, Pareto Analysis: Descriptive Statistics)
+- Percentile, Pareto Analysis
 ## Predictive Analytics
 ## Prescriptive Analytics
