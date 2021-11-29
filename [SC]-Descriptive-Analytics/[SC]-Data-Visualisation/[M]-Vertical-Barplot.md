@@ -1,6 +1,6 @@
 ### Vertical Barplot
 Preparation Code
-```{r Vertical Barplot - Preparation, echo=TRUE}
+```
 # Functions
 library(dplyr)
 # Data
@@ -10,7 +10,7 @@ sample_df <- sample_df[c("Hair", "Freq")]
 sample_df <- aggregate(Freq~Hair, sample_df, sum)
 ```
 Actual Code
-```{r Vertical Barplot, echo=TRUE}
+```
 bar <- barplot(sample_df$Freq,
         ylim = c(0,330),
         main = "Barplot of Frequency of Hair Colour",
