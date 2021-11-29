@@ -35,7 +35,7 @@ text(y = satisfaction.grouped_barplot.matrix, x = satisfaction.grouped_barplot,
      label = round(satisfaction.grouped_barplot.matrix,2), pos = 3, cex = 0.9)
 ```
 Additional Notes:
-1. Structure of dataframe `M`
+1. Structure of data frame `M`
 
 | Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
 | :---: | :---: | :---: | :---: |
