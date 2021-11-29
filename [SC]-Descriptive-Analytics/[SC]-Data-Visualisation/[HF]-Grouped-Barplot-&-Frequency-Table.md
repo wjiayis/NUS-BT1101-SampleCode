@@ -63,7 +63,7 @@ plot.GroupedBarplot(sample_df, # data_df
 #                           include_frequency_table = TRUE
 ```
 Additional Notes:
-1. Structure of `sample_df`
+1. Structure of data frame `sample_df`
 
 | Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
 | :---: | :---: | :---: | :---: |
