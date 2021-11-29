@@ -1,5 +1,5 @@
-### Grouped / Stacked Barplot
-```{r Grouped / Stacked Barplot, results="asis", echo=TRUE}
+### [HF] Grouped Barplot
+```{r [HF] Grouped Barplot, results="asis", echo=TRUE}
 #################################################################################
 #################################################################################
 # Functions
@@ -17,7 +17,7 @@ sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %
 #################################################################################
 
 ##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
-plot.StackedGroupedBarplot.h <- function(data_df, is_grouped_barplot, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
+plot.GroupedBarplot.h <- function(data_df, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
   
 grouped_stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
 
@@ -25,12 +25,9 @@ if(include_frequency_table){
 kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()
 }
 
-max_y <- ifelse(is_grouped_barplot, max(grouped_stacked_barplot.matrix)*barplot.axis_range.multiplication_constant,
-max(colSums(grouped_stacked_barplot.matrix))*barplot.axis_range.multiplication_constant)
-
 grouped_stacked_barplot <- barplot(grouped_stacked_barplot.matrix,
-        beside = is_grouped_barplot,
-        ylim = c(0, max_y),
+        beside = TRUE,
+        ylim = c(0, max(grouped_stacked_barplot.matrix)*barplot.axis_range.multiplication_constant),
         names.arg = data_df[[1]],
         main = glue::glue("Bar Plot of {title.text}"),
         ylab = glue::glue("Number of {continuous_variable.text_plural}"),
@@ -45,24 +42,16 @@ legend(legend.position,
        colnames(data_df)[2:ncol(data_df)],
        cex = legend.font_size)
 
-if(is_grouped_barplot){
 text(y = grouped_stacked_barplot.matrix, x = grouped_stacked_barplot,
      label = round(grouped_stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 
-if(!is_grouped_barplot){
-H <- apply(grouped_stacked_barplot.matrix, 2L, cumsum) - grouped_stacked_barplot.matrix
-text(x = rep(grouped_stacked_barplot, each = nrow(H)), y = H,
-     label = round(grouped_stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
-}
-
 ##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
-plot.StackedGroupedBarplot <- function(data_df, is_grouped_barplot, title.text, continuous_variable.text_plural, categories.font_size = 1, title.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
-{plot.StackedGroupedBarplot.h(data_df, is_grouped_barplot, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
+plot.GroupedBarplot <- function(data_df, title.text, continuous_variable.text_plural, categories.font_size = 1, title.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
+{plot.GroupedBarplot.h(data_df, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 
 ##### SAMPLE INPUTS #####
-plot.StackedGroupedBarplot(sample_df, # data_df
-                           TRUE, # is_grouped_barplot
+plot.GroupedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text ----- "Bar Plot of {title.text}"
                            "Years") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
 
