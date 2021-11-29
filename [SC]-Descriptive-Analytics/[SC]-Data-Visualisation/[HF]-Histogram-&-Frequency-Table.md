@@ -13,7 +13,8 @@ CS <- ceosal1
 CS <- CS %>% filter(salary < 1000)
 ```
 **Actual Code**
-1. Helper function. (Must be included. Do not edit.)
+1. Set {r ..., results="asis", ...}
+2. Helper function. (Must be included. Do not edit.)
 ```
 plot.Histogram.h <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table, histogram.range_of_y_values.multiplication_constant){
 
@@ -39,19 +40,19 @@ kable(frequency_table, caption = glue::glue("Frequency Distribution of {subject.
 # Graph (2/2)
 histogram(c(0,max(frequency_table)*histogram.range_of_y_values.multiplication_constant), TRUE)}
 ```
-2. Hyperparameter. (Must be included. Edit only if (1) is not producing the right output. Alert me if you have to edit this.)
+3. Hyperparameter. (Must be included. Edit only if (1) is not producing the right output. Alert me if you have to edit this.)
 ```
 plot.Histogram <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins = "Sturges", histogram.colour = "pink", frequency_table.bins.upper_bound = FALSE, include_frequency_table = TRUE)
   {plot.Histogram.h(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table,
   histogram.range_of_y_values.multiplication_constant = 1.2)}
 ```
-3. **Sample Input**. (Must be included. Edit this.)
+4. **Inputs**. (Must be included. Edit this.)
 ```
 plot.Histogram(CS$salary, # dataset_variable
                "Salary", # variable.text_singular ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
                "CEOs") # subject.text_plural ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
 ```
-4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+5. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
 ```
 #               histogram.bins = "Sturges" # ----- e.g., "Sturges" / 6
 #               histogram.colour = "pink"
