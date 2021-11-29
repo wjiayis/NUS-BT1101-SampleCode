@@ -1,7 +1,6 @@
 ### Horizontal Barplot
-```{r Horizontal Barplot, echo=TRUE}
-#################################################################################
-#################################################################################
+Preparation Code
+```
 # Functions
 library(dplyr)
 # Data
@@ -9,9 +8,9 @@ data(HairEyeColor)
 sample_df <- HairEyeColor %>% as.data.frame()
 sample_df <- sample_df[c("Hair", "Freq")]
 sample_df <- aggregate(Freq~Hair, sample_df, sum)
-#################################################################################
-#################################################################################
-
+```
+Actual Code
+```
 bar <- barplot(sample_df$Freq,
         horiz = TRUE,
         xlim = c(0,340),
@@ -22,9 +21,8 @@ bar <- barplot(sample_df$Freq,
         col="pink")
 
 text(y = bar, x = sample_df$Freq, label = sample_df$Freq, pos = 4, cex = 1)
-
+```
 # Notes:
 ##### Structure of sample_df ######
 #    [Discrete Variable]    [Continuous Variable] ---- Column Names
 # 
-```
