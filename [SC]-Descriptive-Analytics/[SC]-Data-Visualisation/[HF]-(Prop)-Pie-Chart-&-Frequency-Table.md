@@ -1,20 +1,21 @@
 ### [HF] Pie Chart for Proportion
-```{r [HF] Pie Chart for Proportion, results="asis", echo=TRUE}
-#################################################################################
-#################################################################################
+Preparation Code
+```
 # Functions
 library(dplyr)
 library(knitr)
 library(glue)
-# Data
-data(HairEyeColor)
-sample_df <- HairEyeColor %>% as.data.frame()
-sample_df <- sample_df[c("Hair", "Freq")]
-sample_df <- aggregate(Freq~Hair, sample_df, sum)
-#################################################################################
-#################################################################################
 
-##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
+# Sample Data
+data(HairEyeColor)
+HEC <- HairEyeColor %>% as.data.frame()
+HEC <- sample_df[c("Hair", "Freq")]
+HEC <- aggregate(Freq~Hair, HEC, sum)
+```
+**Actual Code**
+1. Set {r ..., results="asis", ...}
+2. Helper function. (Must be included. Do not edit.)
+```
 plot.PieChart.Proportion <- function(data_df, subject.text, title.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), include_frequency_table = TRUE){
 
 # Frequency Table
@@ -28,16 +29,17 @@ pie(data_df[[2]],
     col = possible_colours,
     main = glue::glue("Pie Chart of {subject.text}"),
     cex.main = title.font_size)}
-
-##### SAMPLE INPUTS #####
+```
+3. **Inputs**. (Must be included. Edit this.)
+```
 plot.PieChart.Proportion(sample_df, # data_df
               "Hair Colour") # subject.text
-
-##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
+```
+4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+```
 #              title.font_size = 1
 #              possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2")
 #              include_frequency_table = TRUE
-
-# Notes:
-# 1. The default palette can support up to 5 slices. If more slices are to be plotted, you must input `possible_colours`.
 ```
+Additional Notes:
+1. The default palette can support up to 5 slices. If more slices are to be plotted, you must input `possible_colours`.
