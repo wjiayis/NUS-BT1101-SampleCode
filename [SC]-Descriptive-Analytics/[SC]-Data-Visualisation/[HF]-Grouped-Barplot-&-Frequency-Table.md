@@ -46,7 +46,7 @@ plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font
 {plot.GroupedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 ```
-3. Sample Input. Edit this.
+**3. Sample Input. Edit this.**
 ```
 plot.GroupedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
