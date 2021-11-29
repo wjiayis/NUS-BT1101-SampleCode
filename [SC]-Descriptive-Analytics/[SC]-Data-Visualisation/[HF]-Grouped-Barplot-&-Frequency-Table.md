@@ -8,9 +8,9 @@ library(glue)
 # Data for Sample Inputs
 library(wooldridge)
 data(mathpnl)
-sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
-sample_df$Year <- ifelse(sample_df$y92 == 1, "1992", ifelse(sample_df$y93 == 1, "1993", ifelse(sample_df$y94 == 1, "1994", ifelse(sample_df$y95 == 1, "1995", NA))))
-sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
+M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
+M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993", ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
+M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
 ```
 **Actual Code**
 1. Helper function. Do not edit.
@@ -48,7 +48,7 @@ plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font
 ```
 **3. Sample Input. Edit this.**
 ```
-plot.GroupedBarplot(sample_df, # data_df
+plot.GroupedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
@@ -63,7 +63,7 @@ plot.GroupedBarplot(sample_df, # data_df
 #                           include_frequency_table = TRUE
 ```
 Additional Notes:
-1. Structure of data frame `sample_df`
+1. Structure of data frame `data_df`
 
 | Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
 | :---: | :---: | :---: | :---: |
