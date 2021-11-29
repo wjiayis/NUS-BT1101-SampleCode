@@ -9,7 +9,7 @@ sample_df <- HairEyeColor %>% as.data.frame()
 sample_df <- sample_df[c("Hair", "Freq")]
 sample_df <- aggregate(Freq~Hair, sample_df, sum)
 ```
-Actual Code
+**Actual Code**
 ```
 bar <- barplot(sample_df$Freq,
         ylim = c(0,330),
