@@ -36,6 +36,6 @@ text(y = grouped_barplot.matrix, x = grouped_barplot,
 ```
 Additional Notes:
 1. Structure of `sample_df`
-
-#   [Discrete Variable]    [Continuous Variable 1]    [Continuous Variable 2]    [...] ----- Column Names
-#          ...                       ...                        ...               ...
+| Discrete Variable | Continuous Variable 1 | Continuous Variable 2 | ... |
+| :---: | :---: | :---: | :---: |
+| ... | ... | ... | ... |
