@@ -14,5 +14,5 @@
 #### 3. Time Series Forecasting
 #### 4. Data Mining
 ## Prescriptive Analytics
-#### 1. Linear Optimisation (w/o Integer Requirements)
+#### 1. Linear Optimisation (w/o Integer Requirement)
 #### 2. Integer Optimisation
