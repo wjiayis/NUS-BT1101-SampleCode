@@ -3,6 +3,7 @@ Preparation Code
 ```
 # Functions
 library(dplyr)
+
 # Sample Data
 data(HairEyeColor)
 HEC <- HairEyeColor %>% as.data.frame()
