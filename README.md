@@ -1,6 +1,6 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
 ### Data Visualisation
-- [Graphs](DA-DV-Graphs)
+- [Graphs](1-1-Graphs)
 ## Predictive Analytics
 ## Prescriptive Analytics
