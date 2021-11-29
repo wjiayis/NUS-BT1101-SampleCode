@@ -18,10 +18,6 @@ sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %
 stacked_barplot.matrix <- sample_df %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 
-# Frequency Table
-kable(sample_df, caption = "Mean Satisfaction for Math, By Year of Graduation")
-
-# Graph
 stacked_barplot <- barplot(stacked_barplot.matrix,
         beside = FALSE,
         ylim = c(0, 120),
