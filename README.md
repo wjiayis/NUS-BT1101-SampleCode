@@ -1,20 +1,20 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
-#### 1a. Data Visualisation
+#### 1. Data Visualisation
 - [Base R Graphics](1-1.md)
 - ggplot2 Graphics (UNDONE)
-#### 1b. Data Tabulation and Frequencies
+#### 2. Data Tabulation and Frequencies
 - [Tables](1-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
 - Pareto Analysis (UNDONE)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Pareto-Analysis.md)
-#### 2. Probability Distributions and Data Modeling
+#### 3. Probability Distributions and Data Modeling
 - Probability Under Normal Distribution
 - Test of Normality
   - _Helper_Function_
-#### 3. Descriptive Statistical Measures
-#### 4. Sampling and Estimation
-#### 5. Hypothesis Testing
+#### 4. Descriptive Statistical Measures
+#### 5. Sampling and Estimation
+#### 6. Hypothesis Testing
 ## Predictive Analytics
 #### 1. Linear Regression
 #### 2. Logistic Regression
