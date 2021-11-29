@@ -28,7 +28,7 @@ grouped_barplot <- barplot(grouped_barplot.matrix,
         ylim = c(0, 70),
         names.arg = c("1992", "1993", "1994", "1995"),
         main = glue::glue("Bar Plot of Mean Satisfaction for Math, By Year of Graduation"),
-        ylab = glue::glue("Number of Individuals"),
+        ylab = glue::glue("Mean Satisfaction for Math"),
         cex.main = 1,
         cex.names = 0.9,
         col = c("plum2", "lightgoldenrod1"))
