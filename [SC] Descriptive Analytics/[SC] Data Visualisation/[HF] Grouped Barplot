@@ -29,7 +29,7 @@ grouped_barplot <- barplot(grouped_barplot.matrix,
         ylim = c(0, max(grouped_barplot.matrix)*barplot.axis_range.multiplication_constant),
         names.arg = data_df[[1]],
         main = glue::glue("Grouped Barplot of {title.text}"),
-        ylab = glue::glue("Number of {continuous_variable.text_plural}"),
+        ylab = glue::glue("{continuous_variable.text_plural}"),
         cex.names = categories.font_size,
         cex.main = title.font_size,
         col = possible_colours[1:ncol(data_df)-1])
@@ -52,7 +52,7 @@ plot.GroupedBarplot <- function(data_df, title.text, continuous_variable.text_pl
 ##### SAMPLE INPUTS #####
 plot.GroupedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text ----- "Bar Plot of {title.text}"
-                           "Years") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
+                           "Mean Satisfaction") # continuous_variable.text_plural ----- "Number of {continuous_variable.text_plural}"
 
 ##### OPTIONAL CUSTOMISATION (DEFAULT IS DISPLAYED) #####
 #                           legend.font_size = 1
