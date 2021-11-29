@@ -22,6 +22,9 @@ text(y = sample_df$Freq, x = bar, label = sample_df$Freq, pos = 3, cex = 1)
 Additional Notes:
 1. Structure of `sample_df`
 
-| Discrete Variable (Variable Name as Column Name) | Continuous Variable (Variable Name as Column Name) |
+| Discrete Variable* | Continuous Variable* |
 | :---: | :---: |
 | ... | ... |
+
+
+\*Variable Name as Column Name
