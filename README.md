@@ -11,7 +11,7 @@
 #### 3. Probability Distributions and Data Modeling
 - Probability Under Normal Distribution
 - Test of Normality
-  - _Helper_Function_
+  - _Helper Function_
 #### 4. Descriptive Statistical Measures
 #### 5. Sampling and Estimation
 #### 6. Hypothesis Testing
