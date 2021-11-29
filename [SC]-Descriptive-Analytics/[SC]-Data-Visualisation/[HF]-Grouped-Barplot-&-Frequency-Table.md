@@ -12,7 +12,7 @@ sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
 sample_df$Year <- ifelse(sample_df$y92 == 1, "1992", ifelse(sample_df$y93 == 1, "1993", ifelse(sample_df$y94 == 1, "1994", ifelse(sample_df$y95 == 1, "1995", NA))))
 sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
 ```
-**Actual Code**
+**ACTUAL CODE**
 1. Helper function. Do not edit.
 ```
 plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
@@ -52,7 +52,7 @@ plot.GroupedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
-4. Optional Arguments for customisation of output. If you wish to include them, add them at the back of your input.
+4. Optional Arguments (for customisation of output). If you wish to include them, add them at the back of your input.
 ```
 #                           title.font_size = 1
 #                           categories.font_size = 1
