@@ -3,6 +3,7 @@ Preparation Code
 ```
 # Functions
 library(dplyr)
+
 # Sample Data
 library(wooldridge)
 data(ceosal1)
