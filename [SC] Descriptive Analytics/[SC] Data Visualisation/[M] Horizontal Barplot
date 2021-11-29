@@ -23,7 +23,7 @@ bar <- barplot(sample_df$Freq,
 text(y = bar, x = sample_df$Freq, label = sample_df$Freq, pos = 4, cex = 1)
 
 # Notes:
-##### 1. Format of sample_df ######
+##### Structure of sample_df ######
 #    [Discrete Variable]    [Continuous Variable] ---- column names
 # 
 ```
