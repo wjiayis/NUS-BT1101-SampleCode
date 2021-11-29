@@ -40,4 +40,5 @@ Additional Notes:
 | Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
 | :---: | :---: | :---: | :---: |
 | ... | ... | ... | ... |
+
 \*Variable Name as Column Name
