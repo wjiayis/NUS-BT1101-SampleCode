@@ -5,7 +5,7 @@ Preparation Code
 library(dplyr)
 library(knitr)
 library(glue)
-# Data for Sample Inputs
+# Sample Data
 library(wooldridge)
 data(mathpnl)
 M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
