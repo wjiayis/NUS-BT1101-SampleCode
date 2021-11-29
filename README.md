@@ -4,8 +4,8 @@
 - [Base R Graphics](1-1.md)
 - [Tables](1-2.md)</br>
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
-- Pareto Analysis
-  - _Helper Function_
+- Pareto Analysis (UNDONE)
+  - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Pareto-Analysis.md)
 #### 2. Probability Distributions and Data Modeling
 #### 3. Descriptive Statistical Measures
 #### 4. Sampling and Estimation
