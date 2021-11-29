@@ -20,9 +20,7 @@ plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.fo
   
 grouped_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
 
-if(include_frequency_table){
-kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()
-}
+if(include_frequency_table){kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()}
 
 grouped_barplot <- barplot(grouped_barplot.matrix,
         beside = TRUE,
@@ -41,8 +39,7 @@ legend(legend.position,
        colnames(data_df)[2:ncol(data_df)],
        cex = legend.font_size)
 
-text(y = grouped_barplot.matrix, x = grouped_barplot,
-     label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
+text(y = grouped_barplot.matrix, x = grouped_barplot, label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 
 ##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
 plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
