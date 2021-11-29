@@ -23,7 +23,7 @@ satisfaction.stacked_barplot <- barplot(satisfaction.stacked_barplot.matrix,
         names.arg = c("1992", "1993", "1994", "1995"),
         main = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation",
         ylab = "Mean Satisfaction",
-        cex.main = 1,
+        cex.main = 0.95,
         cex.names = 0.9,
         col = c("plum2", "lightgoldenrod1"))
 
