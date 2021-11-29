@@ -1,4 +1,5 @@
-Sample Task: Compute the 32% and 78% percentile.
+### Percentile
+Sample Task: Compute the 32% and 78% percentile.</br>
 Preparation Code
 ```
 library(wooldridge)
