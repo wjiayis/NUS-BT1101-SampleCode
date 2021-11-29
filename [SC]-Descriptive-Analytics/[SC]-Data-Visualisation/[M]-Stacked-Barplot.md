@@ -14,10 +14,10 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 ```
 **Actual Code**
 ```
-stacked_barplot.matrix <- M %>%
+satisfaction.stacked_barplot.matrix <- M %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 
-stacked_barplot <- barplot(stacked_barplot.matrix,
+satisfaction.stacked_barplot <- barplot(satisfaction.stacked_barplot.matrix,
         beside = FALSE,
         ylim = c(0, 120),
         names.arg = c("1992", "1993", "1994", "1995"),
@@ -32,9 +32,9 @@ legend("topleft",
        c("Satisfaction.Grade_4", "Satisfaction.Grade_7"),
        cex = 0.9)
 
-H <- apply(stacked_barplot.matrix, 2L, cumsum) - stacked_barplot.matrix
-text(x = rep(stacked_barplot, each = nrow(H)), y = H,
-     label = round(stacked_barplot.matrix,2), pos = 3, cex = 0.9)
+H <- apply(satisfaction.stacked_barplot.matrix, 2L, cumsum) - satisfaction.stacked_barplot.matrix
+text(x = rep(satisfaction.stacked_barplot, each = nrow(H)), y = H,
+     label = round(satisfaction.stacked_barplot.matrix,2), pos = 3, cex = 0.9)
 ```
 
 Additional Notes:
