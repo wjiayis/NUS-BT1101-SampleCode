@@ -13,7 +13,7 @@ HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 **Actual Code**
-1. Set {r ..., results="asis", ...}
+1. Set `{r ..., results="asis", ...}`
 2. Helper function. (Must be included. Do not edit.)
 ```
 plot.PieChart.Proportion <- function(data_df, subject.text, title.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), include_frequency_table = TRUE){
