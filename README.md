@@ -1,6 +1,6 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
-#### 1. Data Visualisation
+#### 1a. Data Visualisation
 - [Base R Graphics](1-1.md)
 - [Tables](1-2.md)</br>
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
