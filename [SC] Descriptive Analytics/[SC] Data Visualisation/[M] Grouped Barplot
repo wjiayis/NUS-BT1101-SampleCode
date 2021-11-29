@@ -4,7 +4,6 @@
 #################################################################################
 # Functions
 library(dplyr)
-library(knitr)
 # Data for Sample Inputs
 library(wooldridge)
 data(mathpnl)
