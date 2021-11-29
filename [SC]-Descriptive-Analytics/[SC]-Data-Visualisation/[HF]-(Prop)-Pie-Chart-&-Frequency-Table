@@ -1,5 +1,5 @@
-### Pie Chart for Proportion
-```{r Pie Chart for Proportion, results="asis", echo=TRUE}
+### [HF] Pie Chart for Proportion
+```{r [HF] Pie Chart for Proportion, results="asis", echo=TRUE}
 #################################################################################
 #################################################################################
 # Functions
