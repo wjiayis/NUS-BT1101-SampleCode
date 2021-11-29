@@ -14,8 +14,8 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 ```
 **Actual Code**
 1. Helper function.
-  - Do not edit.
-  - You must include this code to use the helper function.
+  - _Do not edit._
+  - _You must include this code to use the helper function._
 ```
 plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
   
