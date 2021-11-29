@@ -10,7 +10,7 @@ data(ceosal1)
 CS <- ceosal1
 CS <- CS %>% filter(salary < 1000)
 ```
-Actual Code
+**Actual Code**
 ```
 # Graph
 histogram <- hist(CS$salary,
