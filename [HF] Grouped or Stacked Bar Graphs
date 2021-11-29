@@ -6,7 +6,7 @@
 library(dplyr)
 library(knitr)
 library(glue)
-# Data
+# Data for Sample Inputs
 library(wooldridge)
 data(mathpnl)
 sample_df <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
@@ -16,7 +16,7 @@ sample_df <- sample_df %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %
 #################################################################################
 #################################################################################
 
-##### DO NOT EDIT. ENTER INPUT IN THE INPUT SECTION. #####
+##### DO NOT EDIT. ENTER INPUTS IN THE INPUTS SECTION. #####
 plot.StackedGroupedBarplot.h <- function(data_df, is_grouped_barplot, title.text, continuous_variable.text_plural, categories.font_size, title.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
   
 grouped_stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
