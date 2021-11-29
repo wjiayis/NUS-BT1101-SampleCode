@@ -2,6 +2,7 @@
 #### **Sample Task: Compute the 32% and 78% percentile.**
 Preparation Code
 ```
+# Sample Data
 library(wooldridge)
 data(gpa2)
 ```
