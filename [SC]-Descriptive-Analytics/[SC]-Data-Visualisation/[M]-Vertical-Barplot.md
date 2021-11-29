@@ -23,5 +23,5 @@ Additional notes:
 1. Structure of `sample_df`
 
 | Discrete Variable  | Continuous Variable |
-| ------------- | ------------- |
+| :---: | :---: |
 | ...  | ...  |
