@@ -28,7 +28,7 @@ stacked_barplot <- barplot(stacked_barplot.matrix,
         ylim = c(0, max(colSums(stacked_barplot.matrix))*barplot.axis_range.multiplication_constant),
         names.arg = data_df[[1]],
         main = glue::glue("Stacked Barplot of {title.text}"),
-        ylab = glue::glue("Number of {y_variable.text_plural}"),
+        ylab = glue::glue("Number of {y_variable.text}"),
         cex.main = title.font_size,
         cex.names = categories.font_size,
         col = possible_colours[1:ncol(data_df)-1])
