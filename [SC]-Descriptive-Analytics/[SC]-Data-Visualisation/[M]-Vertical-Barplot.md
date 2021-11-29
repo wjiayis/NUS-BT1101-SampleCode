@@ -11,16 +11,16 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 **Actual Code**
 ```
-bar <- barplot(HEC$Freq,
+hair_colour.barplot <- barplot(HEC$Freq,
         ylim = c(0,330),
         main = "Barplot of Frequency of Hair Colour",
         names.arg = c("Black", "Brown", "Red", "Blond"),
         col="pink")
 
-text(y = HEC$Freq, x = bar, label = HEC$Freq, pos = 3, cex = 1)
+text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 ```
 Additional Notes:
-1. Structure of `sample_df`
+1. Structure of `HEC`
 
 | Discrete Variable* | Continuous Variable* |
 | :---: | :---: |
