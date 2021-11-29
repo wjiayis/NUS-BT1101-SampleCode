@@ -1,10 +1,10 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
 #### 1. Data Visualisation
-- [Base R Graphics](1-1.md)
+- **[Base R Graphics]**(1-1.md)
 - ggplot2 Graphics (UNDONE)
 #### 2. Data Tabulation and Frequencies
-- [Tables](1-2.md)
+- **[Tables]**(1-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
 - Pareto Analysis (UNDONE)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Pareto-Analysis.md)
