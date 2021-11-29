@@ -2,6 +2,7 @@
 ## Descriptive Analytics
 #### 1a. Data Visualisation
 - [Base R Graphics](1-1.md)
+#### 1b. Data Tabulation and Frequencies
 - [Tables](1-2.md)</br>
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
 - Pareto Analysis (UNDONE)
