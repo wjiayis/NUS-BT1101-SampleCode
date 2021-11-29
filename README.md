@@ -1,18 +1,18 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
-### Data Visualisation
+### 1. Data Visualisation
 - [Base R Graphics](1-1.md)
 - [Tables](1-2.md)</br>
 - Percentile, Pareto Analysis
-### Probability Distributions and Data Modeling
-### Descriptive Statistical Measures
-### Sampling and Estimation
-### Hypothesis Testing
+### 2. Probability Distributions and Data Modeling
+### 3. Descriptive Statistical Measures
+### 4. Sampling and Estimation
+### 5. Hypothesis Testing
 ## Predictive Analytics
-### Linear Regression
-### Logistic Regression
-### Time Series Forecasting
-### Data Mining
+### 1. Linear Regression
+### 2. Logistic Regression
+### 3. Time Series Forecasting
+### 4. Data Mining
 ## Prescriptive Analytics
-### Linear Optimisation (w/o Integer Requirements)
-### Integer Optimisation
+### 1. Linear Optimisation (w/o Integer Requirements)
+### 2. Integer Optimisation
