@@ -5,13 +5,13 @@ Preparation Code
 library(dplyr)
 # Data
 data(HairEyeColor)
-sample_df <- HairEyeColor %>% as.data.frame()
-sample_df <- sample_df[c("Hair", "Freq")]
-sample_df <- aggregate(Freq~Hair, sample_df, sum)
+HEC <- HairEyeColor %>% as.data.frame()
+HEC <- sample_df[c("Hair", "Freq")]
+HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 Actual Code
 ```
-bar <- barplot(sample_df$Freq,
+hair_colour.barplot <- barplot(HEC$Freq,
         horiz = TRUE,
         xlim = c(0,340),
         main = "Barplot of Frequency of Hair Colour",
@@ -20,10 +20,10 @@ bar <- barplot(sample_df$Freq,
         cex.names = 0.9,
         col="pink")
 
-text(y = bar, x = sample_df$Freq, label = sample_df$Freq, pos = 4, cex = 1)
+text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ```
 Additional Notes:
-1. Structure of `sample_df`
+1. Structure of `HEC` (dataframe)
 
 | Discrete Variable* | Continuous Variable* |
 | :---: | :---: |
