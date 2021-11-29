@@ -5,12 +5,12 @@ Preparation Code
 library(wooldridge)
 data(gpa2)
 ```
-#### **Sample Task: Compute the first quartile.**
+#### **_Sample Task: Compute the first quartile._**
 **Actual Code**
 ```
 quantile(gpa2$sat, 0.25)
 ```
-#### **Sample Task: Compute the 32% and 78% percentile.**
+#### **_Sample Task: Compute the 32% and 78% percentile._**
 **Actual Code**
 ```
 quantile(gpa2$sat, c(0.32, 0.78))
