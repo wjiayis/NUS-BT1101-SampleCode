@@ -32,7 +32,7 @@ legend("topleft",
        cex = 0.9)
 
 text(y = satisfaction.grouped_barplot.matrix, x = satisfaction.grouped_barplot,
-     label = round(satisfaction.grouped_barplot.matrix,2), pos = 3, cex = 0.9)
+     label = round(satisfaction.grouped_barplot.matrix, 2), pos = 3, cex = 0.9)
 ```
 Additional Notes:
 1. Structure of data frame `M`
