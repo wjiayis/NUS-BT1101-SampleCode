@@ -2,7 +2,7 @@
 ## Descriptive Analytics
 #### 1a. Data Visualisation
 - [Base R Graphics](1-1.md)
-- ggPlot Graphics (UNDONE)
+- ggplot2 Graphics (UNDONE)
 #### 1b. Data Tabulation and Frequencies
 - [Tables](1-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
