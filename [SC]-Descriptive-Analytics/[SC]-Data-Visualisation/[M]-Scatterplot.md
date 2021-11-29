@@ -12,5 +12,5 @@ CS <- ceosal1
 ```
 **Actual Code**
 ```
-plot(CS$lsalary, CS$lsales)
+plot(y = CS$lsalary, x = CS$lsales)
 ```
