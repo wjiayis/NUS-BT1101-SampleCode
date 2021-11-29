@@ -36,7 +36,7 @@ text(y = grouped_barplot.matrix, x = grouped_barplot,
      label = round(grouped_barplot.matrix,2), pos = 3, cex = 0.9)
 
 # Notes:
-##### Structure of data_df #####
+##### Structure of sample_df #####
 #   [Discrete Variable]    [Continuous Variable 1]    [Continuous Variable 2]    [...] ----- Column Names
 #          ...                       ...                        ...               ...
 ```
