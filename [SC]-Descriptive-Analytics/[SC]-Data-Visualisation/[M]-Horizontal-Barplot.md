@@ -6,7 +6,7 @@ library(dplyr)
 # Data
 data(HairEyeColor)
 HEC <- HairEyeColor %>% as.data.frame()
-HEC <- sample_df[c("Hair", "Freq")]
+HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 **Actual Code**
