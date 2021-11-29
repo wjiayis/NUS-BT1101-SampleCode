@@ -23,7 +23,7 @@ hair_colour.barplot <- barplot(HEC$Freq,
 text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ```
 Additional Notes:
-1. Structure of `HEC` (dataframe)
+1. Structure of dataframe `HEC`
 
 | Discrete Variable* | Continuous Variable* |
 | :---: | :---: |
