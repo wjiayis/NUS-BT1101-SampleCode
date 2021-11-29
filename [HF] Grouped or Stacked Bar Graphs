@@ -64,3 +64,8 @@ plot.GroupedBarplot(sample_df, # data_df
 #                           legend.position = " PRESET" ----- e.g., "PRESET" / list(x = 1, y = 70)
 #                           include_frequency_table = TRUE
 ```
+
+# Notes to users:
+##### Structure of data_df #####
+#   [Discrete Variable]    [Continuous Variable 1]    [Continuous Variable 2]]    [...]
+#          ...                       ...                        ...                ...
