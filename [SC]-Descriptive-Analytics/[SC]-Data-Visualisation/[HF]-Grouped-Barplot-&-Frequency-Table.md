@@ -5,6 +5,7 @@ Preparation Code
 library(dplyr)
 library(knitr)
 library(glue)
+
 # Sample Data
 library(wooldridge)
 data(mathpnl)
