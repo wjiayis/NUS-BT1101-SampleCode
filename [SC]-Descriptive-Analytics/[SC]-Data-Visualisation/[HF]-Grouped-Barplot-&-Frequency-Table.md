@@ -52,7 +52,7 @@ plot.GroupedBarplot(sample_df, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
-4. Optional Arguments (for fine-tuning of output). If you wish to include them, add them at the back of your input.
+4. Optional Arguments (for fine-tuning of output). If you wish to include them, edit what is on the right of the `=` and add them at the back of your input.
 ```
 #                           title.font_size = 1
 #                           categories.font_size = 1
