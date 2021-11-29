@@ -4,7 +4,7 @@ Preparation Code
 # Functions
 library(dplyr)
 
-# Data
+# Sample Data
 library(wooldridge)
 data(rdchem)
 R <- rdchem
