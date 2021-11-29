@@ -45,7 +45,7 @@ text(y = grouped_barplot.matrix, x = grouped_barplot,
      label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 
 ##### HYPERPARAMETERS ----- ADMIN ONLY ----- #####
-plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, categories.font_size = 1, title.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
+plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
 {plot.GroupedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 
