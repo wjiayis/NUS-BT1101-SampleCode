@@ -1,4 +1,4 @@
-### z Score
+### z-Score
 Preparation Code
 ```
 # Sample Data
