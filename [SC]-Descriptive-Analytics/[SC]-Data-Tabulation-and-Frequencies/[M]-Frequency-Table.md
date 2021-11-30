@@ -134,7 +134,7 @@ kable(improvement.frequency_table, caption = "Relative Frequency Table of Improv
 | y | ... |
 </td><td>
 
-| Discrete Variable | Frequency | Relative Frequency | Cumulative Frequency |Cumulative Relative Frequency |
-|:---:| :---: | :---: | :---: | :---: |
-| x | ... | ... | ... | ... |
-| y | ... | ... | ... | ... |      
+| Discrete Variable | Frequency | Cumulative Frequency |Cumulative Relative Frequency |
+|:---:| :---: | :---: | :---: |
+| x | ... | ... | ... |
+| y | ... | ... | ... |     
