@@ -38,8 +38,8 @@ text(y = satisfaction.grouped_barplot.matrix, x = satisfaction.grouped_barplot,
 Additional Notes:
 1. Structure of data frame `M`
 
-| Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
+| Discrete Variable[^1] | Continuous Variable 1[^1] | Continuous Variable 2[^1] | ... | 
 | :---: | :---: | :---: | :---: |
 | ... | ... | ... | ... |
 
-\*Variable Name as Column Name
+[^1]: Variable Name as Column Name
