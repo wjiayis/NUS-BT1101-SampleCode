@@ -1,6 +1,6 @@
-### Line Graph for Time Trend
+## Line Graph for Time Trend
 
-#### Non-time-series
+### Non-time-series
 Preparation Code
 ```
 # Sample Data
