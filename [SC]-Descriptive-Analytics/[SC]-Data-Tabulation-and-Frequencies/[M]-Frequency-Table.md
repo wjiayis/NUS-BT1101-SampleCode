@@ -2,7 +2,7 @@
 ### Frequency Table
 #### **_Sample Task 1._**
 <table>
-<tr><th> FROM [^1] </th><th> TO </th></tr>
+<tr><th> FROM[^1] </th><th> TO </th></tr>
 <tr><td>
 
 | ... | Discrete Variable | ... |
@@ -12,7 +12,9 @@
 | ... | x | ... |
 | ... | x | ... |
 </td><td>
+
 [^1]: data frame
+
 | Discrete Variable | Frequency |
 |:---:| :---: |
 | x | ... |
