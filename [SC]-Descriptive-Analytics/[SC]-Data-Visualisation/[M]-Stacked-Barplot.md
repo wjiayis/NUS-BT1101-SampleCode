@@ -40,8 +40,8 @@ text(x = rep(satisfaction.stacked_barplot, each = nrow(H)), y = H,
 Additional Notes:
 1. Structure of data frame `M`
 
-| Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
+| Discrete Variable[^1] | Continuous Variable 1[^1] | Continuous Variable 2[^1] | ... | 
 | :---: | :---: | :---: | :---: |
 | ... | ... | ... | ... |
 
-\*Variable Name as Column Name
+[^1]: Variable Name as Column Name
