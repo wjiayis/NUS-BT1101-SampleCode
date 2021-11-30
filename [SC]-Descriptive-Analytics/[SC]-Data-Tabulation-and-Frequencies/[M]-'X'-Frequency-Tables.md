@@ -103,7 +103,7 @@ rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
 rd.frequency_table <- table(rd.cut) %>% transform()
 rd.frequency_table
 ```
-\[M2\] [Using Histogram]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md) (LINK NOT WORKING)
+\[M2\] [Using Histogram]([SC]-Data-Tabulation-and-Frequencies/[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md) (LINK NOT WORKING)
 - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md) (LINK NOT WORKING)
 ### Relative Frequency Table
 #### **_Task:_**
