@@ -13,7 +13,7 @@
    - [Given Mean & Standard Deviation &#8594; Probability]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Mean-&-Standard-Deviation-Probability.md)
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-and-Test-of-Normality.md)
-### 4. Descriptive Statistical Measures
+### 4. [Descriptive Statistical Measures](1-4.md)
 ### 5. Sampling and Estimation
 ### 6. Hypothesis Testing
 ## Predictive Analytics
