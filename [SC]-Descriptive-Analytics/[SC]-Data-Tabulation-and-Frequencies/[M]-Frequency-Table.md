@@ -18,6 +18,25 @@
 
 </td></tr> </table>
 
+Preparation Code
+```
+# Functions
+library(dplyr)
+library(knitr)
+
+# Sample Data
+library(vcd)
+data(Arthritis)
+A <- Arthritis
+```
+**Actual Code**
+Method 1
+```
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(n())
+
+kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
+      col.names = c("Improvement", "Frequency"))
+```
 #### **_Sample Task 2._**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
