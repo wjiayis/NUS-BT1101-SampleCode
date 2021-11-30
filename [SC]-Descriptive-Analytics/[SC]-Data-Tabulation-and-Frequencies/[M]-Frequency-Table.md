@@ -31,9 +31,9 @@ library(vcd)
 data(Arthritis)
 A <- Arthritis
 ```
-\[M1\] **Actual Code**
+\[M1\] **Actual Code** (used for latter data manipulation)
 ```
-improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(n())
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
 
 kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency"))
@@ -84,20 +84,40 @@ kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
 ### Relative Frequency Table
-Preparation Code
+
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
-
+#### **_Task_**
 | Discrete Variable | Frequency |
 |:---:| :---: |
 | x | ... |
 | y | ... |
 </td><td>
       
-| Discrete Variable | Relative Frequency |
-|:---:| :---: |
-| x | ... |
-| y | ... |
+| Discrete Variable | Frequency | Relative Frequency |
+|:---:| :---: | :---: |
+| x | ... | ... |
+| y | ... | ... |
 
 </td></tr> </table>
+
+Preparation Code
+```
+# Functions
+library(dplyr)
+library(knitr)
+
+# Sample Data
+library(vcd)
+data(Arthritis)
+A <- Arthritis
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
+```
+**Actual Code**
+```
+improvement.frequency_table$relative_frequency <- improvement.frequency_table$frequency/sum(improvement.frequency_table$frequency)
+
+kable(improvement.frequency_table, caption = "Relative Frequency Table of Improvement",
+      col.names = c("Improvement", "Frequency", "Relative Frequency"))
+```
