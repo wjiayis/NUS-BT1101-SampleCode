@@ -11,7 +11,7 @@ MC <- mtcars
 shapiro.test(MC$mpg)
 ```
 ### Graphical Methods[^1]
-1. Density Plot
+1. [Density Plot]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Density-Plot.md)
 2. [Histogram]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md)
  - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)  
 4. Q-Q Plot
