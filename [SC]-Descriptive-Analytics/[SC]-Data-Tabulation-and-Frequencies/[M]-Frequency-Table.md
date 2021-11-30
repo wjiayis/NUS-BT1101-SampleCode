@@ -1,5 +1,5 @@
 <table>
-<tr><th> (from) </th><th> (to) </th></tr>
+<tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
 
 |Table 1| Middle | Table 2|
