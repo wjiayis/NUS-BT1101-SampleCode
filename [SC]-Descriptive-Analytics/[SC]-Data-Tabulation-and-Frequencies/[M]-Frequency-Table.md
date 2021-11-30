@@ -11,10 +11,10 @@
 | ... | x | ... |
 </td><td>
 
-| Discrete Variable | ... | Frequency |
-|:---:| :---: | :---: |
-| x | ... | ... |
-| y | ... | ... |
+| Discrete Variable | Frequency |
+|:---:| :---: |
+| x | ... |
+| y | ... |
 
 </td></tr> </table>
 
