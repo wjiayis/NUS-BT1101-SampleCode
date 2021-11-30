@@ -96,14 +96,14 @@ library(wooldridge)
 data(rdchem)
 R <- rdchem
 ```
-\[M1\]**Actual Code**
+\[M1\] **Actual Code**
 ```
 rd.breaks <- seq(0, 1500, by=100)
 rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
 rd.frequency_table <- table(rd.cut) %>% transform()
 rd.frequency_table
 ```
-\[M2\] [(Using Histogram)]()
+\[M2\] [(Using Histogram)]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md)
 - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
 ### Relative Frequency Table
 #### **_Task:_**
