@@ -1,4 +1,4 @@
-### Standard Deviation
+### Sample Standard Deviation
 Preparation Code
 ```
 # Sample Data
