@@ -119,7 +119,7 @@ improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency 
 ```
 improvement.frequency_table$relative_frequency <- improvement.frequency_table$frequency/sum(improvement.frequency_table$frequency)
 
-kable(improvement.frequency_table, caption = "Relative Frequency Table of Improvement",
+kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency", "Relative Frequency"))
 ```
 ### Cumulative Frequency and Cumulative Relative Frequency Table
@@ -138,3 +138,24 @@ kable(improvement.frequency_table, caption = "Relative Frequency Table of Improv
 |:---:| :---: | :---: | :---: |
 | x | ... | ... | ... |
 | y | ... | ... | ... |     
+
+Preparation Code
+```
+# Functions
+library(dplyr)
+library(knitr)
+
+# Sample Data
+library(vcd)
+data(Arthritis)
+A <- Arthritis
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
+```
+**Actual Code**
+```
+improvement.frequency_table <- improvement.frequency_table %>% mutate(cumulative_frequency = cumsum(improvement.frequency_table$frequency),
+       cumulative_relative_frequency = cumsum(improvement.frequency_table$frequency) / nrow(A))
+
+
+kable(improvement.frequency_table, caption = "Frequency Table of Improvement", col.names = c("Improvement", "Frequency", "Cumulative Frequency", "Cumulative Relative Frequency"))
+```
