@@ -139,6 +139,8 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
 | x | ... | ... | ... |
 | y | ... | ... | ... |     
 
+</td></tr> </table>
+
 Preparation Code
 ```
 # Functions
