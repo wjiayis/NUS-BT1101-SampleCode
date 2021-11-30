@@ -1,3 +1,5 @@
+## 'X' Frequency Tables
+### Frequency Table
 #### **_Sample Task 1._**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
@@ -81,3 +83,4 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
+### Relative Frequency Table
