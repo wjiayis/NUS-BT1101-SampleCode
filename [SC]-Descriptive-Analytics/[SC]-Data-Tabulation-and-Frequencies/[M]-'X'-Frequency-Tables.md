@@ -114,15 +114,11 @@ rd.frequency_table
       
 | Categories | Frequency |
 |:---:| :---: |
-| x | ... |
-| y | ... |
 | ... | ... |
 </td><td>
       
 | Categories | Frequency | Relative Frequency |
 |:---:| :---: | :---: |
-| x | ... | ... |
-| y | ... | ... |
 | ... | ... | ... |
 </td></tr> </table>
 
@@ -153,15 +149,11 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       
 | Categories | Frequency |
 |:---:| :---: |
-| x | ... |
-| y | ... |
 | ... | ... |
 </td><td>
 
 | Categories | Frequency | Cumulative Frequency | Cumulative Relative Frequency |
-|:---:| :---: | :---: | :---: |
-| x | ... | ... | ... |
-| y | ... | ... | ... |     
+|:---:| :---: | :---: | :---: |    
 | ... | ... | ... | ... |
 </td></tr> </table>
 
