@@ -1,4 +1,4 @@
-## Test of Normality
+## Test of Normality [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-and-Test-of-Normality.md) LINK DOESNT WORK
 ### Shapiro-wilk test[^1]
 Preparation Code
 ```
