@@ -95,7 +95,7 @@ Preparation Code
 | y | ... |
 </td><td>
       
-| Discrete Variable | Frequency |
+| Discrete Variable | Relative Frequency |
 |:---:| :---: |
 | x | ... |
 | y | ... |
