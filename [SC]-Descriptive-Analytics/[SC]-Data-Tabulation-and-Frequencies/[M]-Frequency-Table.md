@@ -123,3 +123,18 @@ kable(improvement.frequency_table, caption = "Relative Frequency Table of Improv
       col.names = c("Improvement", "Frequency", "Relative Frequency"))
 ```
 ### Cumulative Relative Frequency Table
+#### **_Task._**
+<table>
+<tr><th> FROM </th><th> TO </th></tr>
+<tr><td>
+      
+| Discrete Variable | Frequency | Relative Frequency |
+|:---:| :---: | :---: |
+| x | ... | ... |
+| y | ... | ... |
+</td><td>
+
+| Discrete Variable | Frequency | Relative Frequency | Cumulative Relative Frequency |
+|:---:| :---: | :---: | :---: |
+| x | ... | ... | ... |
+| y | ... | ... | ... |      
