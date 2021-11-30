@@ -23,8 +23,8 @@ text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 Additional Notes:
 1. Structure of data frame `HEC`
 
-| Discrete Variable* | Continuous Variable* |
+| Discrete Variable[^1] | Continuous Variable[^1] |
 | :---: | :---: |
 | ... | ... |
 
-\*Variable Name as Column Name
+[^1]: Variable Name as Column Name
