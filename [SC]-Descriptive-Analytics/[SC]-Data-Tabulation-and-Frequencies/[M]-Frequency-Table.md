@@ -84,7 +84,7 @@ kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
 ### Relative Frequency Table
-#### **_Task_**
+#### **_Task._**
 
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
