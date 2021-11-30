@@ -29,7 +29,7 @@ library(vcd)
 data(Arthritis)
 A <- Arthritis
 ```
-\[M1\]**Actual Code**
+\[M1\] **Actual Code**
 ```
 improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(n())
 
