@@ -9,7 +9,7 @@
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
-- [Probability Under Normal Distribution]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Mean-&-sd-Probability.md)
+- [Probability Under Normal Distribution]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Mean-&-Standard-Deviation-Probability.md)
 - Test of Normality
   - _Helper Function_
 ### 4. Descriptive Statistical Measures
