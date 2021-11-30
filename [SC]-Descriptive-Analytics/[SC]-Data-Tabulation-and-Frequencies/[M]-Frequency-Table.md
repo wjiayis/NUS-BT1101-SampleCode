@@ -1,3 +1,23 @@
+#### **_Sample Task 1._**
+<table>
+<tr><th> FROM </th><th> TO </th></tr>
+<tr><td>
+
+| ... | Discrete Variable | ... |
+|:---:| :---: | :---: |
+| ... | x | ... |
+| ... | y | ... |
+| ... | x | ... |
+| ... | x | ... |
+</td><td>
+
+| Discrete Variable | ... | Frequency |
+|:---:| :---: | :---: |
+| x | ... | ... |
+| y | ... | ... |
+
+</td></tr> </table>
+
 #### **_Sample Task 2._**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
@@ -5,16 +25,16 @@
 
 | Discrete Variable | ... | Frequency |
 |:---:| :---: | :---: |
-| **x** | ... | ... |
+| x | ... | ... |
 | y | ... | ... |
-| **x** | ... | ... |
-| **x** | ... | ... |
+| x | ... | ... |
+| x | ... | ... |
 </td><td>
 
-| Discrete Variable | ... | Frequency |
-|:---:| :---: | :---: |
-| **x** | ... | ... |
-| y | ... | ... |
+| Discrete Variable | Frequency |
+|:---: | :---: |
+| x | ... |
+| y | ... |
 
 </td></tr> </table>
 
