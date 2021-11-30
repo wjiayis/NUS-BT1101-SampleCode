@@ -6,7 +6,7 @@ library(wooldridge)
 data(gpa2)
 G <- gpa2
 ```
-Actual Code
+**Actual Code**
 ```
 names(table(G$sat))[table(G$sat) == max(table(G$sat))]
 ```
