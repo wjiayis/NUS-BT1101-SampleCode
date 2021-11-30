@@ -85,3 +85,19 @@ kable(HEC, caption = "Frequency Table of Hair Colour",
 ```
 ### Relative Frequency Table
 Preparation Code
+<table>
+<tr><th> FROM </th><th> TO </th></tr>
+<tr><td>
+
+| Discrete Variable | Frequency |
+|:---:| :---: |
+| x | ... |
+| y | ... |
+</td><td>
+      
+| Discrete Variable | Frequency |
+|:---:| :---: |
+| x | ... |
+| y | ... |
+
+</td></tr> </table>
