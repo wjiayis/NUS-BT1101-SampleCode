@@ -122,3 +122,4 @@ improvement.frequency_table$relative_frequency <- improvement.frequency_table$fr
 kable(improvement.frequency_table, caption = "Relative Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency", "Relative Frequency"))
 ```
+### Cumulative Relative Frequency Table
