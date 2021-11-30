@@ -1,6 +1,6 @@
 ## 'X' Frequency Tables
 ### Frequency Table
-#### **_Sample Task 1._**
+#### **_Sample Task 1:_**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
@@ -46,7 +46,7 @@ improvement.frequency_table <- table(A$Improved) %>% as.data.frame()
 kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency"))
 ```
-#### **_Sample Task 2._**
+#### **_Sample Task 2:_**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
@@ -86,7 +86,7 @@ kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
 ### Relative Frequency Table
-#### **_Task._**
+#### **_Task:_**
 
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
@@ -126,7 +126,7 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency", "Relative Frequency"))
 ```
 ### Cumulative Frequency and Cumulative Relative Frequency Table
-#### **_Task._**
+#### **_Task:_**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
