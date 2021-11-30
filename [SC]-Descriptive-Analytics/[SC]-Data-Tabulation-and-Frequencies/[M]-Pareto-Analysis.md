@@ -1,4 +1,4 @@
-### Pareto Analysis
+### Pareto Analysis [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md) LINK DOESNT WORK
 Preparation Code
 ```
 # Sample Data
