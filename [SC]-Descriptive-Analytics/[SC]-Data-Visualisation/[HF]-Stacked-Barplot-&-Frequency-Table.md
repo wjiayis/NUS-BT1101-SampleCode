@@ -70,8 +70,8 @@ plot.StackedBarplot(M, # data_df
 Additional Notes:
 1. Structure of data frame `data_df`
 
-| Discrete Variable* | Continuous Variable 1* | Continuous Variable 2* | ... | 
+| Discrete Variable[^1] | Continuous Variable 1[^1] | Continuous Variable 2[^1] | ... | 
 | :---: | :---: | :---: | :---: |
 | ... | ... | ... | ... |
 
-\*Variable Name as Column Name
+[^1]: Variable Name as Column Name
