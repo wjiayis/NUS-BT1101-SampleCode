@@ -15,8 +15,7 @@
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-and-Test-of-Normality.md)
 ### 4. Descriptive Statistical Measures
-- [Individual Statistics](1-4-1.md)
-- Summary Statistics (UNDONE)
+- [Individual](1-4-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification
 
 ### 5. Sampling and Estimation
