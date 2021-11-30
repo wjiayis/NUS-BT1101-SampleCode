@@ -2,7 +2,7 @@
 ### Frequency Table
 #### **_Sample Task 1._**
 <table>
-<tr><th> FROM </th><th> TO </th></tr>
+<tr><th> FROM (data frame) </th><th> TO </th></tr>
 <tr><td>
 
 | ... | Discrete Variable | ... |
