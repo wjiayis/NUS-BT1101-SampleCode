@@ -1,4 +1,4 @@
-### Sample-Variance
+### Sample Variance
 Preparation Code
 ```
 # Sample Data
