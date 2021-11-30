@@ -11,13 +11,14 @@
 | ... | y | ... |
 | ... | x | ... |
 | ... | x | ... |
+| ... | ... | ... |
 </td><td>
 
 | Discrete Variable | Frequency |
 |:---:| :---: |
 | x | ... |
 | y | ... |
-
+| ... | ... |
 </td></tr> </table>
 
 Preparation Code
@@ -56,13 +57,14 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
 | y | ... | ... |
 | x | ... | ... |
 | x | ... | ... |
+| ... | ... | ... |
 </td><td>
 
 | Discrete Variable | Frequency |
 |:---: | :---: |
 | x | ... |
 | y | ... |
-
+| ... | ... |
 </td></tr> </table>
 
 Preparation Code
@@ -94,13 +96,14 @@ kable(HEC, caption = "Frequency Table of Hair Colour",
 |:---:| :---: |
 | x | ... |
 | y | ... |
+| ... | ... |
 </td><td>
       
 | Discrete Variable | Frequency | Relative Frequency |
 |:---:| :---: | :---: |
 | x | ... | ... |
 | y | ... | ... |
-
+| ... | ... | ... |
 </td></tr> </table>
 
 Preparation Code
@@ -132,13 +135,14 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
 |:---:| :---: |
 | x | ... |
 | y | ... |
+| ... | ... |
 </td><td>
 
 | Discrete Variable | Frequency | Cumulative Frequency |Cumulative Relative Frequency |
 |:---:| :---: | :---: | :---: |
 | x | ... | ... | ... |
 | y | ... | ... | ... |     
-
+| ... | ... | ... | ... |
 </td></tr> </table>
 
 Preparation Code
