@@ -2,10 +2,12 @@
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
 
-|Table 1| Middle | Table 2|
+| Discrete Variable | ... | Frequency |
 |--|--|--|
-|a| not b|and c |
-
+| **x** | ... | 3 |
+| y | ... | 2 |
+| x | ... | 4 |
+| x | ... | 8 |
 </td><td>
 
 |b|1|2|3| 
