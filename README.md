@@ -8,7 +8,6 @@
 - [**Base R Graphics**](1-2-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Percentile.md)
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
-  - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
 - [Given Normal Distribution, Mean, Standard Deviation &#8594; Probability]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Mean-Standard-Deviation-Probability.md)
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
