@@ -1,4 +1,4 @@
-### Stacked Barplot
+### Stacked Barplot [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Stacked-Barplot-&-Frequency-Table.md)
 Preparation Code
 ```
 # Functions
