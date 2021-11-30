@@ -7,7 +7,7 @@
 - [**Tables**](1-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
 - Pareto Analysis (UNDONE)
-  - [_Helper Function_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Pareto-Analysis.md)
+  - [_Helper Function_]([SC]-Descriptive-Analytics/[HF]-Pareto-Analysis.md)
 #### 3. Probability Distributions and Data Modeling
 - Probability Under Normal Distribution
 - Test of Normality
