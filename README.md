@@ -5,7 +5,7 @@
 - ggplot2 Graphics (UNDONE)
 #### 2. Data Tabulation and Frequencies
 - [**Tables**](1-2.md)
-- [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Percentile.md)
+- [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Percentile.md)
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
   - [_Helper Function_]([SC]-Descriptive-Analytics/[HF]-Pareto-Analysis.md)
 #### 3. Probability Distributions and Data Modeling
