@@ -11,9 +11,8 @@
 | ... | y | ... |
 | ... | x | ... |
 | ... | x | ... |
-</td><td>
-
 [^1]: data frame
+</td><td>
 
 | Discrete Variable | Frequency |
 |:---:| :---: |
