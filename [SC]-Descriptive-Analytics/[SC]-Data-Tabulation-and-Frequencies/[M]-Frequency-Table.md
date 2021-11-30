@@ -36,6 +36,13 @@ improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(n())
 kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency"))
 ```
+\[M2\] **Actual Code**
+```
+improvement.frequency_table <- table(A$Improved) %>% as.data.frame()
+
+kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
+      col.names = c("Improvement", "Frequency"))
+```
 #### **_Sample Task 2._**
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
