@@ -112,14 +112,14 @@ rd.frequency_table
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
       
-| Discrete Variable | Frequency |
+| Categories | Frequency |
 |:---:| :---: |
 | x | ... |
 | y | ... |
 | ... | ... |
 </td><td>
       
-| Discrete Variable | Frequency | Relative Frequency |
+| Categories | Frequency | Relative Frequency |
 |:---:| :---: | :---: |
 | x | ... | ... |
 | y | ... | ... |
@@ -151,14 +151,14 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
 <tr><th> FROM </th><th> TO </th></tr>
 <tr><td>
       
-| Discrete Variable | Frequency |
+| Categories | Frequency |
 |:---:| :---: |
 | x | ... |
 | y | ... |
 | ... | ... |
 </td><td>
 
-| Discrete Variable | Frequency | Cumulative Frequency |Cumulative Relative Frequency |
+| Categories | Frequency | Cumulative Frequency | Cumulative Relative Frequency |
 |:---:| :---: | :---: | :---: |
 | x | ... | ... | ... |
 | y | ... | ... | ... |     
