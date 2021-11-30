@@ -85,6 +85,25 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
+#### **_Sample Task 3: Continuous Variable_**
+Preparation Code
+```
+# Functions
+library(dplyr)
+
+# Sample Data
+library(wooldridge)
+data(rdchem)
+R <- rdchem
+```
+\[M1\]**Actual Code**
+```
+rd.breaks <- seq(0, 1500, by=100)
+rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
+rd.frequency_table <- table(rd.cut) %>% transform()
+rd.frequency_table
+```
+\[M2\] (Using Histogram)
 ### Relative Frequency Table
 #### **_Task:_**
 
