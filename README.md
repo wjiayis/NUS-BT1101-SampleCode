@@ -10,6 +10,7 @@
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
+
 Normal Distribution (1/2)
 - [Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
 ### 4. Descriptive Statistical Measures
