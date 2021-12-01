@@ -8,8 +8,7 @@ library(glue)
 
 # Sample Data
 library(wooldridge)
-CS <- ceosal1
-CS <- CS %>% filter(salary < 1000)
+CS <- ceosal1 %>% filter(salary < 1000)
 ```
 **Actual Code**
 1. Set `{r ..., results="asis", ...}`
