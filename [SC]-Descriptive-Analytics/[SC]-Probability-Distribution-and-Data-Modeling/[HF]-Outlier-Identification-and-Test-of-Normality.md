@@ -7,7 +7,6 @@ library(glue)
 
 # Sample Data
 library(wooldridge)
-data(gpa2)
 G <- gpa2
 ```
 **Actual Code**
