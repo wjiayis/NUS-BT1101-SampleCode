@@ -14,7 +14,8 @@
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and Summary Statistics (UNDONE)
-- [**Outlier Identification and Handling**](1-4-2.md)
+- Outlier Identification and Handling
+  - [**Base R Graphics**](1-4-2.md)
 ### 5. Sampling and Estimation
 - Normal Distribution (2/2)
   - Probability for the Mean of Multiple New Observations
