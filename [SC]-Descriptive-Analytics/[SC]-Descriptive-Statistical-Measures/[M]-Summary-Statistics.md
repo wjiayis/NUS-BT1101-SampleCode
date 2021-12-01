@@ -35,7 +35,7 @@ summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
 ```
 A$Age %>% describeBy(group = A$Treatment, IQR = TRUE)
 ```
-#### **_Sample Task: Compute summary statistics for each gender, for each mode of treatment._** (CHECK WORDING)
+#### **_Sample Task: Compute summary statistics for each gender, for each mode of treatment._** (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS) (CHECK WORDING)
 **Actual Code**
 ```
 describeBy(Age ~ Treatment + Sex, data = A, IQR = TRUE)
