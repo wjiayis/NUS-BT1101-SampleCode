@@ -22,6 +22,7 @@ pie(HEC$Freq,
 ```
 Additional Notes:
 1. Structure of `HEC`
+
 | Discrete Variable | Frequency |
 |:---:| :---: |
 | x | ... |
