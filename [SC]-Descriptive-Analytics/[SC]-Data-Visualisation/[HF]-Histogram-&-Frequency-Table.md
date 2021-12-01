@@ -8,7 +8,6 @@ library(glue)
 
 # Sample Data
 library(wooldridge)
-data(ceosal1)
 CS <- ceosal1
 CS <- CS %>% filter(salary < 1000)
 ```
