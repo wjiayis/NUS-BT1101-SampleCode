@@ -8,7 +8,6 @@ library(dplyr)
 library(glue)
 
 # Sample Data
-data(HairEyeColor)
 HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
