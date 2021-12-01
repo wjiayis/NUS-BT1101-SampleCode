@@ -11,15 +11,14 @@
 ### 3. Probability Distributions and Data Modeling
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 
-Normal Distribution (1/2)
-- [Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
+
+- [\[ND\] Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification and Handling
   - [**Base R Graphics**](1-4-2.md)
 ### 5. Sampling and Estimation
-Normal Distribution (2/2)
-- Probability for the Mean of Multiple New Observations
+- \[ND\]Probability for the Mean of Multiple New Observations
 - **Interval Estimates**
 - Sample Size Determination for Mean and Proportion
 ### 6. Hypothesis Testing
