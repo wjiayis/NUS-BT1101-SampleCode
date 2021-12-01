@@ -9,15 +9,15 @@
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Percentile.md)
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
-- Normal Distribution
-  - (1/2) [Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
+- Normal Distribution (1/2)
+  - [Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification
 ### 5. Sampling and Estimation
-- Normal Distribution
-  - (2/2) Probability for the Mean of Multiple New Observations
+- Normal Distribution (2/2)
+  - Probability for the Mean of Multiple New Observations
 - **Interval Estimates**
 - Sample Size Determination for Mean and Proportion
 ### 6. Hypothesis Testing
