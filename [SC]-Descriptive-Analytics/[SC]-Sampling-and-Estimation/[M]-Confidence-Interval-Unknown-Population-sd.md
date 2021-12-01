@@ -1,4 +1,4 @@
-### Confidence Interval (Unknown sd)
+### Confidence Interval (Unknown Population sd)
 Preparation Code
 ```
 library(Rmisc)
