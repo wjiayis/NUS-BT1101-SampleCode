@@ -12,7 +12,7 @@
 - [Probability Calculation for Normal Distribution I]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Probability-Calculation-for-Normal-Distribution-I.md) (For a Single New Observation)
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 ### 4. Descriptive Statistical Measures
-- [**Individual**](1-4-1.md) and Summary Statistics (UNDONE)
+- [**Individual**](1-4-1-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification
 ### 5. Sampling and Estimation
 - Probability Calculation for Normal Distribution II (For the Mean of Multiple New Observations)
