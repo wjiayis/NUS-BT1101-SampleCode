@@ -3,7 +3,6 @@ Preparation Code
 ```
 # Sample Data
 library(wooldridge)
-data(gpa2)
 ```
 #### **_Sample Task: Compute the first quartile (Q1)._**
 **Actual Code**
