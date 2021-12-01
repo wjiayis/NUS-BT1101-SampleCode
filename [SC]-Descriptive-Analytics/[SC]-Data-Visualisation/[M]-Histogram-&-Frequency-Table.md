@@ -1,5 +1,5 @@
 ### Histogram
-- [{_Helper Function Available_}](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
+:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
 
 Preparation Code
 ```
