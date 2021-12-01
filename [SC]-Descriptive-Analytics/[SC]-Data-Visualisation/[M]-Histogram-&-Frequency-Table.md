@@ -1,5 +1,6 @@
 ### Histogram
 [{Helper Function Available}](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
+
 Preparation Code
 ```
 # Functions
