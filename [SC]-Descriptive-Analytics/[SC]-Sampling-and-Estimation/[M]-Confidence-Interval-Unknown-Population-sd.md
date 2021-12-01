@@ -1,5 +1,6 @@
 ### Confidence Interval (Unknown Population sd)
-:white_heart: _Helper Function Available_
+:white_heart: [_Helper Function Available_]()
+
 Preparation Code
 ```
 library(Rmisc)
