@@ -6,7 +6,6 @@ library(psych)
 
 # Sample Data
 library(wooldridge)
-data(HairEyeColor)
 HEC <- as.data.frame(HairEyeColor)
 ```
 
