@@ -1,4 +1,5 @@
-### Grouped Barplot [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md) LINK DOESNT WORK
+### Grouped Barplot
+[{Helper Function Available}](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
 
 Preparation Code
 ```
