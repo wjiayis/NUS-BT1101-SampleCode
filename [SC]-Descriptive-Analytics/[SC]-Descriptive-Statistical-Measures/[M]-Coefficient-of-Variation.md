@@ -1,5 +1,4 @@
 ### Coefficient of Variation
-### Mean
 Preparation Code
 ```
 # Sample Data
