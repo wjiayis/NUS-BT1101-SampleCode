@@ -29,7 +29,6 @@ library(knitr)
 
 # Sample Data
 library(vcd)
-data(Arthritis)
 A <- Arthritis
 ```
 \[M1\] **Actual Code** (used in latter data manipulation)
@@ -70,12 +69,10 @@ kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
 Preparation Code
 ```
 # Functions
-library(dplyr)
 library(knitr)
 
 # Sample Data
-data(HairEyeColor)
-HEC <- HairEyeColor %>% as.data.frame()
+HEC <- as.data.frame(HairEyeColor)
 ```
 **Actual Code**
 ```
@@ -93,7 +90,6 @@ library(dplyr)
 
 # Sample Data
 library(wooldridge)
-data(rdchem)
 R <- rdchem
 ```
 \[M1\] **Actual Code**
@@ -129,7 +125,6 @@ library(knitr)
 
 # Sample Data
 library(vcd)
-data(Arthritis)
 A <- Arthritis
 improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
 ```
@@ -164,7 +159,6 @@ library(knitr)
 
 # Sample Data
 library(vcd)
-data(Arthritis)
 A <- Arthritis
 improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
 ```
