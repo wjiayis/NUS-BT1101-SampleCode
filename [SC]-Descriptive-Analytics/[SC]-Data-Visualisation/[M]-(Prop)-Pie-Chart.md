@@ -20,3 +20,10 @@ pie(HEC$Freq,
     main = "Pie Chart of Frequency of Hair Colour",
     cex.main = 0.9)
 ```
+Additional Notes:
+1. Structure of `HEC`
+| Discrete Variable | Frequency |
+|:---:| :---: |
+| x | ... |
+| y | ... |
+| ... | ... |
