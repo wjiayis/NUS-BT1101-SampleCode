@@ -16,6 +16,8 @@
 ### 5. Sampling and Estimation
 - [\[ND\] Probability for the Mean of n New Observations]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[M]-Normal-Distribution-Probability-Calculation-for-the-Mean-of-n-New-Observations.md)
 - [**Interval Estimates**](1-5-2.md)
+- Outlier Identification and Removal
+  - [**Base R Graphics**](1-4-2.md)
 ### 6. Hypothesis Testing
 ## Predictive Analytics
 ### 1. Linear Regression
