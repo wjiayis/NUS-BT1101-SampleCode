@@ -16,7 +16,8 @@
 - Outlier Identification
 
 ### 5. Sampling and Estimation
-- [Probability Calculation for Normal Distribution II]() (For the Mean of Multiple New Observations)
+- Probability Calculation for Normal Distribution II (For the Mean of Multiple New Observations)
+- Interval Estimates
 ### 6. Hypothesis Testing
 ## Predictive Analytics
 ### 1. Linear Regression
