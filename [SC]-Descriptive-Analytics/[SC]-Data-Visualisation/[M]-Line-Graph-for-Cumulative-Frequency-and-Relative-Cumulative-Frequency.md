@@ -6,7 +6,6 @@ library(dplyr)
 
 # Sample Data
 library(wooldridge)
-data(rdchem)
 R <- rdchem
 rd.breaks <- seq(0, 1500, by=100)
 rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
