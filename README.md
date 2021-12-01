@@ -14,10 +14,10 @@
 ### 4. Descriptive Statistical Measures
 - [Individual](1-4-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification
-
 ### 5. Sampling and Estimation
 - Probability Calculation for Normal Distribution II (For the Mean of Multiple New Observations)
 - **Interval Estimates**
+- Sample Size Determination for Mean and Proportion
 ### 6. Hypothesis Testing
 ## Predictive Analytics
 ### 1. Linear Regression
