@@ -1,4 +1,6 @@
-### Pie Chart for Proportion [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Prop)-Pie-Chart-&-Frequency-Table.md) LINK DOESNT WORK
+### Pie Chart for Proportion
+:white_heart: [_Helper Function Available_]([SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Prop)-Pie-Chart-&-Frequency-Table.md) LINK DOESNT WORK
+
 Preparation Code
 ```
 # Functions
