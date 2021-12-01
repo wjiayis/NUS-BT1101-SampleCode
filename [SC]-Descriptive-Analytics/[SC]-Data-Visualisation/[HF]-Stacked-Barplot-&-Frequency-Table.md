@@ -8,7 +8,6 @@ library(glue)
 
 # Sample Data
 library(wooldridge)
-data(mathpnl)
 M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
 M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
                         ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
