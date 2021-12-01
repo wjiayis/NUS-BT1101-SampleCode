@@ -1,5 +1,5 @@
 ### Confidence Interval (Unknown Population sd)
-:white_heart: [_Helper Function Available_]()
+:white_heart: [_Helper Function Available_]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval-Unknown-Population-sd.md)
 
 Preparation Code
 ```
