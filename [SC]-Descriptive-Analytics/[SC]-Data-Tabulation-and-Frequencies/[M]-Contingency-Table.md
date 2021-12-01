@@ -6,7 +6,6 @@ library(rpivotTable)
 
 # Sample Data
 library(wooldridge)
-data(gpa2)
 G <- gpa2
 G$ethnicity <- ifelse(G$black == 1, "Black",
                   ifelse(G$white ==1, "White",
