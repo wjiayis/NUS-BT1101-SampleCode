@@ -5,7 +5,6 @@ Preparation Code
 ```
 # Sample Data
 library(wooldridge)
-data(rdchem)
 R <- rdchem
 ```
 **Actual Code**
