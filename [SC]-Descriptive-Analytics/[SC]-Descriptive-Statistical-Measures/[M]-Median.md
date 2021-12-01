@@ -1,7 +1,11 @@
 ### Median
 Preparation Code
 ```
+# Functions
 library(dplyr)
+# Sample Data
+library(vcd)
+A <- Arthritis
 ```
 #### **_Sample Task: Compute median age._**
 **Actual Code**
