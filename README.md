@@ -9,7 +9,7 @@
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Percentile.md)
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
-- [Probability Calculation for Normal Distribution I]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Mean-Standard-Deviation-Probability.md)
+- [Probability Calculation for Normal Distribution I]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Probability-Calculation-for-Normal-Distribution-I.md) (For a Single New Observation)
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 ### 4. Descriptive Statistical Measures
 - [Individual](1-4-1.md) and Summary Statistics (UNDONE)
