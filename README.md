@@ -15,6 +15,7 @@
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and Summary Statistics (UNDONE)
 - Outlier Identification
+  - Line Graph, Boxplot
 ### 5. Sampling and Estimation
 - Normal Distribution (2/2)
   - Probability for the Mean of Multiple New Observations
