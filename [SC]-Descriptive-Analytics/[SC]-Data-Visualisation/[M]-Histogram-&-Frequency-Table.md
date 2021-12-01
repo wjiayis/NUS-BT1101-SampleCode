@@ -1,4 +1,4 @@
-### Histogram [(HF Available)](/Sample-Code-for-BT1101/[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md) LINK DOESNT WORK
+### Histogram [(HF Available)]([SC]-Data-Visualisation/[SC]Descriptive-Analytics/Sample-Code-for-BT1101/[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md) LINK DOESNT WORK
 Preparation Code
 ```
 # Functions
