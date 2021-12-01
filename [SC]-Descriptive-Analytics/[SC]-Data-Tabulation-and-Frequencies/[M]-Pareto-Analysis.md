@@ -1,4 +1,6 @@
-### Pareto Analysis [(HF Available)]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md) LINK DOESNT WORK
+### Pareto Analysis
+:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md)
+
 Preparation Code
 ```
 # Sample Data
