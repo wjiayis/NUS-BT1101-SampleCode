@@ -27,7 +27,8 @@ describe(A$Age, IQR=TRUE) %>%
 # Obtain "1st Qu.", "3rd Qu."
 summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
   as.array() %>% t() %>%
-  kable(caption = "Additional Descriptive Statistics for Age", col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
+  kable(caption = "Additional Descriptive Statistics for Age",
+    col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
 ```
 #### **_Sample Task: Compute summary statistics for each mode of treatment._** (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS)
 **Actual Code**
