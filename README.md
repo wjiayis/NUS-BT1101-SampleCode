@@ -12,7 +12,7 @@
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
 - [\[ND\] Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
 ### 4. Descriptive Statistical Measures
-- [**Individual**](1-4-1-1.md) and [**Summary**]([SC]-Descriptive-Analytics/[SC]-Descriptive-Statistical-Measures/[M]-Summary-Statistics.md) Statistics (INDIVIDUAL - MORE GROUPING EXAMPLES)
+- [**Individual**](1-4-1-1.md) and [**Summary**]([SC]-Descriptive-Analytics/[SC]-Descriptive-Statistical-Measures/[M]-Summary-Statistics.md) Statistics
 - Outlier Identification and Handling
   - [**Base R Graphics**](1-4-2.md)
 ### 5. Sampling and Estimation
