@@ -3,14 +3,9 @@
 
 Preparation Code
 ```
-# Functions
-library(dplyr)
-
 # Sample Data
 library(wooldridge)
-data(ceosal1)
-CS <- ceosal1
-CS <- CS %>% filter(salary < 1000)
+CS <- filter(ceosal1, salary < 1000)
 ```
 **Actual Code**
 ```
