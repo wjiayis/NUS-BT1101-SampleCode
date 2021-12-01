@@ -21,9 +21,19 @@
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
 ### 1. Linear Regression
+- Residual Plot
 ### 2. Logistic Regression
 ### 3. Time Series Forecasting
+- Simple Moving Average Model
+- Exponential Smoothing Model
+- Model Selection
+- Variance Inflation Factor (VIF) for Multicollinearity Identification
 ### 4. Data Mining
+- Principal Component Analysis
+- k-means Clustering
+- Assessment of Classification
+- Cross-validation
+- Regularisation
 ## Prescriptive Analytics
 ### 1. Linear Optimisation (w/o Integer Requirement)
 ### 2. Integer Optimisation
