@@ -6,7 +6,6 @@ library(dplyr)
 
 # Sample Data
 library(wooldridge)
-data(rdchem)
 R <- rdchem
 ```
 **Actual Code**
