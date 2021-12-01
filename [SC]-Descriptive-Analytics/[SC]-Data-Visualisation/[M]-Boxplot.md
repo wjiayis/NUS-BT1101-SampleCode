@@ -3,7 +3,6 @@ Preparation Code
 ```
 # Sample Data
 library(wooldridge)
-data(gpa2)
 G <- gpa2
 ```
 #### **_Sample Task: Examine extreme outliers (outside 3 IQR)._**
