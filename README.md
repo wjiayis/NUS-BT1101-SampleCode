@@ -18,7 +18,7 @@
 - Outlier Identification and Handling
   - [**Base R Graphics**](1-4-2.md)
 ### 5. Sampling and Estimation
-- \[ND\]Probability for the Mean of Multiple New Observations
+- \[ND\] Probability for the Mean of Multiple New Observations
 - **Interval Estimates**
 - Sample Size Determination for Mean and Proportion
 ### 6. Hypothesis Testing
