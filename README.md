@@ -35,5 +35,5 @@
 - Cross-validation
 - Regularisation
 ## Prescriptive Analytics
-- Linear Optimisation
-- Integer Optimisation
+### 1. Linear Optimisation
+### 2. Integer Optimisation
