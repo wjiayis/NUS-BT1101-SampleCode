@@ -2,7 +2,7 @@
 **Actual Code**
 1. Helper function. (Must be included. Do not edit.)
 ```
-compute.ConfidenceInterval <- function(dataset_variable, confidence_level.decimal){
+calculate.ConfidenceInterval <- function(dataset_variable, confidence_level.decimal){
 m <- mean(dataset_variable)
 sd <- sd(dataset_variable)
 
@@ -14,6 +14,6 @@ cbind(lCI, uCI)}
 ```
 2. **Inputs**. (Must be included. Edit this.)
 ```
-compute.ConfidenceInterval(mtcars$mpg, # dataset_variable
+calculate.ConfidenceInterval(mtcars$mpg, # dataset_variable
   0.95) # confidence_level.decimal
 ```
