@@ -2,6 +2,7 @@
 **_Sample Hypotheses:</br>
 H0: Mean Miles/(US) gallon of all automobiles == 19, at 95% confidence level.</br>
 H1: Mean Miles/(US) gallon of all automobiles != 19, at 95% confidence level._**</br>
+
 **Actual Code**
 ```
 t.test(mtcars$mpg,
@@ -12,6 +13,7 @@ t.test(mtcars$mpg,
 **_Sample Hypotheses:</br>
 H0: Mean Miles/(US) gallon of all automobiles <= 19, at 90% confidence level.</br>
 H1: Mean Miles/(US) gallon of all automobiles > 19, at 90% confidence level._**</br>
+
 **Actual Code**
 ```
 t.test(mtcars$mpg,
@@ -22,6 +24,7 @@ t.test(mtcars$mpg,
 **_Sample Hypotheses:</br>
 H0: Mean Miles/(US) gallon of all automobiles >= 23, at 99% confidence level.</br>
 H1: Mean Miles/(US) gallon of all automobiles < 23, at 99% confidence level._**</br>
+
 **Actual Code**
 ```
 t.test(mtcars$mpg,
