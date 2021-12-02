@@ -37,17 +37,13 @@ uPI.t <- m + (qt(((1-(1 - confidence.decimal)/2)),
 
 cbind(lPI.t, uPI.t) %>% print()
 
-if (lambda > 0){
+if (lambda != 0){
   lPI <- lPI.t^(1/lambda)
   uPI <- uPI.t^(1/lambda)}
 
 if (lambda == 0){
   lPI <- 10^lPI.t
   uPI <- 10^uPI.t}
-
-if (lambda < 0){
-  lPI <- (-1*lPI.t^(1/lambda))
-  uPI <-  (-1*uPI.t^(1/lambda))}
 
 output <- cbind(lPI, uPI)
 rownames(output) <- NULL
