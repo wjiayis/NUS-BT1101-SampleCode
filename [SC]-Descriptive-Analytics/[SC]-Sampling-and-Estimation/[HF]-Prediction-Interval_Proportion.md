@@ -46,8 +46,8 @@ if (lambda == 0){
   uPI <- 10^uPI.t}
 
 if (lambda < 0){
-  lPI <- (-1*lPI.t)^(1/lambda)
-  uPI <-  (-1*uPI.t)^(1/lambda)}
+  lPI <- (-1*lPI.t^(1/lambda))
+  uPI <-  (-1*uPI.t^(1/lambda))}
 
 output <- cbind(lPI, uPI)
 rownames(output) <- NULL
