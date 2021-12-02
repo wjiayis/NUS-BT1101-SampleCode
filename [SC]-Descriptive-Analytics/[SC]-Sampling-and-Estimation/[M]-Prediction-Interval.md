@@ -1,5 +1,5 @@
 ## Prediction Interval
-:white_heart:[Helper_Function_Available]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Prediction-Interval_Proportion.md)
+:white_heart:[_Helper Function Available_]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Prediction-Interval_Proportion.md)
 ### Prediction Interval
 #### **_Sample Task: [Normally Distributed Data] Compute the 99% prediction interval._**
 **Actual Code**
