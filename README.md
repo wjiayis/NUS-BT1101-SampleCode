@@ -1,7 +1,7 @@
 # Sample-Code-for-BT1101
 ## Descriptive Analytics
 ### 1. Data Visualisation
-- [**Base R Graphics**](Subpages/1-1-1.md)
+- [**Base R Graphics**](1-1-1.md)
 - ggplot2 Graphics (UNDONE)
 ### 2. Data Tabulation and Frequencies
 - [**Tables**](Subpages/1-2-1.md)
