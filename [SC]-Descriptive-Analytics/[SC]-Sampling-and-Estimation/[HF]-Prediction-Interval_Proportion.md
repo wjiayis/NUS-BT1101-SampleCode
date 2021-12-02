@@ -55,7 +55,7 @@ print(output)}}
 ```
 2. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```
-calculate.PredictionInterval <- function(dataset_variable, confidence.decimal, is_normal = "TO BE CALCULATED"){calculate.PredictionInterval.h(dataset_variable, confidence.decimal, is_normal,
+calculate.PredictionInterval <- function(dataset_variable, confidence.decimal, is_normal = "TO BE DETERMINED"){calculate.PredictionInterval.h(dataset_variable, confidence.decimal, is_normal,
 normality.p_value.critical_value = 0.05, normality.w_value.critical_value = 0.95)} 
 ```
 3. **Inputs**. (Must be included. Edit this.)
