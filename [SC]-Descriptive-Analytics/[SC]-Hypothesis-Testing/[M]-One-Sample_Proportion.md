@@ -1,6 +1,6 @@
 ### One Sample Hypothesis Test for Proportion
 **_Sample Hypotheses:</br>
-H0: Population proportion of (Miles/(US) gallon > 17) >= 0.18.
+H0: Population proportion of (Miles/(US) gallon > 17) >= 0.18.</br>
 H1: Population proportion of (Miles/(US) gallon > 17) < 0.18._**
 
 Preparation Code
