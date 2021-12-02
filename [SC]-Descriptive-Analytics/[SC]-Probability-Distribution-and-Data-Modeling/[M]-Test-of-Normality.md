@@ -1,5 +1,5 @@
 ## Test of Normality
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-and-Test-of-Normality.md)
+:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-&-Test-of-Normality.md)
 
 ### Shapiro-wilk test[^1]
 Preparation Code
