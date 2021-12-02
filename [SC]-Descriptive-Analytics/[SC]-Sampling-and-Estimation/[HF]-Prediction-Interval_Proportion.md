@@ -63,7 +63,7 @@ normality.p_value.critical_value = 0.05, normality.w_value.critical_value = 0.95
 calculate.PredictionInterval(mtcars$cyl, # dataset_variable
                              0.95) # confidence.decimal
 ```
-4. Optional Arguments to Override the helper function's test for normality. (If you wish to include it, edit the rhs of `=` and add them at the back of your input.)
+4. Optional Arguments to override the helper function's test for normality. (If you wish to include it, edit the rhs of `=` and add them at the back of your input.)
 ```
 #                             is_normal = "TO BE DETERMINED" ----- TRUE / FALSE
 ```
