@@ -10,7 +10,7 @@
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
 - [Test of Normality]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Test-of-Normality.md)
-- [\[ND\] Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution-Probability-Calculation-for-a-Single-New-Observation.md)
+- [\[ND\] Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution_Probability-for-a-Single-New-Observation.md)
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and [Summary]([SC]-Descriptive-Analytics/[SC]-Descriptive-Statistical-Measures/[M]-Summary-Statistics.md) Statistics
 - Outlier Identification and Removal
