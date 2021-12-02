@@ -38,7 +38,7 @@ kable(frequency_table, caption = glue::glue("Frequency Distribution of {subject.
 # Graph (2/2)
 histogram(c(0,max(frequency_table)*histogram.range_of_y_values.multiplication_constant), TRUE)}
 ```
-3. Hyperparameter. (Must be included. Edit only if (2) is not producing the right output. Alert me if you have to edit this.)
+3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```
 plot.Histogram <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins = "Sturges", histogram.colour = "pink", frequency_table.bins.upper_bound = FALSE, include_frequency_table = TRUE)
   {plot.Histogram.h(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table,
