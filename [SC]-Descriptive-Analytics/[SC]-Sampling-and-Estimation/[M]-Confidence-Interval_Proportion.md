@@ -1,5 +1,6 @@
 ### Confidence Interval for Proportion
 **_Sample Task: Develop 95% confidence interval for proportion of mpg > 25._**
+
 Preparation Code
 ```
 library(dplyr)
