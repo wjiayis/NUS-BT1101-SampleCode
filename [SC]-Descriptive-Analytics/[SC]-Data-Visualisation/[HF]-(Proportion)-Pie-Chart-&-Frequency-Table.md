@@ -34,7 +34,7 @@ pie(data_df[[2]],
 plot.PieChart.Proportion(HEC, # data_df
               "Hair Colour") # subject.text
 ```
-4. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
+4. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of = and add them at the back of your input.)
 ```
 #              title.font_size = 1
 #              possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2")
