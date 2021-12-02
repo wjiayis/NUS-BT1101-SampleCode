@@ -28,7 +28,7 @@
 - Simple Moving Average Model
 - Exponential Smoothing Model
 - Model Selection
-- Variance Inflation Factor (VIF) for Multicollinearity Identification
+- \[Multicollinearity\] Variance Inflation Factor (VIF)
 ### 4. Data Mining
 - Principal Component Analysis
 - k-means Clustering
