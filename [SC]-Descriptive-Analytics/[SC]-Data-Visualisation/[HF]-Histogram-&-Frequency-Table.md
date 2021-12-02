@@ -50,7 +50,7 @@ plot.Histogram(CS$salary, # dataset_variable
                "Salary", # variable.text_singular ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
                "CEOs") # subject.text_plural ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
 ```
-5. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
+5. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
 ```
 #               histogram.bins = "Sturges" # ----- e.g., "Sturges" / 6
 #               histogram.colour = "pink"
