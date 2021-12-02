@@ -68,4 +68,33 @@ uPI <- uPI.t^(1/-0.05)
 
 cbind(lPI, uPI)
 ```
-## LAMBDA == 0 UNDONE, LAMBDA < 0 HIGH W VALUE
+#### **_Sample Task: [lambda == 0] Compute the 90% prediction interval._**
+Preparation Code
+```
+# Functions
+library(rcompanion)
+
+# Samples Data
+library(wooldridge)
+R <- rdchem
+```
+**Actual Code**
+```
+lambda <- transformTukey(R$salessq, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
+lambda
+R$salessq.t <- transformTukey(R$salessq)
+
+salessq.m.t <- mean(R$salessq.t)
+salessq.sd.t <- sd(R$salessq.t)
+
+lPI.t <- salessq.m.t - (qt(((1-(1 - 0.90)/2)),
+                             df = (nrow(R)-1))*salessq.sd.t*sqrt(1+1/nrow(R)))
+uPI.t <- salessq.m.t + (qt(((1-(1 - 0.90)/2)),
+                             df = (nrow(R)-1))*salessq.sd.t*sqrt(1+1/nrow(R)))
+cbind(lPI.t, uPI.t)
+
+lPI <- exp(1)^lPI.t
+uPI <- exp(1)^uPI.t
+
+cbind(lPI, uPI)
+```
