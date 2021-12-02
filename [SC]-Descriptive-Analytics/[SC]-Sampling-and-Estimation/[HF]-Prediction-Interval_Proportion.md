@@ -7,7 +7,7 @@ This helper function performs `transformTukey` if and only if it is required.
 calculate.PredictionInterval.h <- function(dataset_variable, confidence.decimal, is_normal, normality.p_value.critical_value, normality.w_value.critical_value){
 
 # Assess if transformation is required
-if(is_normal == "TO BE CALCULATED"){
+if(is_normal == "TO BE DETERMINED"){
 normality_test <- shapiro.test(dataset_variable)
 is_normal <- ifelse(normality_test$p.value > normality.p_value.critical_value | normality_test$statistic > normality.w_value.critical_value, TRUE, FALSE)}
 
@@ -62,4 +62,8 @@ normality.p_value.critical_value = 0.05, normality.w_value.critical_value = 0.95
 ```
 calculate.PredictionInterval(mtcars$cyl, # dataset_variable
                              0.95) # confidence.decimal
+```
+4. Optional Arguments to Override the helper function's test for normality. (If you wish to include it, edit the rhs of `=` and add them at the back of your input.)
+```
+#                             is_normal = "TO BE DETERMINED" ----- TRUE / FALSE
 ```
