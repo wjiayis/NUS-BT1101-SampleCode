@@ -1,5 +1,5 @@
 ### [HF] Normal Distribution, Sample Mean, Population Standard Deviation &#8594; Confidence Interval
-#### **_Sample Task:</br>The distribution for volume is normal with sample mean = 796 and population standard deviation = 15.</br>Compute the 95% confidence interval for the mean volume for population._**
+#### **_Sample Task:</br>The distribution for volume is normal with sample mean = 796 and population standard deviation = 15.</br>Develop the 95% confidence interval for the mean volume for population._**
 **Actual Code**
 1. Helper function. (Must be included. Do not edit.)
 ```
