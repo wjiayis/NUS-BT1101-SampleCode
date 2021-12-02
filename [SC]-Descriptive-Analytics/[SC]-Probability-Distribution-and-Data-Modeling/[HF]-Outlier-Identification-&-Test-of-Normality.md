@@ -28,7 +28,7 @@ boxplot(dataset_variable, range = 1.5, main = glue::glue("Boxplot to Examine Dis
 test.NormalityOutliers(G$sat, # dataset_variable
                "SAT score") # variable.text
 ```
-3. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
+3. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
 ```
 #               density_plot.remove_na = TRUE
 ```
