@@ -44,7 +44,7 @@ H <- apply(stacked_barplot.matrix, 2L, cumsum) - stacked_barplot.matrix
 text(x = rep(stacked_barplot, each = nrow(H)), y = H,
      label = round(stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 ```
-3. Hyperparameter. (Must be included. Edit only if (1) is not producing the right output. Alert me if you have to edit this.)
+3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```
 plot.StackedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
 {plot.StackedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
@@ -56,7 +56,7 @@ plot.StackedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
-5. Optional Keyword Arguments for Fine-tuning of Output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
+5. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
 ```
 #                           title.font_size = 1
 #                           categories.font_size = 1
