@@ -7,12 +7,12 @@ library(ggbiplot) # For Sample Task 2
 
 # Sample Data
 library(dplyr)
-mtcars1 <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
+M <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
 ```
 **Actual Code**
 1. Run the principal component analysis.
 ```
-pca1 <- prcomp(mtcars1, center=T, scale=T)
+pca1 <- prcomp(M, center=T, scale=T)
 summary(pca1)
 ```
 2. If required, complete relevant tasks.
@@ -27,7 +27,7 @@ ggbiplot(pca1)
 3. If required, extract the first x principal components.
 ###### Sample Task 1: Extract the first 4 principal components.
 ```
-mtcars <- mtcars %>% mutate(
+M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
   pc2 = pca1$x[,"PC2"],
   pc3 = pca1$x[,"PC3"],
@@ -35,9 +35,9 @@ mtcars <- mtcars %>% mutate(
 ```
 ###### Sample Task 2: Extract sufficicient principal components to explain 90% of variance.
 ```
-mtcars <- mtcars %>% mutate(
+M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
   pc2 = pca1$x[,"PC2"],
   pc3 = pca1$x[,"PC3"])
 ```
-4. Linear Regression with Principal Components
+4. [Linear Regression with Principal Components]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
