@@ -11,7 +11,7 @@ library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
 **Actual Code**
-1. Set `{r ..., results="asis", ...}`
+1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
 ```
 plot.Histogram.h <- function(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table, histogram.range_of_y_values.multiplication_constant){
