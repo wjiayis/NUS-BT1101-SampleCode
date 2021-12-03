@@ -1,4 +1,5 @@
-### Two-Sample Hypothesis Test for Variance
+## Two-Sample Hypothesis Test for Variance
+### Fisher's F Test
 
 DIFFERENT FROM LECTURE NOTES (, VS ~)
 
