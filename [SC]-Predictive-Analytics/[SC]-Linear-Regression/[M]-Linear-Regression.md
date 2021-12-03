@@ -31,7 +31,7 @@ plot(fit, 1)
 plot(fit, 2)
 abline(a=0, b=0)
 ```
-3. If required, obtain prediction and/or residuals
+3. If required, obtain prediction and/or residuals.
 ```
 iris$predicted <- predict(fit)
 iris$residuals <- residuals(fit)
