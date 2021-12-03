@@ -1,7 +1,7 @@
 ## Prediction Interval
 :white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Prediction-Interval.md)
 ### Prediction Interval
-#### **_Sample Task: [Normally Distributed Data] Compute the 99% prediction interval._**
+#### ***Sample Task: [Normally Distributed Data] Compute the 99% prediction interval.***
 **Actual Code**
 ```
 mpg.m <- mean(mtcars$mpg)
@@ -13,7 +13,7 @@ uPI <- mpg.m + (qt(((1-(1 - 0.99)/2)),
                              df = (nrow(mtcars)-1))*mpg.sd*sqrt(1+1/nrow(mtcars)))
 cbind(lPI, uPI)
 ```
-#### **_Sample Task: [lambda > 0] Compute the 95% prediction interval._**
+#### ***Sample Task: [lambda > 0] Compute the 95% prediction interval.***
 Preparation Code
 ```
 library(rcompanion)
@@ -38,7 +38,7 @@ uPI <- uPI.t^(1/1.1)
 
 cbind(lPI, uPI)
 ```
-#### **_Sample Task: [lambda < 0] Compute the 90% prediction interval._**
+#### ***Sample Task: [lambda < 0] Compute the 90% prediction interval.***
 Preparation Code
 ```
 # Functions
@@ -68,7 +68,7 @@ uPI <- uPI.t^(1/-0.05)
 
 cbind(lPI, uPI)
 ```
-#### **_Sample Task: [lambda == 0] Compute the 90% prediction interval._**
+#### ***Sample Task: [lambda == 0] Compute the 90% prediction interval.***
 Preparation Code
 ```
 # Functions
