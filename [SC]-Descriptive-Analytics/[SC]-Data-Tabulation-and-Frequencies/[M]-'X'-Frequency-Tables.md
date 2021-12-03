@@ -126,7 +126,7 @@ library(knitr)
 # Sample Data
 library(vcd)
 A <- Arthritis
-improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n()) # Obtain frequency table
 ```
 **Actual Code**
 ```
@@ -160,7 +160,7 @@ library(knitr)
 # Sample Data
 library(vcd)
 A <- Arthritis
-improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n())
+improvement.frequency_table <- A %>% group_by(Improved) %>% summarise(frequency = n()) # Obtain frequency table
 ```
 **Actual Code**
 ```
