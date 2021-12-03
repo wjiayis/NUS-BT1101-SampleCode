@@ -1,4 +1,4 @@
-### Principal Component Analysis
+### Principal Component Analysis [LOGISTIC REGRESSION VERSION UNDONE]
 Preparation Code
 ```
 # Functions
