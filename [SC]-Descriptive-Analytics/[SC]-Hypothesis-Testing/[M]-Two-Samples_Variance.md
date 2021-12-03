@@ -1,4 +1,7 @@
 ### Two-Sample Hypothesis Test for Variance
+
+DIFFERENT FROM LECTURE NOTES (, VS ~)
+
 Preparation Code
 ```
 library(dplyr)
