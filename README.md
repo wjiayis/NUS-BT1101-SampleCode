@@ -21,13 +21,13 @@
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
 ### 1. Linear Regression
-- [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
-- [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Model-Selection.md)
-### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
+- [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression.md)
+- [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-&-LogisticRegression/[M]-Model-Selection.md)
+### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-LogisticRegression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
 - Simple k-period Moving Average Model: [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - Exponential Smoothing Model: [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
-- [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Regression-based-Forecasting.md) (IS THERE A LOGISTIC REGRESSION VERSION)
+- [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-&-LogisticRegression/[M]-Regression-based-Forecasting.md) (IS THERE A LOGISTIC REGRESSION VERSION)
 - \[Multicollinearity\] Variance Inflation Factor
 ### 4. Data Mining
 - Principal Component Analysis
