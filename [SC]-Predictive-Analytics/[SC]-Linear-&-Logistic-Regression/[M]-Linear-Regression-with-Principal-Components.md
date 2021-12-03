@@ -14,6 +14,13 @@ M <- M %>% mutate(
   pc4 = pca1$x[,"PC4"])
 ```
 **Actual Code**
+1. Run the regression model.
 ```
-summary(lm(cyl ~ pc1+pc2+pc3+pc4, M))
+fit <- lm(cyl ~ pc1+pc2+pc3+pc4, M)
+summary(fit)
+```
+2. If required, obtain prediction and/or residuals.
+```
+M$predicted <- predict(fit)
+M$residuals <- residuals(fit)
 ```
