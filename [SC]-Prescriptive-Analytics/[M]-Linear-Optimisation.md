@@ -44,3 +44,4 @@ lp.solution$duals
 lp.solution$sens.coef.from
 lp.solution$sens.coef.to
 ```
+MINIMISATION VERSION UNDONE
