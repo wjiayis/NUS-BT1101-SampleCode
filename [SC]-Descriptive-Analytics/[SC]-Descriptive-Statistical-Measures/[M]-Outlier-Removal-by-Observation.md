@@ -8,13 +8,13 @@ Preparation Code
 # Functions
 library(dplyr)
 ```
-###### Sample Task: Extract observations of `mtcars$hp` above 350 (outliers).
+###### Sample Task: Extract observations of `mtcars$hp` above 300 (outliers).
 **Actual Code**</br>
 ```
-M.age.outliers <- mtcars %>% filter(mtcars$hp > 350)
+M.age.outliers <- mtcars %>% filter(mtcars$hp > 300)
 ```
-###### Sample Task: Remove observations of `mtcars$hp` above 350 (outliers).
+###### Sample Task: Remove observations of `mtcars$hp` above 300 (outliers).
 **Actual Code**</br>
 ```
-M.age.wo <- mtcars %>% filter(mtcars$hp <= 350)
+M.age.wo <- mtcars %>% filter(mtcars$hp <= 300)
 ```
