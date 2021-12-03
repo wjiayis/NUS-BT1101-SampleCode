@@ -21,8 +21,6 @@
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
 ### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
-- Numeric on Numeric (IS THERE VAR.EQUAL VARIATION?)
-- Numeric on Factor
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
 - Simple Moving Average Model
