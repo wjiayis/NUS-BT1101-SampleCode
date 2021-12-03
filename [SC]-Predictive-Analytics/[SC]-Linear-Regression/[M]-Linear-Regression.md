@@ -16,7 +16,7 @@ plot(fit, 1)
 plot(fit, 2)
 abline(a=0, b=0)
 ```
-3. If required, obtain prediction and residuals
+3. If required, obtain prediction and/or residuals
 ```
 mtcars$predicted <- predict(fit)
 mtcars$residuals <- residuals(fit)
@@ -39,7 +39,7 @@ plot(fit, 1)
 plot(fit, 2)
 abline(a=0, b=0)
 ```
-3. If required, obtain prediction and residuals
+3. If required, obtain prediction and/or residuals
 ```
 mtcars$predicted <- predict(fit)
 mtcars$residuals <- residuals(fit)
