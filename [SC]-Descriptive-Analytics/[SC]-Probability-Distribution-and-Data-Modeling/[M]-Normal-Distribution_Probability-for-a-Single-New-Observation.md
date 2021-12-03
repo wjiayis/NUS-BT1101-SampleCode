@@ -10,11 +10,11 @@ pnorm(900, 750, 100)
 ###### Sample Task 2:
 >The distribution for customer demand (units per month) is normal with mean = 750 and standard deviation = 100.</br>Find the probability that demand will exceed 700 units/month.
 
-\[M1\]
+Method 1
 ```
 1 - pnorm(700, 750, 100)
 ```
-\[M2\]
+Method 2
 ```
 pnorm(700, 750, 100, lower.tail = FALSE)
 ```
