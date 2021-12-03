@@ -43,3 +43,5 @@ abline(a=0, b=0)
 ```
 iris$predicted <- predict(fit)
 iris$residuals <- residuals(fit)
+```
+### Regression-based Forecasting
