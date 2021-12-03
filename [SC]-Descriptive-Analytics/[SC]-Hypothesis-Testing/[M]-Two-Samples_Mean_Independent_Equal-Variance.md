@@ -9,7 +9,7 @@ setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
 H0: Mean sepal length of (setosa == vesicolor).</br>
 H1: Mean sepal length of (setosa != vesicolor)._**</br>
 
-**Actual Code**
+**Actual Code**</br>
 Note: `setosa_and_vesicolor$Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, var.equal = TRUE)
@@ -18,7 +18,7 @@ t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, var.equ
 H0: Mean sepal length of (setosa >= vesicolor).</br>
 H1: Mean sepal length of (setosa < vesicolor)._**</br>
 
-**Actual Code**
+**Actual Code**</br>
 Note: `setosa_and_vesicolor$Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "less", var.equal = TRUE)
@@ -27,7 +27,7 @@ t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alterna
 H0: Mean sepal length of (setosa <= vesicolor).</br>
 H1: Mean sepal length of (setosa > vesicolor)._**</br>
 
-**Actual Code**
+**Actual Code**</br>
 Note: `setosa_and_vesicolor$Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "greater", var.equal = TRUE)
