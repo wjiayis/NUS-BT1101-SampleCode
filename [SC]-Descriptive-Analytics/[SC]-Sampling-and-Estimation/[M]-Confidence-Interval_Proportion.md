@@ -1,11 +1,11 @@
 ### Confidence Interval for Proportion
-**_Sample Task: Develop 95% confidence interval for proportion of mpg > 25._**
 
 Preparation Code
 ```
 library(dplyr)
 ```
 **Actual Code**
+##### Sample Task: Develop 95% confidence interval for proportion of mpg > 25.
 ```
 mpg.n <- nrow(mtcars)
 mpg.25 <- mtcars %>% filter(mpg>25)
