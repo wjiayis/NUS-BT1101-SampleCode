@@ -1,4 +1,4 @@
-### Two Samples Hypothesis Test for Variance
+### Two-Sample Hypothesis Test for Variance
 Preparation Code
 ```
 setosa <- iris %>% filter(Species == "setosa")
