@@ -4,7 +4,7 @@ Preparation Code
 # Functions
 library(lpSolve)
 ```
-###### Sample Task 1: Maximise Profits with the given constraints.
+###### Sample Task 1: Maximise profits with the given constraints.
 | Maximise total profit using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -44,7 +44,7 @@ lp.solution$duals
 lp.solution$sens.coef.from
 lp.solution$sens.coef.to
 ```
-###### Sample Task 1: Maximise Profits with the given constraints.
+###### Sample Task 2: Minimise costs with the given constraints.
 | Minimise total cost using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
