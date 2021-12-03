@@ -33,7 +33,7 @@
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
 - [Principal Component Analysis]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Principal-Component-Analysis.md)
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
-- Assessment of Classification
+- [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
 - Cross-validation (UNDONE)
 - Regularisation (UNDONE)
 ## Prescriptive Analytics
