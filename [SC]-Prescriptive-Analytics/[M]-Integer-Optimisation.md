@@ -55,6 +55,7 @@ lp.solution$sens.coef.to
 | Non-negativity Constraint (X<sub>2</sub>) | X<sub>2</sub> ≥ 0 |
 | Integer Constraint (X<sub>1</sub>) | X<sub>1</sub> is an integer |
 | Binding Constraint (X<sub>2</sub>) | X<sub>2</sub> is binary |
+
 **Actual Code**
 1. Run the integer optimisation model.
 ```
