@@ -1,4 +1,5 @@
 ### Linear Regression
+↪️ [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Regression-based-Forecasting.md)
 
 | Implicit Assumptions |
 | :---: |
