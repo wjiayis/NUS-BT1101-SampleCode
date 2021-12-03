@@ -21,7 +21,7 @@
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
 ### 1. Linear Regression
-- [Linear Regression (With/Without Interaction)]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
+- [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
 - Model Selection
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
