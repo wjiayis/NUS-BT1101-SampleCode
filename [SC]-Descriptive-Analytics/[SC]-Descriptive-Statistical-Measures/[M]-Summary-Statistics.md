@@ -10,8 +10,8 @@ library(psych)
 library(vcd)
 A <- Arthritis
 ```
-#### **_Sample Task: Compute median, skew and interquartile range._**
-**Actual Code**
+</br>**Actual Code**
+###### Sample Task 1: Compute median, skew and interquartile range.
 ```
 # Obtain "n", "mean", "sd", "median", "trimmed", "mad", "min", "max", "skew", "kurtosis", "se", "IQR"
 describe(A$Age, IQR=TRUE) %>%
@@ -21,8 +21,7 @@ describe(A$Age, IQR=TRUE) %>%
   mutate(across(where(is.double), round, 2)) %>% # Round numbers to 2d.p.
   kable(row.names = FALSE, caption = "Descriptive Statistics for Age")
 ```
-#### **_Sample Task: Compute the first quartile (Q1) and the third quartile (Q3)._**
-**Actual Code**
+###### Sample Task 2: Compute the first quartile (Q1) and the third quartile (Q3).
 ```
 # Obtain "1st Qu.", "3rd Qu."
 summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
@@ -30,13 +29,11 @@ summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
   kable(caption = "Additional Descriptive Statistics for Age",
     col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
 ```
-#### **_Sample Task: Compute summary statistics for each mode of treatment._** (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS)
-**Actual Code**
+###### Sample Task 3: Compute summary statistics for each mode of treatment. (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS)
 ```
 A$Age %>% describeBy(group = A$Treatment, IQR = TRUE)
 ```
-#### **_Sample Task: Compute summary statistics for each gender, for each mode of treatment._** (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS) (CHECK WORDING)
-**Actual Code**
+###### Sample Task 4: Compute summary statistics for each gender, for each mode of treatment. (HOW TO SECTION IT LIKE THE ABOVE SAMPLE TASKS) (CHECK WORDING)
 ```
 describeBy(Age ~ Treatment + Sex, data = A, IQR = TRUE)
 ```
