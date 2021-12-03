@@ -11,7 +11,7 @@ H1: Mean sepal length != mean petal length._**</br>
 
 **Actual Code**
 ```
-t.test(setosa$Sepal.Length, setosa$Petal.Length)
+t.test(setosa$Sepal.Length, setosa$Petal.Length, paired = TRUE)
 ```
 **_Sample Hypotheses:</br>
 H0: Mean sepal length >= mean petal length.</br>
@@ -19,7 +19,7 @@ H1: Mean sepal length < mean petal length._**</br>
 
 **Actual Code**
 ```
-t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "less")
+t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "less", paired = TRUE)
 ```
 **_Sample Hypotheses:</br>
 H0: Mean sepal length <= mean petal length.</br>
@@ -27,5 +27,5 @@ H1: Mean sepal length > mean petal length._**</br>
 
 **Actual Code**
 ```
-t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "greater")
+t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "greater", paired = TRUE)
 ```
