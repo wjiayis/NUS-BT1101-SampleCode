@@ -33,8 +33,8 @@ abline(a=0, b=0)
 ```
 3. If required, obtain prediction and/or residuals
 ```
-mtcars$predicted <- predict(fit)
-mtcars$residuals <- residuals(fit)
+iris$predicted <- predict(fit)
+iris$residuals <- residuals(fit)
 ```
 
 
