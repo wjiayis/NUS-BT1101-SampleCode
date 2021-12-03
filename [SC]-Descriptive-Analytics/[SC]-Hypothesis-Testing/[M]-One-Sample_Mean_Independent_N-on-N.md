@@ -1,5 +1,5 @@
 ### Two-sample Hypothesis Test for Mean
-##### Independent Samples, Equal Variance Assumption Absent, Numeric on Numeric</br></br>
+#### _Independent Samples, Equal Variance Assumption Assumption, Numeric on Numeric_</br></br>
 Preparation Code
 ```
 # Sample Data
