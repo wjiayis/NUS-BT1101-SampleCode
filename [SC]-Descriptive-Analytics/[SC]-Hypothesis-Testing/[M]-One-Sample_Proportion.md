@@ -6,7 +6,7 @@ library(dplyr)
 **Actual Code**
 ###### Sample Hypotheses:
 >H0: Population proportion of (Miles/(US) gallon > 17) ≥ 0.18.</br>
->H1: Population proportion of (Miles/(US) gallon > 17) < 0.18.
+>H1: Population proportion of (Miles/(US) gallon > 17) < 0.18.</br>
 > With no additional information on confidence level (α), α=0.05 is used.
 ```
 # z-statistic
