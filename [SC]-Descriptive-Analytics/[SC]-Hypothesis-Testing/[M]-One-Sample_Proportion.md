@@ -7,7 +7,7 @@ library(dplyr)
 ###### Sample Hypotheses:
 >H0: Population proportion of (Miles/(US) gallon > 17) ≥ 0.18.</br>
 >H1: Population proportion of (Miles/(US) gallon > 17) < 0.18.</br>
-> With no additional information on confidence level (α), α=0.05 is used.
+>Note: With no information on confidence level (α), α=0.05 is used.
 ```
 # z-statistic
 mpg.17 <- mtcars %>% filter(mpg > 17)
