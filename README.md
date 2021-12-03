@@ -23,7 +23,7 @@
 ### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
-- Simple Moving Average Model
+- [Simple Moving Average Model]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average-Model.md)
 - Exponential Smoothing Model
 - Model Selection
 - \[Multicollinearity\] Variance Inflation Factor
