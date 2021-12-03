@@ -24,7 +24,7 @@
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
 - Simple k-period Moving Average Model: [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
-- Exponential Smoothing Model: [Holt-Winters](([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md))
+- Exponential Smoothing Model: [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
 - Model Selection
 - \[Multicollinearity\] Variance Inflation Factor
 ### 4. Data Mining
