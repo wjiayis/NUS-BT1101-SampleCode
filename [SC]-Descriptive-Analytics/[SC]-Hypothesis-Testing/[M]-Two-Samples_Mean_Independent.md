@@ -1,4 +1,4 @@
-### Two-sample Hypothesis Test for Mean (Independent)
+### Two-sample Hypothesis Test for Mean (Independent Samples)
 Preparation Code
 ```
 # Sample Data
