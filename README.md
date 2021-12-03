@@ -22,7 +22,7 @@
 ## Predictive Analytics
 ### 1. Linear Regression
 - [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
-- Model Selection
+- [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Model-Selection.md)
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
 - Simple k-period Moving Average Model: [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
