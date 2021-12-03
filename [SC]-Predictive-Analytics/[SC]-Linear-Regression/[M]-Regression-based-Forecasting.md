@@ -41,6 +41,6 @@ abline(a=0, b=0)
 ```
 3. If required, obtain prediction and/or residuals.
 ```
-iris$predicted <- predict(fit)
-iris$residuals <- residuals(fit)
+B$predicted <- predict(fit)
+B$residuals <- residuals(fit)
 ```
