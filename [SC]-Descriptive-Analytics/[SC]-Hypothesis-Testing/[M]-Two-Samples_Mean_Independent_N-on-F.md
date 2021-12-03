@@ -1,5 +1,7 @@
 ### Two-sample Hypothesis Test for Mean
-###### Independent Samples, Equal Variance Assumption Assumption, Numeric on Factor
+#### _Independent Samples, Equal Variance Assumption Assumption, Numeric on Factor_
+
+</br>
 
 | Implicit Assumptions |
 | :---: |
