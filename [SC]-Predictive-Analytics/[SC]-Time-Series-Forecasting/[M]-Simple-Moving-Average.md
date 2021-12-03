@@ -1,4 +1,4 @@
-### Simple Moving Average Model
+### Simple Moving Average
 Preparation Code
 ```
 # Functions
