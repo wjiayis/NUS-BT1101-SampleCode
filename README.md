@@ -31,7 +31,7 @@
 - [\[Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
 ### 4. Data Mining
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
-- Principal Component Analysis
+- [Principal Component Analysis]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Principal-Component-Analysis.md)
 - k-means Clustering
 - Assessment of Classification
 - Cross-validation (UNDONE)
