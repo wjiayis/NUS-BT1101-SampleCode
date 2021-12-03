@@ -1,4 +1,4 @@
-# Regression-based Forecasting
+# Regression-based Forecasting (LOGISTIC REGRESSION VERSION UNDONE)
 
 | Implicit Assumptions |
 | :---: |
