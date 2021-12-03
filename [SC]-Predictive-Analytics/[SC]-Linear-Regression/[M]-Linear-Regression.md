@@ -30,7 +30,7 @@ mtcars$residuals <- residuals(fit)
 **Actual Code**</br>
 1. Run the linear regression model.
 ```
-fit <- lm(mpg ~ hp+cyl, mtcars)
+fit <- lm(Petal.Length ~ Species + Sepal.Length, iris)
 summary(fit)
 ```
 2. Examine its residual plots.
@@ -41,5 +41,5 @@ abline(a=0, b=0)
 ```
 3. If required, obtain prediction and/or residuals
 ```
-mtcars$predicted <- predict(fit)
-mtcars$residuals <- residuals(fit)
+iris$predicted <- predict(fit)
+iris$residuals <- residuals(fit)
