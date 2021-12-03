@@ -1,5 +1,5 @@
 ## Assessment of Classification
-:white_heart: [_Helper Function Available_]([SC]-Predictive-Analytics/[SC]-Data-Mining/[HF]-Assessment-of-Classification.md)
+:white_heart: [_Helper Function Available_](../../[SC]-Predictive-Analytics/[SC]-Data-Mining/[HF]-Assessment-of-Classification.md)
 ### Classification Accuracy
 **Actual Code**
 ```
