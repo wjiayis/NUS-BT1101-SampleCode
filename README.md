@@ -20,8 +20,7 @@
 - [**\[Sampling Error\] Sample Size Determination**](1-5-3.md)
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
-### 1. Linear Regression
-- Residual Plot
+### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
 ### 2. Logistic Regression
 ### 3. Time Series Forecasting
 - Simple Moving Average Model
