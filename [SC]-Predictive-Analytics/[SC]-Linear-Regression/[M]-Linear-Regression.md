@@ -1,5 +1,4 @@
 ### Linear Regression
-↪️ [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Regression-based-Forecasting.md)
 
 | Implicit Assumptions |
 | :---: |
@@ -7,6 +6,8 @@
 
 **Actual Code**</br>
 1. Run the linear regression model.
+###### [Regression-based Forecasting]([SC]-Linear-Regression/[M]-Regression-based-Forecasting.md)
+
 ###### Simple Linear Regression
 ```
 fit <- lm(mpg ~ hp, mtcars)
