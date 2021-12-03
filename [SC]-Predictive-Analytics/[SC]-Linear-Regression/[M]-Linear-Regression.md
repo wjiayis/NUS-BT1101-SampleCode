@@ -1,4 +1,4 @@
-### Simple Linear Regression
+### Simple Linear Regression (w/o Interaction)
 
 | Implicit Assumptions |
 | :---: |
@@ -21,5 +21,25 @@ abline(a=0, b=0)
 mtcars$predicted <- predict(fit)
 mtcars$residuals <- residuals(fit)
 ```
-### Multiple Linear Regression
+### Multiple Linear Regression (w/o Interaction)
+
+| Implicit Assumptions |
+| :---: |
+| :white_medium_square: Dependent variable is continuous. |
+
 **Actual Code**</br>
+1. Run the linear regression model.
+```
+fit <- lm(mpg ~ hp+cyl, mtcars)
+summary(fit)
+```
+2. Examine its residual plots.
+```
+plot(fit, 1)
+plot(fit, 2)
+abline(a=0, b=0)
+```
+3. If required, obtain prediction and residuals
+```
+mtcars$predicted <- predict(fit)
+mtcars$residuals <- residuals(fit)
