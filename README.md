@@ -30,6 +30,7 @@
 - [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Regression-based-Forecasting.md) (IS THERE A LOGISTIC REGRESSION VERSION)
 - [\[Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
 ### 4. Data Mining
+- Summary Visualisation
 - Principal Component Analysis
 - k-means Clustering
 - Assessment of Classification
