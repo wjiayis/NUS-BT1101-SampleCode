@@ -14,15 +14,15 @@ A <- Arthritis
 calculate.Mode <- function(x){which.max(tabulate(x))}
 ```
 2. **Inputs**. (Must be included. Edit this.)
-#### **_Sample Task: Compute mode._**
+###### Sample Task: Compute mode age.
 ```
 calculate.Mode(A$Age)
 ```
-#### **_Sample Task: Compute mode for each gender._**
+###### Sample Task: Compute mode age for each gender.
 ```
 A %>% group_by(Sex) %>% summarise(Mode = calculate.Mode(Age))
 ```
-#### **_Sample Task: Compute mode for for each mode of treatment, for each gender._** (CHECK WORDING)
+###### Sample Task: Compute mode age for each mode of treatment, for each gender. (CHECK WORDING)
 ```
 A %>% group_by(Treatment, Sex) %>% summarise(Mode = calculate.Mode(Age)) # group by `Treatment`, then group by `Sex`
 ```
