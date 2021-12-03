@@ -13,6 +13,7 @@ library(lpSolve)
 | Contract Constraint 2 | X<sub>2</sub> ≥ 5 |
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
+
 **Actual Code**
 1. Run the linear optimisation model.
 ```
@@ -53,6 +54,7 @@ lp.solution$sens.coef.to
 | Contract Constraint 2 | X<sub>2</sub> ≥ 5 |
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
+
 **Actual Code**
 1. Run the linear optimisation model.
 ```
