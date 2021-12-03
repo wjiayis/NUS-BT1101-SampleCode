@@ -48,4 +48,4 @@ Additional Notes:
 | :---: | :---: |
 | ... | ... |
 
-[^1]: Variable Name as Column Name
+[^1]: Variable name as column name
