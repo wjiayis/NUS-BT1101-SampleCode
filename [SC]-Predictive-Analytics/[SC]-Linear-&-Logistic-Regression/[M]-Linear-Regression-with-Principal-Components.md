@@ -14,4 +14,6 @@ M <- M %>% mutate(
   pc4 = pca1$x[,"PC4"])
 ```
 **Actual Code**
+```
 summary(lm(cyl ~ pc1+pc2+pc3+pc4, M))
+```
