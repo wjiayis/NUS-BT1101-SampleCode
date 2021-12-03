@@ -13,7 +13,7 @@ library(titanic)
 fit <- glm(Survived ~ Sex + Age, family="binomial", titanic_train)
 summary(fit)
 ```
-2. If required, perform a prediction.
+2. If required, perform prediction.
 ```
 predict(fit, newdata = data.frame(Sex="male", Age=35))
 ```
