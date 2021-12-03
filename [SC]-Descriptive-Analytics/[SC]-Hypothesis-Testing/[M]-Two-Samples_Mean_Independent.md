@@ -17,7 +17,7 @@ H1: Mean sepal length of (setosa != virginica)._**</br>
 ```
 t.test(setosa$Sepal.Length, virginica$Sepal.Length)
 ```
-\[M2\] **Actual Code**
+\[M2\] **Actual Code**</br>
 Note: `Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species)
@@ -30,7 +30,7 @@ H1: Mean sepal length of (setosa < virginica)._**</br>
 ```
 t.test(setosa$Sepal.Length, virginica$Sepal.Length, alternative = "less")
 ```
-\[M2\] **Actual Code**
+\[M2\] **Actual Code**</br>
 Note: `Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "less")
@@ -43,7 +43,7 @@ H1: Mean sepal length of (setosa > virginica)._**</br>
 ```
 t.test(setosa$Sepal.Length, virginica$Sepal.Length, alternative = "greater")
 ```
-\[M2\] **Actual Code**
+\[M2\] **Actual Code**</br>
 Note: `Species` is a factor.
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "greater")
