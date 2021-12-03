@@ -16,7 +16,7 @@ G$ethnicity <- ifelse(G$black == 1, "Black",
 ```
 bartlett.test(G$sat, G$ethnicity)
 ```
-### If any sample is /some samples are not normally distributed
+### If any sample is / some samples are not normally distributed
 **Actual Code**
 ```
 fligner.test(iris$Sepal.Length, iris$Species)
