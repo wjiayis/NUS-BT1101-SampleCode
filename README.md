@@ -1,4 +1,4 @@
-# Sample-Code-for-BT1101
+# Sample Code for BT1101
 ## Descriptive Analytics
 ### 1. Data Visualisation
 - [**Base R Graphics**](1-1-1.md)
