@@ -27,7 +27,7 @@ summary(sat.aov)
 ```
 TukeyHSD(sat.aov)
 ```
-### Welch ANOVA
+### Welch-ANOVA
 Preparation Code
 ```
 # Functions
