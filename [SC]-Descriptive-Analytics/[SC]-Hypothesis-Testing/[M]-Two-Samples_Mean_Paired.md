@@ -8,27 +8,23 @@ Preparation Code
 library(dplyr)
 setosa <- iris %>% filter(Species == "setosa")
 ```
-**_Sample Hypotheses:</br>
-H0: Mean sepal length == mean petal length.</br>
-H1: Mean sepal length != mean petal length._**</br>
 
 **Actual Code**
+###### Sample Hypotheses 1:
+H0: Mean sepal length = mean petal length.</br>
+H1: Mean sepal length ≠ mean petal length.
 ```
 t.test(setosa$Sepal.Length, setosa$Petal.Length, paired = TRUE)
 ```
-**_Sample Hypotheses:</br>
-H0: Mean sepal length >= mean petal length.</br>
-H1: Mean sepal length < mean petal length._**</br>
-
-**Actual Code**
+###### Sample Hypotheses 2:
+H0: Mean sepal length ≥ mean petal length.</br>
+H1: Mean sepal length < mean petal length.
 ```
 t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "less", paired = TRUE)
 ```
-**_Sample Hypotheses:</br>
-H0: Mean sepal length <= mean petal length.</br>
-H1: Mean sepal length > mean petal length._**</br>
-
-**Actual Code**
+###### Sample Hypotheses 3:
+H0: Mean sepal length ≤ mean petal length.</br>
+H1: Mean sepal length > mean petal length.
 ```
 t.test(setosa$Sepal.Length, setosa$Petal.Length, alternative = "greater", paired = TRUE)
 ```
