@@ -33,8 +33,8 @@
 - Principal Component Analysis
 - k-means Clustering
 - Assessment of Classification
-- Cross-validation
-- Regularisation
+- Cross-validation (UNDONE)
+- Regularisation (UNDONE)
 ## Prescriptive Analytics
 ### 1. Linear Optimisation
 ### 2. Integer Optimisation
