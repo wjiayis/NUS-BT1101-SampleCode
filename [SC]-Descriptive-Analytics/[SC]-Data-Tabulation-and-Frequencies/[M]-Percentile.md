@@ -9,7 +9,7 @@ library(wooldridge)
 ```
 quantile(gpa2$sat, 0.25)
 ```
-###### Sample Task 1: Compute the 32% and 78% percentile.
+###### Sample Task 2: Compute the 32% and 78% percentile.
 ```
 quantile(gpa2$sat, c(0.32, 0.78))
 ```
