@@ -27,7 +27,7 @@
 - Simple k-period Moving Average Model: [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - Exponential Smoothing Model: [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
 - [Regression-based Forecasting]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Regression-based-Forecasting.md) (IS THERE A LOGISTIC REGRESSION VERSION)
-- [\[Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
+- [\[Detection of Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
 ### 4. Data Mining
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
 - [Principal Component Analysis]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Principal-Component-Analysis.md)
