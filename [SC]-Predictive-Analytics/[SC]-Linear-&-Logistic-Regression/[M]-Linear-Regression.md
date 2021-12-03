@@ -7,6 +7,7 @@
 **Actual Code**</br>
 1. Run the linear regression model.
 ###### [Regression-based Forecasting](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Regression-based-Forecasting.md)
+###### [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
 
 ###### Simple Linear Regression
 ```
