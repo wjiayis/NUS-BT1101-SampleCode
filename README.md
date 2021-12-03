@@ -13,7 +13,7 @@
 - [\[ND\] Probability for a Single New Observation]([SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[M]-Normal-Distribution_Probability-for-a-Single-New-Observation.md)
 ### 4. Descriptive Statistical Measures
 - [**Individual**](1-4-1-1.md) and [Summary]([SC]-Descriptive-Analytics/[SC]-Descriptive-Statistical-Measures/[M]-Summary-Statistics.md) Statistics
-- [**Outlier Identification and Removal**](1-4-2.md)
+- [**Outlier Handling**](1-4-2.md)
 ### 5. Sampling and Estimation
 - [\[ND\] Probability for the Mean of n New Observations]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[M]-Normal-Distribution_Probability-for-the-Mean-of-n-New-Observations.md)
 - [**Interval Estimates**](1-5-2.md)
