@@ -6,7 +6,7 @@
 
 **Actual Code**</br>
 1. Run the linear regression model.
-###### [Regression-based Forecasting]([SC]-Linear-Regression/[M]-Regression-based-Forecasting.md)
+###### [Regression-based Forecasting](../../[SC]-Linear-Regression/[M]-Regression-based-Forecasting.md)
 
 ###### Simple Linear Regression
 ```
