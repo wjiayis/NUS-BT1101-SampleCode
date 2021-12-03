@@ -1,4 +1,7 @@
 ### Two-sample Hypothesis Test for Mean (Paired Samples)
+
+DIFFERENT FROM LECTURE NOTES (, VS ~)
+
 Preparation Code
 ```
 # Sample Data
