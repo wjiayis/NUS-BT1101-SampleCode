@@ -21,11 +21,14 @@
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
 ### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-Regression/[M]-Linear-Regression.md)
+- Without Interaction
+- With Interaction
+- Model Selection
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
 - Simple k-period Moving Average Model: [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - Exponential Smoothing Model: [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
-- Model Selection
+- Regression-based Forecasting
 - \[Multicollinearity\] Variance Inflation Factor
 ### 4. Data Mining
 - Principal Component Analysis
