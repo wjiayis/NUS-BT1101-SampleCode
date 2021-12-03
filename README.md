@@ -20,8 +20,7 @@
 - [**\[Sampling Error\] Sample Size Determination**](1-5-3.md)
 ### 6. [Hypothesis Testing](1-6.md)
 ## Predictive Analytics
-### 1. Linear Regression
-- [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression.md)
+### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression.md)
 - [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Model-Selection.md)
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Logistic-Regression.md)
 ### 3. Time Series Forecasting
