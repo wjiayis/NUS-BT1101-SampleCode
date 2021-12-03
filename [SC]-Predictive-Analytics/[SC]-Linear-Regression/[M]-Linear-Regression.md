@@ -18,7 +18,7 @@ summary(fit)
 ```
 ###### Multiple Linear Regression (w Interaction)
 ```
-fit <- lm(Petal.Length ~ Species * Sepal.Length + Sepal.width, iris)
+fit <- lm(Petal.Length ~ Species * Sepal.Length + Sepal.Width, iris)
 summary(fit)
 ```
 
