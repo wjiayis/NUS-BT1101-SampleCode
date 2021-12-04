@@ -20,6 +20,7 @@ for (k in 2:20){
 ```
 2. Run a Simple Moving Average model.
 ```
+# `B$bchlimp` is not a ts object.
 B$bchlimp.SMA16.predict <-  dplyr::lag(SMA(B$bchlimp, n=16),1) # Window size = 16; lag = 1
 ```
 3. If required, plot the prediction graph.
