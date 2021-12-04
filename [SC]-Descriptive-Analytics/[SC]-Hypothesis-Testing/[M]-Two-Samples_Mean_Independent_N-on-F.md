@@ -1,4 +1,4 @@
-## \[Independent\]\[Numeric on Factor\] Two-sample Hypothesis Test for Mean
+## \[Numeric on Factor\] Two-sample Hypothesis Test for Mean
 
 | Implicit Assumptions |
 | :---: |
