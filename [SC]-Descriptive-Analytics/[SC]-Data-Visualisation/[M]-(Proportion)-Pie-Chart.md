@@ -1,5 +1,5 @@
 ### Pie Chart for Proportion
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Proportion)-Pie-Chart-&-Frequency-Table.md)
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[SC]-Base-R-Graphic/[HF]-(Proportion)-Pie-Chart-&-Frequency-Table_Base-R.md)
 
 Preparation Code
 ```
