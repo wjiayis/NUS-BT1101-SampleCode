@@ -34,7 +34,7 @@
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
 - Confusion Matrix (UNDONE)
 - [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
-- Cross-validation (UNDONE)
+- [Cross-validation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Cross-Validation.md)
 - Regularisation (UNDONE)
 ## Prescriptive Analytics
 ### 1. [Linear Optimisation]([SC]-Prescriptive-Analytics/[M]-Linear-Optimisation.md)
