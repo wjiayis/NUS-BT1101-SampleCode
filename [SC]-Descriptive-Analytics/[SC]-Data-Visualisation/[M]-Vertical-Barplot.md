@@ -11,7 +11,7 @@ HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 </br>**Actual Code**
-##### Base R Graphics
+##### Base R Graphic
 ```
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         ylim = c(0,340), # Range of y-values
@@ -24,7 +24,7 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
 
 text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 ```
-##### ggplot2 Graphics
+##### ggplot2 Graphic
 ```
 ggplot(data=HEC, aes(x=Hair, y=Freq)) + # dataset_variable
   geom_bar(stat="identity", fill = "pink") + # Colour
