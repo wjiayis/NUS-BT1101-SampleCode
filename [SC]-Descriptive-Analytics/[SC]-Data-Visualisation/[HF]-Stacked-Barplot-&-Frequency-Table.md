@@ -1,5 +1,5 @@
-### [HF] Stacked Barplot
-Preparation Code
+## [HF] Stacked Barplot
+</br>Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -13,7 +13,7 @@ M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
                         ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
 M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
 ```
-**Actual Code**
+</br>**Actual Code**
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
 ```
@@ -50,7 +50,7 @@ plot.StackedBarplot <- function(data_df, title.text, y_variable.text, title.font
 {plot.StackedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 ```
-4. **Inputs**. (Must be included. Edit this.)
+4. Inputs. (Must be included. Edit this.)
 ```
 plot.StackedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
@@ -66,11 +66,3 @@ plot.StackedBarplot(M, # data_df
 #                           legend.position = " PRESET" ----- e.g., "PRESET" / list(x = 1, y = 70)
 #                           include_frequency_table = TRUE
 ```
-Additional Notes:
-1. Structure of data frame `data_df`
-
-| Discrete Variable[^1] | Continuous Variable 1[^1] | Continuous Variable 2[^1] | ... | 
-| :---: | :---: | :---: | :---: |
-| ... | ... | ... | ... |
-
-[^1]: Variable name as column name
