@@ -18,7 +18,6 @@ M <- M %>%
 Year <- c("1992", "1993", "1994", "1995")
 M <- cbind(Year, M)
 M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
-
 ```
 </br>**Actual Code**
 ##### Base R Graphics
