@@ -1,4 +1,4 @@
-### [HF] Normal Distribution, Sample Mean, Population Standard Deviation &#8594; Confidence Interval
+### \[HF\]\[Normal Distribution\]\[Known Population sd\] Confidence Interval for Mean
 ##### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
