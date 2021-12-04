@@ -1,5 +1,5 @@
-### Variance Inflation Factor
-Preparation Code
+## Variance Inflation Factor
+###### Preparation Code
 ```
 # Functions
 library(car)
@@ -8,7 +8,7 @@ library(car)
 library(wooldridge)
 B <- barium
 ```
-**Actual Code**
+###### Actual Code
 ```
 car::vif(lm(chnimp ~ gas + lgas + spr, B))
 ```
