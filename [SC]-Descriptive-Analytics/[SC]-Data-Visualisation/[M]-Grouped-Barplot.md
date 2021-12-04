@@ -6,29 +6,27 @@ library(dplyr)
 library(tidyr) # For ggplot2 graphic
 library(ggplot2) # For ggplot2 graphic
 
-# Sample Data (Common)
+# Sample Data
 library(wooldridge)
 M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
 M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
                    ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
-M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Grade_4 = mean(math4, na.rm=TRUE), Grade_7 = mean(math7, na.rm=TRUE))
+M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(`Grade 4` = mean(math4, na.rm=TRUE), `Grade 7` = mean(math7, na.rm=TRUE))
 
-# Sample Data (for base R graphic only)
-satisfaction.base.df <- M %>%
-  select(c(Grade_4, Grade_7)) %>% as.data.frame() %>% t()
-  
-# Sample Data (for ggplot2 graphic only)
-satisfaction.gg.df <- M %>%
-  select(c(Grade_4, Grade_7)) %>% as.data.frame()
+M <- M %>%
+  select(c(`Grade 4`, `Grade 7`)) %>% as.data.frame()
 Year <- c("1992", "1993", "1994", "1995")
-satisfaction.gg.df <- cbind(Year, satisfaction.gg.df)
-satisfaction.gg.df <- satisfaction.gg.df %>% gather("Grade", "Mean Satisfaction for Math", -Year)
+M <- cbind(Year, M)
+M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
+
 ```
 </br>**Actual Code**
 ##### Base R Graphics
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
 ```
-satisfaction.grouped_barplot <- barplot(satisfaction.base.df, # dataset_variable
+M.base <- M %>% spread(Year, `Mean Satisfaction for Math`)
+
+satisfaction.grouped_barplot <- barplot(M.base, # dataset_variable
         beside = TRUE,
         ylim = c(0, 70), # Range of y-values
         main = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation", # Title
@@ -43,25 +41,19 @@ legend("topleft",
        c("Grade 4", "Grade 7"),
        cex = 0.9) # [Font size] Legend
 
-text(y = satisfaction.base.df, x = satisfaction.grouped_barplot,
-     label = round(satisfaction.base.df, 2), pos = 3, cex = 0.9) # Value labels
+text(y = M.base, x = satisfaction.grouped_barplot,
+     label = round(M.base, 2), pos = 3, cex = 0.9) # Value labels
 ```
 ##### ggplot2 Graphics
 ```
-ggplot(data=satisfaction.gg.df, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_bariable
+ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
 geom_bar(stat="identity", position=position_dodge()) +
-scale_fill_manual(values=c("pink", "lightblue")) + # Colours
-geom_text(aes(label= round(`Mean Satisfaction for Math`, 2)), vjust=1.6, color="black", position = position_dodge(0.9), size=3.5) # Value labels
+labs(title = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation") + # Title
+geom_text(aes(label= round(`Mean Satisfaction for Math`, 2)), vjust=1.6, color="black", position = position_dodge(0.9), size=3.5) + # Value labels
+scale_fill_manual(values=c("pink", "lightblue"))# Colours
 ```
 </br>Additional Notes:
-1. Structure of matrix `satisfaction.base.m`
-
-| | Continuous Variable 1a[^1] | Continuous Variable 1b[^1] | ... |
-| :---: | :---: | :---: | :---: |
-| Discrete Variable 1a[^1] | ... | ... | ... |
-| Discrete Variable 1b[^1] | ... | ... | ... |
-
-2. Structure of data frame `satisfaction.gg.df`
+1. Structure of data frame `M`
 
 | Bar Groups Discrete Variable[^1] | Legend Discrete Variable[^1] | Continuous Variable[^1] |
 | :---: | :---: | :---: |
