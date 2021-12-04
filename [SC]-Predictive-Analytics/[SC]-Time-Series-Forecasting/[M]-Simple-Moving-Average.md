@@ -21,6 +21,7 @@ for (k in 2:20){
 2. Run a Simple Moving Average model.
 ```
 B$bchlimp.SMA16.predict <-  dplyr::lag(SMA(B$bchlimp, n=16),1) # Window size = 16; lag = 1
+```
 ###### Base R Graphic
 ```
 plot(B$t, B$bchlimp, type="n")
