@@ -31,11 +31,3 @@ ggplot(data=HEC, aes(x=Hair, y=Freq)) + # dataset_variable
   #geom_text(aes(label=Freq), vjust=-0.3, color = "black", size=3.5) # 'Outside-bars' value labels
   geom_text(aes(label=Freq), vjust=1.6, color="black", size=3.5) # 'Within-bars' value labels
 ```
-</br>Additional Notes:
-1. Structure of data frame `HEC`
-
-| Discrete Variable[^1] | Continuous Variable[^1] |
-| :---: | :---: |
-| ... | ... |
-
-[^1]: Variable name as column name
