@@ -5,7 +5,6 @@
 library(ggplot2) # For ggplot2 graphic
 ```
 ###### Actual Code
-###### Base R graphic
 ```
 plot(ecdf(mtcars$mpg),
      main = "Cumulative Frequency of Miles/(US) gallon",
