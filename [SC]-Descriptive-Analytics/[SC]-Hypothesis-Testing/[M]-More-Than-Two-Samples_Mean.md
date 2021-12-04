@@ -1,9 +1,4 @@
 ## More Than Two Samples Hypothesis Test for Mean
-### Test for Equality of Sample Size
-###### Actual Code
-```
-table(iris$Species)
-```
 ### ANOVA
 ###### Preparation Code
 ```
@@ -17,6 +12,7 @@ G$ethnicity <- ifelse(G$black == 1, "Black",
                   ifelse(G$white ==1, "White",
                          ifelse(G$black ==0 & G$white == 0, "Others", -1)))
 ```
+Note: Check for the 3 ANOVA assumptions before proceeding.
 ###### Actual Code
 1. ANOVA Test GROUPING VARIABLE - FACTOR OR NUMERICS FROM 0?
 ```
