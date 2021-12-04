@@ -1,10 +1,7 @@
-### Linear Optimisation
-Preparation Code
-```
-# Functions
-library(lpSolve)
-```
-###### Sample Task 1: Maximise profits with the given constraints.
+## Linear Optimisation
+##### Sample Task 1
+>Maximise profits with the given constraints.
+
 | Maximise total profit using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -14,9 +11,15 @@ library(lpSolve)
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
 
-**Actual Code**
+###### Preparation Code
+```
+# Functions
+library(lpSolve)
+```
+###### Actual Code
 1. Run the linear optimisation model.
 ```
+# Define parameters
 objective.fn <- c(11, 22)
 
 const.mat <- (matrix(
@@ -31,7 +34,8 @@ const.dir <- c("<=","<=",">=",">=")
 
 const.rhs <- c(12,34,5,5)
 
-lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs, compute.sens=T)
+# Run the model
+lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs, compute.sens=TRUE)
 
 lp.solution
 lp.solution$solution
@@ -45,7 +49,10 @@ lp.solution$duals
 lp.solution$sens.coef.from
 lp.solution$sens.coef.to
 ```
-###### Sample Task 2: Minimise costs with the given constraints.
+</br></br></br>
+##### Sample Task 2
+>Minimise costs with the given constraints.
+
 | Minimise total cost using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -55,7 +62,12 @@ lp.solution$sens.coef.to
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
 
-**Actual Code**
+###### Preparation Code
+```
+# Functions
+library(lpSolve)
+```
+###### Actual Code
 1. Run the linear optimisation model.
 ```
 objective.fn <- c(11, 22)
@@ -72,7 +84,7 @@ const.dir <- c("<=","<=",">=",">=")
 
 const.rhs <- c(12,34,5,5)
 
-lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs, compute.sens=T)
+lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs, compute.sens=TRUE)
 
 lp.solution
 lp.solution$solution
