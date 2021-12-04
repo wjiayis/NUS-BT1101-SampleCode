@@ -1,4 +1,4 @@
-## Grouped Barplot (ggplot2)
+## \[ggplot2\] Grouped Barplot
 ###### Preparation Code
 ```
 # Functions
