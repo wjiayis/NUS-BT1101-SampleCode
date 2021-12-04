@@ -1,4 +1,4 @@
-## [HF] Grouped Barplot
+## \[Base R\]\[HF\] Grouped Barplot
 </br>Preparation Code
 ```
 # Functions
