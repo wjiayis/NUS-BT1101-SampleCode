@@ -1,5 +1,5 @@
-### Grouped Barplot</br></br>
-Preparation Code
+## Grouped Barplot
+</br>Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -22,7 +22,7 @@ satisfaction.gg.df <- M %>%
   select(c(Grade_4, Grade_7)) %>% as.data.frame()
 Year <- c("1992", "1993", "1994", "1995")
 satisfaction.gg.df <- cbind(Year, satisfaction.gg.df)
-satisfaction.gg.df <- satisfaction.gg.df %>% gather("Grade", "Satisfaction", -Year)
+satisfaction.gg.df <- satisfaction.gg.df %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
 </br>**Actual Code**
 ##### Base R Graphics
@@ -48,17 +48,23 @@ text(y = satisfaction.base.df, x = satisfaction.grouped_barplot,
 ```
 ##### ggplot2 Graphics
 ```
-ggplot(data=satisfaction.gg.df, aes(x=Year, y=Satisfaction, fill=Grade)) + # dataset_bariable
+ggplot(data=satisfaction.gg.df, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_bariable
 geom_bar(stat="identity", position=position_dodge()) +
 scale_fill_manual(values=c("pink", "lightblue")) + # Colours
-geom_text(aes(label= round(Satisfaction, 2)), vjust=1.6, color="black", position = position_dodge(0.9), size=3.5) # Value labels
+geom_text(aes(label= round(`Mean Satisfaction for Math`, 2)), vjust=1.6, color="black", position = position_dodge(0.9), size=3.5) # Value labels
 ```
 </br>Additional Notes:
-1. Structure of matrix `satisfaction.base.matrix`
+1. Structure of matrix `satisfaction.base.m`
 
-| | (Continuous Variable 1) | (Continuous Variable 2) | ... | 
+| | Continuous Variable 1a[^1] | Continuous Variable 1b[^1] | ... |
 | :---: | :---: | :---: | :---: |
-| Discrete Variable[^1]  | ... | ... | ... |
+| Discrete Variable 1a[^1] | ... | ... | ... |
+| Discrete Variable 1b[^1] | ... | ... | ... |
 
-2. Structuer of 
+2. Structure of data frame `satisfaction.gg.df`
+
+| Bar Groups Discrete Variable[^1] | Legend Discrete Variable[^1] | Continuous Variable[^1] |
+| :---: | :---: | :---: |
+| ... | ... | ... |
+
 [^1]: Variable name as column name
