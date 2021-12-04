@@ -1,13 +1,12 @@
-### Two-sample Hypothesis Test for Mean
-#### _Independent Samples, Equal Variance Assumption Assumption, Numeric on Numeric_</br></br>
-Preparation Code
+## \[Independent\]\[Numeric on Numeric\] Two-sample Hypothesis Test for Mean
+##### Preparation Code
 ```
 # Sample Data
 library(dplyr)
 setosa <- iris %>% filter(Species == "setosa")
 virginica <- iris %>% filter(Species == "virginica")
 ```
-</br>**Actual Code**
+##### Actual Code
 ###### Sample Hypotheses 1:
 >H0: Mean sepal length of (setosa = virginica).</br>
 >H1: Mean sepal length of (setosa ≠ virginica).
