@@ -14,7 +14,7 @@ G$ethnicity <- ifelse(G$black == 1, "Black",
 ```
 Note: Check for the 3 ANOVA assumptions before proceeding.
 ###### Actual Code
-1. ANOVA Test GROUPING VARIABLE - FACTOR OR NUMERICS FROM 0?
+1. ANOVA Test
 ```
 sat.aov <- aov(sat ~ ethnicity, G)
 summary(sat.aov)
