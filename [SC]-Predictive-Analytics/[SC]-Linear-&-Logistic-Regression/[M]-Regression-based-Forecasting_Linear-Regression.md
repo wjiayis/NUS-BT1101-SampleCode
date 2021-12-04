@@ -1,4 +1,4 @@
-## Regression-based Forecasting
+## [Linear Regression] Regression-based Forecasting
 
 | Implicit Assumptions |
 | :---: |
