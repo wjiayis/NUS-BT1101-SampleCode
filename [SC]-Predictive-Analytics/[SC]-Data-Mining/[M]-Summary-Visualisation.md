@@ -1,19 +1,19 @@
 ## Summary Visualisation
 ### Base R Graphics
-Preparation Code
+###### Preparation Code
 ```
 library(psych)
 ```
-**Actual Code**
+###### Actual Code
 ```
 pairs.panels(iris, lm=TRUE)
 ```
 ### ggplot2 Graphics
-Preparation Code
+###### Preparation Code
 ```
 library(GGally)
 ```
-**Actual Code**
+###### Actual Code
 ```
 ggpairs(iris)
 ```
