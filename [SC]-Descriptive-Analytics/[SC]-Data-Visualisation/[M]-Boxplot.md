@@ -1,5 +1,5 @@
-### Boxplot
-Preparation Code
+## Boxplot
+</br>Preparation Code
 ```
 # Sample Data
 library(wooldridge)
