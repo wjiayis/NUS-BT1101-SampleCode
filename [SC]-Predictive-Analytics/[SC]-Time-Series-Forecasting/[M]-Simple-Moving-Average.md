@@ -3,8 +3,8 @@
 ```
 # Functions
 library(TTR)
-library(ggplot2)
 library(glue)
+library(ggplot2) # For ggplot2 graphic
 
 # Sample Data
 library(wooldridge)
