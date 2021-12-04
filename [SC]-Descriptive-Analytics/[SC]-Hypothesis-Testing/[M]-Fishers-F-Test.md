@@ -15,6 +15,7 @@ var.test(setosa$Sepal.Length, setosa$Petal.Length)
 library(dplyr)
 setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
 ```
+##### Actual Code
 ```
 var.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species)
 ```
