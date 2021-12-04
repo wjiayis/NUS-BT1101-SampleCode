@@ -29,7 +29,7 @@ pie(data_df[[2]],
     main = glue::glue("Pie Chart of {subject.text}"),
     cex.main = title.font_size)}
 ```
-3. **Inputs**. (Must be included. Edit this.)
+3. Inputs. (Must be included. Edit this.)
 ```
 plot.PieChart.Proportion(HEC, # data_df
               "Hair Colour") # subject.text
