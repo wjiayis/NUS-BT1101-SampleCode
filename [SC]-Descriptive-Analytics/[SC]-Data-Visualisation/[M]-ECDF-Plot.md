@@ -1,12 +1,14 @@
-### ECDF plot
-Preparation Code
+## ECDF plot
+</br>Preparation Code
 ```
 # Sample Data
 MC <- mtcars
 ```
-**Actual Code**
+</br>**Actual Code**
+###### Base R graphic
 ```
 plot(ecdf(MC$mpg),
      main = "Cumulative Frequency of Miles/(US) gallon",
      xlab = "Miles/(US) gallon")
 ```
+###### ggplot2 graphic
