@@ -1,4 +1,4 @@
-## One Sample Hypothesis Test for Mean
+## One-Sample Hypothesis Test for Mean
 ##### Actual Code
 ###### Sample Hypotheses 1:
 >At 95% confidence level,</br>
