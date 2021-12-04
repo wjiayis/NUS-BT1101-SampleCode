@@ -1,5 +1,5 @@
-### Linear Regression with Principal Components
-Preparation Code
+## Linear Regression with Principal Components
+###### Preparation Code
 ```
 # Sample Data
 library(dplyr)
@@ -13,8 +13,8 @@ M <- M %>% mutate(
   pc3 = pca1$x[,"PC3"],
   pc4 = pca1$x[,"PC4"])
 ```
-**Actual Code**
-1. **Run the regression model**.
+###### Actual Code
+1. Run the regression model.
 ```
 fit <- lm(cyl ~ pc1+pc2+pc3+pc4, M)
 summary(fit)
