@@ -1,15 +1,11 @@
-### Two-sample Hypothesis Test for Mean (Paired Samples)
-
-DIFFERENT FROM LECTURE NOTES (, VS ~)
-
-Preparation Code
+## [Paired] Two-sample Hypothesis Test for Mean
+##### Preparation Code
 ```
 # Sample Data
 library(dplyr)
 setosa <- iris %>% filter(Species == "setosa")
 ```
-
-**Actual Code**
+##### Actual Code
 ###### Sample Hypotheses 1:
 >H0: Mean sepal length = mean petal length.</br>
 >H1: Mean sepal length ≠ mean petal length.
