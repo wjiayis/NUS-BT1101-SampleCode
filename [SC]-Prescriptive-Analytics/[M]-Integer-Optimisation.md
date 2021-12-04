@@ -1,10 +1,7 @@
-### Integer Optimisation
-Preparation Code
-```
-# Functions
-library(lpSolve)
-```
-###### Sample Task 1: Maximise profits with the given constraints.
+## Integer Optimisation
+##### Sample Task 1
+>Maximise profits with the given constraints.
+
 | Maximise total profit using decision variables</br>X<sub>1</sub> = number of apples to sell, X<sub>2</sub> = whether to sell one orange or not | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -15,7 +12,12 @@ library(lpSolve)
 | Integer Constraint (X<sub>1</sub>) | X<sub>1</sub> is an integer |
 | Binding Constraint (X<sub>2</sub>) | X<sub>2</sub> is binary |
 
-**Actual Code**
+###### Preparation Code
+```
+# Functions
+library(lpSolve)
+```
+###### Actual Code
 1. Run the integer optimisation model.
 ```
 objective.fn <- c(11, 22)
@@ -45,8 +47,10 @@ lp.solution$duals
 lp.solution$sens.coef.from
 lp.solution$sens.coef.to
 ```
+</br></br></br>
+##### Sample Task 2
+>Minimise costs with the given constraints.
 
-###### Sample Task 2: Minimise costs with the given constraints.
 | Minimise total cost using decision variables</br>X<sub>1</sub> = number of apples to sell, X<sub>2</sub> = whether to sell one orange or not | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -57,7 +61,12 @@ lp.solution$sens.coef.to
 | Integer Constraint (X<sub>1</sub>) | X<sub>1</sub> is an integer |
 | Binding Constraint (X<sub>2</sub>) | X<sub>2</sub> is binary |
 
-**Actual Code**
+###### Preparation Code
+```
+# Functions
+library(lpSolve)
+```
+###### Actual Code
 1. Run the integer optimisation model.
 ```
 objective.fn <- c(11, 22)
