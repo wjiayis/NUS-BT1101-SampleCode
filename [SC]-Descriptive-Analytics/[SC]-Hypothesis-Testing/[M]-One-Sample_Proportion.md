@@ -1,9 +1,9 @@
-### One Sample Hypothesis Test for Proportion
-Preparation Code
+## One Sample Hypothesis Test for Proportion
+##### Preparation Code
 ```
 library(dplyr)
 ```
-**Actual Code**
+##### Actual Code
 ###### Sample Hypotheses:
 >H0: Population proportion of (Miles/(US) gallon > 17) ≥ 0.18.</br>
 >H1: Population proportion of (Miles/(US) gallon > 17) < 0.18.</br>
