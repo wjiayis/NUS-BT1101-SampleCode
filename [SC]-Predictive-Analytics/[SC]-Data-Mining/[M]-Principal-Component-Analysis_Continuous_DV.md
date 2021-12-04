@@ -17,14 +17,14 @@ pca1 <- prcomp(M, # Ensure that it only contains continuous variables
 summary(pca1)
 ```
 ###### Sample Task 2.1
->Examine loadings on the first 2 principal components.
-```
-pca1$rotation[,1:2]
-```
-###### Sample Task 3.1
 >Plot the principal components.
 ```
 ggbiplot(pca1)
+```
+###### Sample Task 3.1
+>Examine loadings on the first 2 principal components.
+```
+pca1$rotation[,1:2]
 ```
 ###### Sample Task 4.1
 > Extract the first x (eg 4) principal components.
