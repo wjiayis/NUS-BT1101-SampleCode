@@ -27,7 +27,7 @@ ggbiplot(pca1)
 pca1$rotation[,1:2]
 ```
 ###### Sample Task 4.1
-> Extract the first x (eg 4) principal components.
+> Extract the first 4 principal components.
 ```
 M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
