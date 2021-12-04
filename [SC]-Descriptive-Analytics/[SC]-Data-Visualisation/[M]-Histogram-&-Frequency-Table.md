@@ -1,16 +1,14 @@
-### Histogram
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
+## Histogram
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
 
-Preparation Code
+###### Preparation Code
 ```
-# Functions
-library(dplyr)
-
 # Sample Data
+library(dplyr)
 library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
-**Actual Code**
+###### Actual Code
 ```
 # Graph
 histogram <- hist(CS$salary,
