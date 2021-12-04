@@ -1,8 +1,8 @@
-## Vertical Barplot</br></br>
-Preparation Code
+## Vertical Barplot
+</br>Preparation Code
 ```
 # Functions
-library(ggplot2) # For ggplot2 graphics
+library(ggplot2) # For ggplot2 graphic
 
 # Sample Data
 library(dplyr)
@@ -28,8 +28,8 @@ text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 ```
 ggplot(data=HEC, aes(x=Hair, y=Freq)) + # dataset_variable
   geom_bar(stat="identity", fill = "pink") + # Colour
-  #geom_text(aes(label=Freq), vjust=-0.3, color = "black", size=3.5) # "Outside-bars" label
-  geom_text(aes(label=Freq), vjust=1.6, color="black", size=3.5) # "Within-bars" label
+  #geom_text(aes(label=Freq), vjust=-0.3, color = "black", size=3.5) # "Outside-bars" value labels
+  geom_text(aes(label=Freq), vjust=1.6, color="black", size=3.5) # "Within-bars" value labels
 ```
 </br>Additional Notes:
 1. Structure of data frame `HEC`
