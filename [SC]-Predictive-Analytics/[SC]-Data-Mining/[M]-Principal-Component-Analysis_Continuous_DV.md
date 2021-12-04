@@ -42,4 +42,4 @@ M <- M %>% mutate(
   pc2 = pca1$x[,"PC2"],
   pc3 = pca1$x[,"PC3"])
 ```
-4. [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
+5. [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
