@@ -1,14 +1,20 @@
-## Two-Sample Hypothesis Test for Variance
-### Fisher's F Test
-
-DIFFERENT FROM LECTURE NOTES (, VS ~)
-
-Preparation Code
+## Fisher's F Test
+### Numeric on numeric
+##### Preparation Code
 ```
 library(dplyr)
 setosa <- iris %>% filter(Species == "setosa")
 ```
-**Actual Code**
+##### Actual Code
 ```
 var.test(setosa$Sepal.Length, setosa$Petal.Length)
+```
+### Numeric on factor
+##### Preparation Code
+```
+library(dplyr)
+setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
+```
+```
+var.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species)
 ```
