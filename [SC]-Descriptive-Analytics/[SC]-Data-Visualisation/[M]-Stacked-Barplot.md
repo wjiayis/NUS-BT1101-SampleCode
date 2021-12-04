@@ -1,6 +1,6 @@
 ## Stacked Barplot
+### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Stacked-Barplot-&-Frequency-Table.md)
-
 ###### Preparation Code
 ```
 # Functions
@@ -37,3 +37,5 @@ H <- apply(satisfaction.stacked_barplot.matrix, 2L, cumsum) - satisfaction.stack
 text(x = rep(satisfaction.stacked_barplot, each = nrow(H)), y = H,
      label = round(satisfaction.stacked_barplot.matrix,2), pos = 3, cex = 0.9)
 ```
+### ggplot2 Graphic
+###### Preparation Code
