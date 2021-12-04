@@ -22,7 +22,7 @@ for (k in 2:20){
 ```
 B$bchlimp.SMA16.predict <-  dplyr::lag(SMA(B$bchlimp, n=16),1) # Window size = 16; lag = 1
 ```
-3. Plot the prediction graph.
+3. If required, plot the prediction graph.
 ###### Base R Graphic
 ```
 plot(B$t, B$bchlimp, type="n")
