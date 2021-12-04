@@ -14,8 +14,8 @@ plot(ecdf(mtcars$mpg),
 ###### ggplot2 graphic
 ```
 ggplot(mtcars, aes(mpg)) +
-stat_ecdf(col="darkblue") +
-labs(title="Cumulative Frequency of Miles/(US) gallon") +
-ylab("Cumulative Frequency") +
-xlab("Miles/(US) gallon")
+  stat_ecdf(col="darkblue") +
+  labs(title="Cumulative Frequency of Miles/(US) gallon") +
+  ylab("Cumulative Frequency") +
+  xlab("Miles/(US) gallon")
 ```
