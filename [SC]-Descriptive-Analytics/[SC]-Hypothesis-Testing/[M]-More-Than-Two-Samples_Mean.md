@@ -1,4 +1,4 @@
-## >2-Sample Hypothesis Test for Mean
+## More Than Two Samples Hypothesis Test for Mean
 ### ANOVA
 ###### Preparation Code
 ```
