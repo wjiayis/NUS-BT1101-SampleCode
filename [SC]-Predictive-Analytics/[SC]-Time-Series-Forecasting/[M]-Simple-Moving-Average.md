@@ -1,5 +1,5 @@
-### Simple Moving Average
-Preparation Code
+## Simple Moving Average
+###### Preparation Code
 ```
 # Functions
 library(TTR)
@@ -10,7 +10,7 @@ library(glue)
 library(wooldridge)
 B <- barium
 ```
-**Actual Code**
+###### Actual Code
 1. Choose the window size that produces the lowest root mean square error.
 ```
 for (k in 2:20){
@@ -18,7 +18,7 @@ for (k in 2:20){
   rmse <- sqrt(mean((B$bchlimpSMA - B$chnimp)^2, na.rm = TRUE))
   print(glue::glue("{k}: {rmse}"))}
 ```
-2. Produce a Simple Moving Average model.
+2. Run a Simple Moving Average model.
 ```
 B$bchlimp.SMA16.predict <-  dplyr::lag(SMA(B$bchlimp, n=16),1) # Window size = 16; lag = 1
 
