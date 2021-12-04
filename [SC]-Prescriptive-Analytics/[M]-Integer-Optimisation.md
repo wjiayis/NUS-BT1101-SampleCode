@@ -46,8 +46,8 @@ lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
 ```
-lp.solution$sens.coef.from
-lp.solution$sens.coef.to
+lp.solution$sens.coef.to # Upper bounds to the coefficients
+lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
 </br></br></br>
 ##### Sample Task 2
@@ -97,6 +97,6 @@ lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
 ```
-lp.solution$sens.coef.from
-lp.solution$sens.coef.to
+lp.solution$sens.coef.to # Upper bounds to the coefficients
+lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
