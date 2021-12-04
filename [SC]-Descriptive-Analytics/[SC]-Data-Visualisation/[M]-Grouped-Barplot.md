@@ -1,7 +1,7 @@
-## Grouped Barplot
-### Base R Graphics
+# Grouped Barplot
+## Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
-</br>Preparation Code
+</br></br>Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -38,8 +38,8 @@ legend("topleft",
 text(y = M.base, x = satisfaction.grouped_barplot,
      label = round(M.base, 2), pos = 3, cex = 0.9) # Value labels
 ```
-##### ggplot2 Graphics
-</br> Preparation Code
+## ggplot2 Graphic
+</br>Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -59,6 +59,7 @@ Year <- c("1992", "1993", "1994", "1995")
 M <- cbind(Year, M)
 M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
+</br>**Actual Code**
 ```
 ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
 geom_bar(stat="identity", position=position_dodge()) +
