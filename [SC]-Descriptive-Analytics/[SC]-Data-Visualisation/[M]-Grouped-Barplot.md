@@ -1,7 +1,8 @@
 ## Grouped Barplot
 ### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
-</br></br>Preparation Code
+</br>Preparation Code
+###### Base R Graphic
 ```
 # Functions
 library(dplyr)
@@ -16,28 +17,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 
 M.m <- M %>% select(c(`Grade 4`, `Grade 7`)) %>% as.matrix() %>% t()
 ```
-</br>**Actual Code**
-```
-satisfaction.grouped_barplot <- barplot(M.m, # dataset_variable
-        beside = TRUE,
-        ylim = c(0, 70), # Range of y-values
-        main = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation", # Title
-        cex.main = 1, # [Font size] Title
-        ylab = "Mean Satisfaction for Math", # y-axis label
-        names.arg = c("1992", "1993", "1994", "1995"), # x-axis labels
-        cex.names = 0.9, # [Font size] x-axis labels
-        col = c("plum2", "lightgoldenrod1")) # Colours
-
-legend("topleft",
-       fill = c("plum2", "lightgoldenrod1"),
-       c("Grade 4", "Grade 7"),
-       cex = 0.9) # [Font size] Legend
-
-text(y = M.m, x = satisfaction.grouped_barplot,
-     label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
-```
-### ggplot2 Graphic
-</br>Preparation Code
+###### ggplot2 Graphic
 ```
 # Functions
 library(dplyr)
@@ -58,6 +38,27 @@ M <- cbind(Year, M)
 M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
 </br>**Actual Code**
+###### Base R Graphic
+```
+satisfaction.grouped_barplot <- barplot(M.m, # dataset_variable
+        beside = TRUE,
+        ylim = c(0, 70), # Range of y-values
+        main = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation", # Title
+        cex.main = 1, # [Font size] Title
+        ylab = "Mean Satisfaction for Math", # y-axis label
+        names.arg = c("1992", "1993", "1994", "1995"), # x-axis labels
+        cex.names = 0.9, # [Font size] x-axis labels
+        col = c("plum2", "lightgoldenrod1")) # Colours
+
+legend("topleft",
+       fill = c("plum2", "lightgoldenrod1"),
+       c("Grade 4", "Grade 7"),
+       cex = 0.9) # [Font size] Legend
+
+text(y = M.m, x = satisfaction.grouped_barplot,
+     label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
+```
+###### ggplot2 Graphic
 ```
 ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
 geom_bar(stat="identity", position=position_dodge()) +
