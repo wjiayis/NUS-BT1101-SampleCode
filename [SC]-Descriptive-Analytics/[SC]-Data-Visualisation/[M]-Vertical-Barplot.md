@@ -1,4 +1,4 @@
-### Vertical Barplot</br></br>
+## Vertical Barplot</br></br>
 Preparation Code
 ```
 # Functions
