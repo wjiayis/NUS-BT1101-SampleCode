@@ -20,6 +20,7 @@ library(lpSolve)
 ###### Actual Code
 1. Run the integer optimisation model.
 ```
+# Define parameters
 objective.fn <- c(11, 22)
 
 const.mat <- (matrix(
@@ -33,6 +34,7 @@ const.dir <- c("<=","<=",">=")
 
 const.rhs <- c(12,34,5)
 
+# Run the model
 lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs, int.vec = 1, binary.vec = 2, compute.sens=FALSE)
 
 lp.solution
@@ -69,6 +71,7 @@ library(lpSolve)
 ###### Actual Code
 1. Run the integer optimisation model.
 ```
+# Define parameters
 objective.fn <- c(11, 22)
 
 const.mat <- (matrix(
@@ -82,6 +85,7 @@ const.dir <- c("<=","<=",">=")
 
 const.rhs <- c(12,34,5)
 
+# Run the model
 lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs, int.vec = 1, binary.vec = 2, compute.sens=FALSE)
 
 lp.solution
