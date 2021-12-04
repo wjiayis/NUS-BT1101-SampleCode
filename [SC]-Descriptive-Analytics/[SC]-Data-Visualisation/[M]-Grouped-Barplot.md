@@ -36,8 +36,6 @@ legend("topleft",
 text(y = M.m, x = satisfaction.grouped_barplot,
      label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
 ```
-</br> Additional Notes:
-
 ### ggplot2 Graphic
 </br>Preparation Code
 ```
