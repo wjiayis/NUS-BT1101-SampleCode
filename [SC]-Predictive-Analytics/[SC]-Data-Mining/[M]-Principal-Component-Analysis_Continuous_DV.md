@@ -12,7 +12,8 @@ M <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
 ##### Actual Code
 1.  Run the principal component analysis.
 ```
-pca1 <- prcomp(M, center=T, scale=T)
+pca1 <- prcomp(M, # Ensure that it only contains continuous variables
+               center=T, scale=T)
 summary(pca1)
 ```
 ###### Sample Task 2.1
@@ -41,5 +42,9 @@ M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
   pc2 = pca1$x[,"PC2"],
   pc3 = pca1$x[,"PC3"])
+```
+###### Sample Task 4.3
+> Using the elbow method, extract sufficient principal components. (UNDONE)
+```
 ```
 5. [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
