@@ -1,5 +1,5 @@
 ## Simple Moving Average
-###### Preparation Code
+##### Preparation Code
 ```
 # Functions
 library(TTR)
@@ -10,7 +10,7 @@ library(glue)
 library(wooldridge)
 B <- barium
 ```
-###### Actual Code
+##### Actual Code
 1. Choose the window size that produces the lowest root mean square error.
 ```
 for (k in 2:20){
@@ -22,6 +22,7 @@ for (k in 2:20){
 ```
 B$bchlimp.SMA16.predict <-  dplyr::lag(SMA(B$bchlimp, n=16),1) # Window size = 16; lag = 1
 ```
+3. Plot the prediction graph.
 ###### Base R Graphic
 ```
 plot(B$t, B$bchlimp, type="n")
