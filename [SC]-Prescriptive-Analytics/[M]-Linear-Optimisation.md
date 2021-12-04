@@ -27,7 +27,7 @@ const.mat <- (matrix(
     1.1, 1.2,
     1, 0,
     0, 1), # R assumes non-negativity, so the non-negativity constraint does not need to be specified
-  ncol = 2, # number of decision variables
+  ncol = 2, # Number of decision variables
   byrow = TRUE))
 
 const.dir <- c("<=","<=",">=",">=")
@@ -77,7 +77,7 @@ const.mat <- (matrix(
     1.1, 1.2,
     1, 0,
     0, 1), # R assumes non-negativity, so the non-negativity constraint does not need to be specified
-  ncol = 2, # number of decision variables
+  ncol = 2, # Number of decision variables
   byrow = TRUE))
 
 const.dir <- c("<=","<=",">=",">=")
