@@ -3,7 +3,7 @@
 ### 1. [Data Visualisation](1-1.md)
 ### 2. Data Tabulation and Frequencies
 - [**Tables**](1-2-1.md)
-- [**Base R Graphics**](1-2-2.md)
+- [**Graphs**](1-2-2.md)
 - [Percentile]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Percentile.md)
 - [Pareto Analysis]([SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[M]-Pareto-Analysis.md)
 ### 3. Probability Distributions and Data Modeling
