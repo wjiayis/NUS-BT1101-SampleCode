@@ -1,8 +1,7 @@
 ## Grouped Barplot
 ### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
-</br>Preparation Code
-###### Base R Graphic
+###### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -17,28 +16,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 
 M.m <- M %>% select(c(`Grade 4`, `Grade 7`)) %>% as.matrix() %>% t()
 ```
-###### ggplot2 Graphic
-```
-# Functions
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-
-# Sample Data
-library(wooldridge)
-M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
-M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
-                   ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
-M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(`Grade 4` = mean(math4, na.rm=TRUE), `Grade 7` = mean(math7, na.rm=TRUE))
-
-M <- M %>%
-  select(c(`Grade 4`, `Grade 7`)) %>% as.data.frame()
-Year <- c("1992", "1993", "1994", "1995")
-M <- cbind(Year, M)
-M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
-```
-</br>**Actual Code**
-###### Base R Graphic
+###### Actual Code
 ```
 satisfaction.grouped_barplot <- barplot(M.m, # dataset_variable
         beside = TRUE,
@@ -58,7 +36,28 @@ legend("topleft",
 text(y = M.m, x = satisfaction.grouped_barplot,
      label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
 ```
-###### ggplot2 Graphic
+### ggplot2 Graphic
+###### Preparation Code
+```
+# Functions
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Sample Data
+library(wooldridge)
+M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
+M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
+                   ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
+M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(`Grade 4` = mean(math4, na.rm=TRUE), `Grade 7` = mean(math7, na.rm=TRUE))
+
+M <- M %>%
+  select(c(`Grade 4`, `Grade 7`)) %>% as.data.frame()
+Year <- c("1992", "1993", "1994", "1995")
+M <- cbind(Year, M)
+M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
+```
+###### Actual Code
 ```
 ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
 geom_bar(stat="identity", position=position_dodge()) +
