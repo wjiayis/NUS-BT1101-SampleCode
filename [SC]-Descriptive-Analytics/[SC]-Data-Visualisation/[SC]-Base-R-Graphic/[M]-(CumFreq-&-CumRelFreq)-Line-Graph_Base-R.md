@@ -1,5 +1,5 @@
-## Line Graph for Cumulative Frequency and Cumulative Relative Frequency
-Preparation Code
+## [Base R] Line Graph for Cumulative Frequency and Cumulative Relative Frequency
+###### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -12,7 +12,7 @@ rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
 rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_frequency = cumsum(Freq), cumulative_relative_frequency = cumulative_frequency/nrow(R))
 ```
 ### Cumulative Frequency
-**Actual Code**
+###### Actual Code
 ```
 # To start at 0
 rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
@@ -24,7 +24,7 @@ plot(rd.breaks, rd.cumulative_frequency,
 lines(rd.breaks, rd.cumulative_frequency)
 ```
 ### Cumulative Relative Frequency
-**Actual Code**
+###### Actual Code
 ```
 # To start at 0
 rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
