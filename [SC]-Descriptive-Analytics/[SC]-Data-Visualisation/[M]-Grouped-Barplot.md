@@ -1,5 +1,5 @@
-# Grouped Barplot
-## Base R Graphic
+## Grouped Barplot
+### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
 </br></br>Preparation Code
 ```
@@ -36,7 +36,9 @@ legend("topleft",
 text(y = M.m, x = satisfaction.grouped_barplot,
      label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
 ```
-## ggplot2 Graphic
+</br> Additional Notes:
+
+### ggplot2 Graphic
 </br>Preparation Code
 ```
 # Functions
