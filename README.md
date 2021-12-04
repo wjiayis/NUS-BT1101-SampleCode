@@ -30,6 +30,10 @@
 - [\[Identification of Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
 ### 4. Data Mining
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
+- <details>
+  <summary>Principal Component Analysis</summary>
+  <br>
+  [Continuous DV]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Principal-Component-Analysis_Continuous_DV.md)
 - [**Principal Component Analysis**](Subpages/2-4-2.md)
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
 - Confusion Matrix (UNDONE)
