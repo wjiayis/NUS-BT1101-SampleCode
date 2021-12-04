@@ -1,4 +1,4 @@
-## One Sample Hypothesis Test for Proportion
+## One-Sample Hypothesis Test for Proportion
 ##### Preparation Code
 ```
 library(dplyr)
