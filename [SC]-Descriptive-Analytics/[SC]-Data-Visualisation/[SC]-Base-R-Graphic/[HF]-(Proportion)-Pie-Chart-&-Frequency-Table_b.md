@@ -1,5 +1,5 @@
 ### \[Base R\]\[HF\] Pie Chart for Proportion
-Preparation Code
+</br>Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -11,7 +11,7 @@ HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
-**Actual Code**
+</br>**Actual Code**
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
 ```
@@ -42,10 +42,3 @@ plot.PieChart.Proportion(HEC, # data_df
 ```
 Additional Notes:
 1. The default palette can support up to 5 slices. If more slices are to be plotted, you must input `possible_colours`.
-2. Structure of data frame `data_df`
-
-| Discrete Variable[^1] | Continuous Variable[^1] |
-| :---: | :---: |
-| ... | ... |
-
-[^1]: Variable name as column name
