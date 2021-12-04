@@ -31,6 +31,7 @@
 ### 4. Data Mining
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
 - [**Principal Component Analysis**](2-4-2.md)
+- Confusion Matrix
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
 - [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
 - Cross-validation (UNDONE)
