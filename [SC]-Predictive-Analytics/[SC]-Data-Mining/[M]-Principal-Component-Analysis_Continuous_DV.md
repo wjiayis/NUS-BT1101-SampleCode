@@ -2,8 +2,8 @@
 ##### Preparation Code
 ```
 # Functions
-library(devtools) # For Sample Task 3.1
-library(ggbiplot) # For Sample Task 3.1
+library(devtools) # For Sample Task 2.1
+library(ggbiplot) # For Sample Task 2.1
 
 # Sample Data
 library(dplyr)
