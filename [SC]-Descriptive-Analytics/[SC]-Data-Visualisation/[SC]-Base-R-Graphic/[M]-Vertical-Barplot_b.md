@@ -1,5 +1,5 @@
 ## [Base R] Vertical Barplot
-</br>Preparation Code
+##### Preparation Code
 ```
 # Functions
 library(ggplot2) # For ggplot2 graphic
@@ -10,7 +10,7 @@ HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
-</br>**Actual Code**
+##### Actual Code
 ###### Base R Graphic
 ```
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
