@@ -14,10 +14,13 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ##### Base R Graphics
 ```
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
-        ylim = c(0,330), # Range of y-values
+        ylim = c(0,340), # Range of y-values
         main = "Barplot of Frequency of Hair Colour", # Title
+        cex.main = 1.1, # [Font size] Title
         names.arg = c("Black", "Brown", "Red", "Blond"), # x-axis labels
-        col="pink") # Colour of bars
+        las = 1, # [Orientation] x-axis labels
+        cex.names = 0.9, # [Font size] x-axis labels
+        col="pink") # Colours
 
 text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 ```
