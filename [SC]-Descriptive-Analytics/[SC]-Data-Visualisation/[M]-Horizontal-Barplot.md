@@ -11,7 +11,7 @@ HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 </br>**Actual Code**
-##### Base R Graphic
+###### Base R Graphic
 ```
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         horiz = TRUE,
@@ -25,18 +25,10 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
 
 text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ```
-##### ggplot2 Graphic
+###### ggplot2 Graphic
 ```
 ggplot(data=HEC, aes(x=Freq, y=Hair)) + # dataset_variable
   geom_bar(stat="identity", fill = "pink") + # Colour
   #geom_text(aes(label=Freq), hjust=-0.3, color = "black", size=3.5) # 'Outside-bars' value labels
   geom_text(aes(label=Freq), hjust=1.6, color="black", size=3.5) # 'Within-bars' value labels
 ```
-</br>Additional Notes:
-1. Structure of data frame `HEC`
-
-| Discrete Variable[^1] | Continuous Variable[^1] |
-| :---: | :---: |
-| ... | ... |
-
-[^1]: Variable Name as Column Name
