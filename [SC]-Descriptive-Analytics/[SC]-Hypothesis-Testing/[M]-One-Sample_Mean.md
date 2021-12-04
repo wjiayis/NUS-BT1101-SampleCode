@@ -1,8 +1,5 @@
-### One Sample Hypothesis Test for Mean
-
-MANUAL METHOD UNDONE</br>
-
-**Actual Code**
+## One Sample Hypothesis Test for Mean
+##### Actual Code
 ###### Sample Hypotheses 1:
 >At 95% confidence level,</br>
 >H0: Mean population mpg = 19.</br>
