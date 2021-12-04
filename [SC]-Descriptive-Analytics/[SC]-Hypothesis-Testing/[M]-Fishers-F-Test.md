@@ -1,4 +1,4 @@
-## \[Two-samples\]\[Variance\] Fisher's F Test
+## \[Two-sample\]\[Variance\] Fisher's F Test
 ### Numeric on numeric
 ##### Preparation Code
 ```
