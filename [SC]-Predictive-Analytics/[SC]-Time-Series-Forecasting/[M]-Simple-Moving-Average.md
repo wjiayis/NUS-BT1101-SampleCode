@@ -34,6 +34,5 @@ lines(B$bchlimp.SMA16.predict, col="blue")
 ggplot(B, aes(x=t)) +
   geom_line(aes(y=bchlimp, color="Raw")) +
   geom_line(aes(y=bchlimp.SMA16.predict, color="Window16")) +
-  scale_color_manual(name="Legend", values =c("Raw"="black", "Window16"="blue")) +
-  theme_bw()
+  scale_color_manual(name="Legend", values =c("Raw"="black", "Window16"="blue"))
 ```
