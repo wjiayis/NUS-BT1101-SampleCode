@@ -18,9 +18,7 @@ M.m <- M %>% select(c(`Grade 4`, `Grade 7`)) %>% as.matrix() %>% t()
 ```
 </br>**Actual Code**
 ```
-M.base <- M %>% spread(Year, `Mean Satisfaction for Math`)
-
-satisfaction.grouped_barplot <- barplot(M.base, # dataset_variable
+satisfaction.grouped_barplot <- barplot(M.m, # dataset_variable
         beside = TRUE,
         ylim = c(0, 70), # Range of y-values
         main = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation", # Title
@@ -35,8 +33,8 @@ legend("topleft",
        c("Grade 4", "Grade 7"),
        cex = 0.9) # [Font size] Legend
 
-text(y = M.base, x = satisfaction.grouped_barplot,
-     label = round(M.base, 2), pos = 3, cex = 0.9) # Value labels
+text(y = M.m, x = satisfaction.grouped_barplot,
+     label = round(M.m, 2), pos = 3, cex = 0.9) # Value labels
 ```
 ## ggplot2 Graphic
 </br>Preparation Code
