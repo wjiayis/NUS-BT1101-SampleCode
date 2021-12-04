@@ -2,7 +2,7 @@
 Preparation Code
 ```
 # Functions
-library(ggplot2) # For ggplot2 Graphics
+library(ggplot2) # For ggplot2 graphics
 
 # Sample Data
 library(dplyr)
