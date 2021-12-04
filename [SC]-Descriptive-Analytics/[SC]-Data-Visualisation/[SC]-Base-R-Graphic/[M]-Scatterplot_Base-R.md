@@ -1,11 +1,11 @@
-### Scatterplot
-Preparation Code
+## Scatterplot
+###### Preparation Code
 ```
 # Sample Data
 library(wooldridge)
 CS <- ceosal1
 ```
-**Actual Code**
+###### Actual Code
 ```
 plot(y = CS$lsalary, x = CS$lsales)
 ```
