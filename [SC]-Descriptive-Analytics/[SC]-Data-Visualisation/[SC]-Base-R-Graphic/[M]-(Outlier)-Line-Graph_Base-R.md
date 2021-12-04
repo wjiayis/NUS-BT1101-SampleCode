@@ -1,12 +1,13 @@
-### Line Graph for Outlier Identification
-Preparation Code
+## \[Base R\] Line Graph for Outlier Identification
+##### Preparation Code
 ```
 # Sample Data
 library(wooldridge)
 B <- barium
 ```
-</br>**Actual Code**
-###### Sample Task: Identify outliers using the third empirical rule.
+##### Actual Code
+###### Sample Task 1
+>Identify outliers using the third empirical rule.
 ```
 plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
@@ -18,7 +19,8 @@ gas.lower_limit3 <- mean(B$gas) - 3*sd(B$gas)
 abline(h = gas.upper_limit3, col=2)
 abline(h = gas.lower_limit3, col=2)
 ```
-###### Sample Task: Identify outliers using the second empirical rule.
+###### Sample Task 2
+>Identify outliers using the second empirical rule.
 ```
 plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
