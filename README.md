@@ -26,7 +26,7 @@
 ### 3. Time Series Forecasting
 - [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
-- [Regression-based Forecasting](2-3-3.md)
+- [**Regression-based Forecasting**](2-3-3.md)
 - [\[Identification of Multicollinearity\] Variance Inflation Factor]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Variance-Inflation-Factor.md)
 ### 4. Data Mining
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
