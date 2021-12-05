@@ -1,15 +1,22 @@
 ## Scatterplot
 ### Base R Graphic
-###### Preparation Code
-```
-# Sample Data
-library(wooldridge)
-CS <- ceosal1
-```
-###### Actual Code
+##### Actual Code
+###### One Variable
 ```
 plot(mtcars$mpg)
 ```
+###### Two Variables
 ```
-plot(y = CS$lsalary, x = CS$lsales)
+plot(mtcars$wt, mtcars$mpg)
+```
+### ggplot Graphic
+###### Actual Code
+###### One Variable
+```
+qplot(seq_along(mtcars$mpg), mtcars$mpg)
+```
+###### Two Variables
+```
+ggplot(mtcars, aes(x=wt, y=mpg)) +
+  geom_point()
 ```
