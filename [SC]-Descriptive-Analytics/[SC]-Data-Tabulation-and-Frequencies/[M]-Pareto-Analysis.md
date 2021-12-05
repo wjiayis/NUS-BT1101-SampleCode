@@ -1,13 +1,13 @@
-### Pareto Analysis
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md)
+## Pareto Analysis
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Tabulation-and-Frequencies/[HF]-Pareto-Analysis.md)
 
-Preparation Code
+###### Preparation Code
 ```
 # Sample Data
 library(wooldridge)
 R <- rdchem
 ```
-**Actual Code**
+###### Actual Code
 ```
 # Sort R$rd in descending order
 rd.descending_order <- sort(R$rd, decreasing = TRUE)
