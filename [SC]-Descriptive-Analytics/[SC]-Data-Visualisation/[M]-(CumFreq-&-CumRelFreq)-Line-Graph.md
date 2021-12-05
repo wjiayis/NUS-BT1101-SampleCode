@@ -36,3 +36,34 @@ plot(rd.breaks, rd.cumulative_relative_frequency,
      ylab = "Cumulative Relative Frequency")
 lines(rd.breaks, rd.cumulative_relative_frequency)
 ```
+### ggplot2 Graphic
+###### Preparation Code
+```
+# Functions
+library(dplyr)
+library(ggplot2)
+
+# Sample Data
+library(wooldridge)
+R <- rdchem
+rd.breaks <- seq(0, 1500, by=100)
+rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
+rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_frequency = cumsum(Freq), cumulative_relative_frequency = cumulative_frequency/nrow(R))
+```
+#### Cumulative Frequency
+###### Actual Code
+```
+# To start at 0
+rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
+ggplot(mapping=aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_frequency)) +
+  geom_line()
+```
+#### Cumulative Relative Frequency
+###### Actual Code
+```
+rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
+plot(rd.cumulative_frequency)
+
+ggplot(mapping=aes(x = 1:length(rd.cumulative_relative_frequency), y = rd.cumulative_relative_frequency)) +
+  geom_line()
+```
