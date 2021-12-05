@@ -1,9 +1,8 @@
 ## Outlier Extraction & Removal by Observation
-1. Plot the data.
+1. Plot the data and identify outliers.
    - Density Plot
    - [Histogram](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md)
-2. Identify outliers from the graph.
-3. If required, remove outliers.
+2. If required, remove outliers.
 ##### Preparation Code
 ```
 # Functions
