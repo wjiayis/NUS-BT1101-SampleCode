@@ -12,11 +12,23 @@ cbind(lCI, uCI)
 ```
 ### For unknown population standard deviation
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval_Mean_Unknown-Population-sd.md)
-##### Preparation Code
+##### Manual Method
+###### Actual Code
+```
+mpg.n <- nrow(mtcars)
+mpg.mean <- mean(mtcars$mpg)
+mpg.sd <- sd(mtcars$mpg)
+mpg.se <- mpg.sd/sqrt(mpg.n)
+mpg.lCI <- mpg.mean - (qt(0.975, df=(mpg.n-1))*mpg.se)
+mpg.uCI <- mpg.mean + (qt(0.975, df=(mpg.n-1))*mpg.se)
+cbind(mpg.lCI, mpg.uCI)
+```
+##### Rmisc Method
+###### Preparation Code
 ```
 library(Rmisc)
 ```
-##### Actual Code
+###### Actual Code
 ```
 mpg.ci <- CI(mtcars$mpg, ci = 0.95)
 mpg.ci <- cbind(mpg.ci[3],mpg.ci[1])
