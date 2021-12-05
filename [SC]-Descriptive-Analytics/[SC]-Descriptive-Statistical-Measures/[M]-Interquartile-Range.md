@@ -1,5 +1,5 @@
 ### Interquartile Range
-**Actual Code**
+###### Actual Code
 ```
 IQR(mtcars$mpg)
 ```
