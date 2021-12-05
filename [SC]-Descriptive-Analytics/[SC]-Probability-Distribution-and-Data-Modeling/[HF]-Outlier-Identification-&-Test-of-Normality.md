@@ -1,5 +1,5 @@
-### \[HF\] Outlier Identification and Test of Normality
-Preparation Code
+## \[HF\] Outlier Identification and Test of Normality
+###### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -9,7 +9,7 @@ library(glue)
 library(wooldridge)
 G <- gpa2
 ```
-**Actual Code**
+###### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
 test.NormalityOutliers <- function(dataset_variable, variable.text, density_plot.remove_na = TRUE){
@@ -23,7 +23,7 @@ qqline(dataset_variable, col = 2)
 boxplot(dataset_variable, range = 3, main = glue::glue("Boxplot to Examine Distribution of Extreme Outliers"))
 boxplot(dataset_variable, range = 1.5, main = glue::glue("Boxplot to Examine Distribution of Moderate Outliers"))}
 ```
-2. **Inputs**. (Must be included. Edit this.)
+2. Inputs. (Must be included. Edit this.)
 ```
 test.NormalityOutliers(G$sat, # dataset_variable
                "SAT score") # variable.text
