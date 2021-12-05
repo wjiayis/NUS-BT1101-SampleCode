@@ -1,4 +1,4 @@
-## \[ND\] Confidence Interval for Proportion
+## Confidence Interval for Proportion
 ##### Preparation Code
 ```
 library(dplyr)
