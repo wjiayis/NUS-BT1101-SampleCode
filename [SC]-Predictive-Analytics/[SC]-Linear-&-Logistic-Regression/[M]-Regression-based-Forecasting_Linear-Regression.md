@@ -10,10 +10,13 @@ library(wooldridge)
 B <- barium
 ```
 ##### Actual Code
-1. Run the linear regression model.
-###### Autoregression
+1. If required, perform lagging.
 ```
 B$gas.lagged <- dplyr::lag(B$gas,1)
+```
+2. Run the linear regression model.
+###### Autoregression
+```
 fit <- lm(B$gas ~ B$gas.lagged)
 summary(fit)
 ```
@@ -33,13 +36,13 @@ fit <- lm(B$chnimp ~ B$rtwex * B$gas.lagged + B$spr)
 #fit <- lm(B$chnimp ~ B$rtwex * B$gas.lagged)
 summary(fit)
 ```
-2. Examine its residual plots.
+3. Examine its residual plots.
 ```
 plot(fit, 1)
 plot(fit, 2)
 abline(a=0, b=0)
 ```
-3. If required, obtain prediction and/or residuals.
+4. If required, obtain prediction and/or residuals.
 ```
 B$predicted <- predict(fit)
 B$residuals <- residuals(fit)
