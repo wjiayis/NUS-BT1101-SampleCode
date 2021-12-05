@@ -1,5 +1,5 @@
-### \[HF\]\[ND\]\[Unknown Population sd\] Confidence Interval for Mean
-**Actual Code**
+## \[HF\] Confidence Interval for Mean
+##### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
 calculate.ConfidenceInterval <- function(dataset_variable, confidence_level.decimal){
@@ -12,7 +12,7 @@ uCI <- mean(dataset_variable) - qt(((1 - confidence_level.decimal)/2), df=length
 
 cbind(lCI, uCI)}
 ```
-2. **Inputs**. (Must be included. Edit this.)
+2. Inputs. (Must be included. Edit this.)
 ```
 calculate.ConfidenceInterval(mtcars$mpg, # dataset_variable
   0.95) # confidence_level.decimal
