@@ -1,5 +1,5 @@
 ## Contingency Table
-###### Preparation Code
+##### Preparation Code
 ```
 # Functions
 library(rpivotTable)
@@ -11,10 +11,20 @@ G$ethnicity <- ifelse(G$black == 1, "Black",
                   ifelse(G$white ==1, "White",
                          ifelse(G$black ==0 & G$white == 0, "Others", -1)))
 ```
-###### Actual Code
+##### Actual Code
+###### Sample Task 1
+>Produce an rpivotTable of count.
 ```
 rpivotTable(G,
             cols = c("female", "ethnicity"),
             rows = "athlete",
             aggregatorName = "Count")
+```
+###### Sample Task 2
+>Produce an rpivotTable of count as a fraction of total.
+```
+rpivotTable(G,
+            cols = c("female", "ethnicity"),
+            rows = "athlete",
+            aggregatorName = "Count as Fraction of Total")
 ```
