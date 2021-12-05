@@ -1,11 +1,6 @@
-### Density Plot
-Preparation Code
+## Density Plot
+###### Actual Code
 ```
-# Sample Data
-MC <- mtcars
-```
-**Actual Code**
-```
-plot(density(MC$mpg),
+plot(density(mtcars$mpg),
      main = "Density Plot of Miles/(US) gallon")
 ```
