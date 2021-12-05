@@ -1,5 +1,6 @@
-## [Base R] Stacked Barplot
-:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[SC]-Base-R-Graphic/[HF]-Stacked-Barplot-&-Frequency-Table_Base-R.md)
+## Stacked Barplot
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Stacked-Barplot-&-Frequency-Table.md)
+##### Base R Graphic
 ###### Preparation Code
 ```
 # Functions
