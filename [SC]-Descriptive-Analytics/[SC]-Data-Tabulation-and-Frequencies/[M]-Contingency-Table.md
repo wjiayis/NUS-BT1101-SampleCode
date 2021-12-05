@@ -1,5 +1,5 @@
-### Contingency Table
-Preparation Code
+## Contingency Table
+###### Preparation Code
 ```
 # Functions
 library(rpivotTable)
@@ -11,7 +11,7 @@ G$ethnicity <- ifelse(G$black == 1, "Black",
                   ifelse(G$white ==1, "White",
                          ifelse(G$black ==0 & G$white == 0, "Others", -1)))
 ```
-**Actual Code** (DOES ORDER OF WRITING MATTER)
+###### Actual Code
 ```
 rpivotTable(G,
             cols = c("female", "ethnicity"),
