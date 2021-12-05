@@ -10,7 +10,7 @@ plot(mtcars$mpg, main="Scatterplot for `mtcars$mpg`")
 plot(mtcars$wt, mtcars$mpg,
      main="Scatterplot for `mtcars$mpg` on `mtcars$wt`")
 ```
-### ggplot Graphic
+### ggplot2 Graphic
 ###### Actual Code
 ###### One Variable
 ```
