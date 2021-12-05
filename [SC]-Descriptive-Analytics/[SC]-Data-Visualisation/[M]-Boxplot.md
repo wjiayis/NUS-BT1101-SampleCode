@@ -30,12 +30,21 @@ library(ggplot2)
 # Sample Data
 library(wooldridge)
 G <- gpa2
+G$ethnicity <- ifelse(gpa2$black == 1, "Black",
+                  ifelse(gpa2$white ==1, "White",
+                         ifelse(gpa2$black ==0 & gpa2$white == 0, "Others", -1)))
 ```
 ##### Actual Code
 ###### Sample Task 1
->Identify moderate outliers (outside 1.5 IQR).
+>Identify moderate outliers (outside 1.5 IQR) for `verbmath`.
 ```
 ggplot(G, aes(y=verbmath)) + 
+  geom_boxplot()
+```
+###### Sample Task 2
+> Identify moderate outliers (outside 1.5 IQR) for `verbmath` for each `ethnicity`.
+```
+ggplot(G, aes(x=ethnicity, y=verbmath)) + 
   geom_boxplot()
 ```
 [^1]: This is one of the many ways to handle outliers.
