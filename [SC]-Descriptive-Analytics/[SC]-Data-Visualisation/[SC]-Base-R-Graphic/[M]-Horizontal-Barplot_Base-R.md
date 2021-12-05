@@ -1,5 +1,6 @@
-## [Base R] Horizontal Barplot
-##### Preparation Code
+## Horizontal Barplot
+### Base R Graphic
+###### Preparation Code
 ```
 # Functions
 library(ggplot2) # For ggplot2 graphic
@@ -10,8 +11,7 @@ HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
-##### Actual Code
-###### Base R Graphic
+###### Actual Code
 ```
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         horiz = TRUE,
@@ -25,7 +25,19 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
 
 text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ```
-###### ggplot2 Graphic
+### ggplot2 Graphic
+###### Preparation Code
+```
+# Functions
+library(ggplot2) # For ggplot2 graphic
+
+# Sample Data
+library(dplyr)
+HEC <- HairEyeColor %>% as.data.frame()
+HEC <- HEC[c("Hair", "Freq")]
+HEC <- aggregate(Freq~Hair, HEC, sum)
+```
+###### Actual Code
 ```
 ggplot(data=HEC, aes(x=Freq, y=Hair)) + # dataset_variable
   geom_bar(stat="identity", fill = "pink") + # Colour
