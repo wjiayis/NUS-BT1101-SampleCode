@@ -1,6 +1,6 @@
 ## \[Time Trend\] Line Graph
 ### Base R Graphic
-#### Non-time-series Graph
+#### For non-time-series data
 ###### Preparation Code
 ```
 # Sample Data
@@ -14,7 +14,7 @@ plot(B$t, B$gas,
      ylab = "Gasoline Production", xlab = "Time Trend", type="n")
 lines(B$t, B$gas)
 ```
-#### Time-series Graph
+#### For time-series data
 ###### Preparation Code
 ```
 # Sample Data
@@ -27,7 +27,7 @@ B$bchlimp.ts <- ts(B$bchlimp, frequency = 12, start = c(1981,1))
 plot(B$bchlimp.ts)
 ```
 ### ggplot2 Graphic
-#### Non-time-series Graph
+#### For non-time-series data
 ###### Preparation Code
 ```
 # Functions
@@ -42,7 +42,7 @@ B <- barium
 ggplot(B, aes(x=t, y=gas)) +
   geom_line()
 ```
-#### Time-series Graph
+#### For time-series data
 ###### Preparation Code
 ```
 # Functions
