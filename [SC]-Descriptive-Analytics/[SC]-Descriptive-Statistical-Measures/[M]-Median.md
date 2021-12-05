@@ -22,5 +22,5 @@ A %>% group_by(Sex) %>% summarise(Median = median(Age))
 ###### Sample Task 3
 >Compute median age, grouping primarily by mode of treatment, and secondarily by gender.
 ```
-A %>% group_by(Treatment, Sex) %>% summarise(Median = median(Age)) # group by `Treatment`, then group by `Sex`
+A %>% group_by(Treatment, Sex) %>% summarise(Median = median(Age))
 ```
