@@ -1,4 +1,4 @@
-## Extract and/or Remove Outlier by Observation
+## Outlier Extraction & Removal by Observation
 1. Plot the data.
    - Density Plot
    - Histogram
