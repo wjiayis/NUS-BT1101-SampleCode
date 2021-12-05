@@ -1,6 +1,6 @@
 ## [Mean] Grouped Barplot
 ### Base R Graphic
-:white_heart: [Helper Function Available](../../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
 ###### Preparation Code
 ```
 # Functions
