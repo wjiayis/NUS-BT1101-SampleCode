@@ -1,5 +1,5 @@
 ### Range
-**Actual Code**
+###### Actual Code
 ```
 range(mtcars$mpg) # Prints the interval
 mpg.range <- max(mtcars$mpg) - min(mtcars$mpg)
