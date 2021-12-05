@@ -28,24 +28,6 @@ Salary.Group <- cut(CS$salary, histogram$breaks, include.lowest = TRUE, right = 
 salary.table <- table(Salary.Group)
 kable(salary.table, caption = "Frequency Distribution by Salary Group")
 ```
-##### Histogram of Density
-###### Actual Code
-```
-# Graph
-histogram <- hist(CS$salary,
-     probability = TRUE,
-     ylim = c(0,28),
-     main = "Histogram of Frequency of CEOs' Salary",
-     xlab = "Salary",
-     ylab = "Number of CEOs",
-     label = TRUE,
-     col = "pink")
-
-# Frequency Table
-Salary.Group <- cut(CS$salary, histogram$breaks, include.lowest = TRUE, right = TRUE)
-salary.table <- table(Salary.Group)
-kable(salary.table, caption = "Frequency Distribution by Salary Group")
-```
 ### ggplot2 Graphic
 ###### Preparation Code
 ```
