@@ -1,9 +1,7 @@
 # Sample Code for BT1101
 :bulb: Note to users: The organisation of content may be different from that in your lecture notes.
 ## Descriptive Analytics
-### 1. Data Visualisation
-- [**Base R Graphic**](Subpages/1-1-1.md)
-- [**ggplot2 Graphic**](Subpages/1-1-2.md)
+### 1. [Data Visualisation](Subpages/1-1.md)
 ### 2. Data Tabulation and Frequencies
 - [**Tables**](Subpages/1-2-1.md)
 - [**Graphs**](Subpages/1-2-2.md)
