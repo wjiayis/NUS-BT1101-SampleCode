@@ -2,7 +2,7 @@
 ##### Sample Task 1
 >Maximise profits with the given constraints.
 <details open>
-  <summary>Click here to Hide Constraints Table</summary>
+  <summary></summary>
   
 | Maximise total profit using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
@@ -57,7 +57,7 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 ##### Sample Task 2
 >Minimise costs with the given constraints.
 <details open>
-  <summary>Click here to Hide Constraints Table</summary>
+  <summary></summary>
   
 | Minimise total cost using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
