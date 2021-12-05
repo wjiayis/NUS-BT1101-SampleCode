@@ -1,4 +1,4 @@
-## \[Base R\] Boxplot
+## Boxplot
 ##### Preparation Code
 ```
 # Sample Data
