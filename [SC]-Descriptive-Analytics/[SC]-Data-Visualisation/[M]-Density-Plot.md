@@ -1,4 +1,5 @@
 ## Density Plot
+### Base R Graphic
 ###### Actual Code
 ```
 plot(density(mtcars$mpg),
