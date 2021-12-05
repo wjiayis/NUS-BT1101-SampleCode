@@ -1,5 +1,5 @@
 ## \[Numeric on Numeric\] Two-sample Hypothesis Test for Mean
-### Independent Samples
+### Unpaired Samples
 ##### Preparation Code
 ```
 # Sample Data
