@@ -1,4 +1,4 @@
-## \[Base R\]\[HF\] Stacked Barplot
+## \[HF\]\[Base R\] Stacked Barplot
 ###### Preparation Code
 ```
 # Functions
