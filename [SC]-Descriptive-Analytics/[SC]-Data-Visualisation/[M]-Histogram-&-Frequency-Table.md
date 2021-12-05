@@ -1,5 +1,5 @@
 ## Histogram
-:white_heart: [Helper Function Available](../../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[SC]-Base-R-Graphic/[HF]-Histogram-&-Frequency-Table_Base-R.md)
+:white_heart: [Helper Function Available](../../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
 ### Base R Graphic
 ###### Preparation Code
 ```
