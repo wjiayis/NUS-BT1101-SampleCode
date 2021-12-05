@@ -3,7 +3,6 @@
 | Implicit Assumptions |
 | :---: |
 | :white_medium_square: Factor variable only 2 levels. |
-### Unpaired Samples
 ##### Preparation Code
 ```
 # Sample Data
@@ -30,4 +29,3 @@ t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alterna
 ```
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "greater")
 ```
-### Paired Samples
