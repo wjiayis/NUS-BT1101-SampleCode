@@ -1,7 +1,8 @@
 ### [HF] Prediction Interval
 This helper function computes the prediction interval, and performs `transformTukey` if and only if it is required.
-#### **_Sample Task: Develop a 95% prediction interval._**
-**Actual Code**
+##### Sample Task
+>Develop a 95% prediction interval.
+###### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
 calculate.PredictionInterval.h <- function(dataset_variable, confidence.decimal, is_normal, normality.p_value.critical_value, normality.w_value.critical_value){
@@ -54,7 +55,7 @@ print(output)}}
 calculate.PredictionInterval <- function(dataset_variable, confidence.decimal, is_normal = "TO BE DETERMINED"){calculate.PredictionInterval.h(dataset_variable, confidence.decimal, is_normal,
 normality.p_value.critical_value = 0.05, normality.w_value.critical_value = 0.95)} 
 ```
-3. **Inputs**. (Must be included. Edit this.)
+3. Inputs. (Must be included. Edit this.)
 ```
 calculate.PredictionInterval(mtcars$cyl, # dataset_variable
                              0.95) # confidence.decimal
