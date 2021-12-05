@@ -1,4 +1,4 @@
-### \[HF\]\[Base R\] Histogram
+## \[HF\]\[Base R\] Histogram
 ###### Preparation Code
 ```
 # Functions
