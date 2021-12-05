@@ -1,4 +1,4 @@
-## \[HF\]\[Known Population sd\] Confidence Interval for Mean
+## \[HF\]\[Pop Sd\] Confidence Interval for Mean
 ##### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
