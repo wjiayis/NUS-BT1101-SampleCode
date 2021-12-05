@@ -1,5 +1,5 @@
 # Sample Code for BT1101
-:bulb: Note to users: The organisation of content may be different from that in your lecture notes.
+:bulb: Note to users: The organisation of content may be slightly different from that in your lecture notes.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
 ### 2. Data Tabulation and Frequencies
