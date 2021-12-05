@@ -11,7 +11,6 @@ fit <- glm(am ~ mpg + cyl, family="binomial", M_train) # am is binary, mpg and c
 ```
 ###### Actual Code
 ```
-```
 M_test$predicted_probability <- predict(fit, M_test, type="response")
 
 M_test$predicted <- factor(    # make factor for labels
@@ -20,3 +19,4 @@ M_test$predicted <- factor(    # make factor for labels
   labels = c("0_predict","1_predict"))
 
 table(M_test$am, M_test$predicted) 
+```
