@@ -1,7 +1,9 @@
 ## Linear Optimisation
 ##### Sample Task 1
 >Maximise profits with the given constraints.
-
+<details>
+  <summary>Constraint Table</summary>
+  
 | Maximise total profit using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -10,6 +12,8 @@
 | Contract Constraint 2 | X<sub>2</sub> ≥ 5 |
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
+
+</details>
 
 ###### Preparation Code
 ```
@@ -52,7 +56,9 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 </br></br></br>
 ##### Sample Task 2
 >Minimise costs with the given constraints.
-
+<details>
+  <summary>Constraint Table</summary>
+  
 | Minimise total cost using decision variables</br>X<sub>1</sub> = volume of apple juice, X<sub>2</sub> = volume of orange juice | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -61,6 +67,8 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 | Contract Constraint 2 | X<sub>2</sub> ≥ 5 |
 | Non-negativity Constraint 1 | X<sub>1</sub> ≥ 0 |
 | Non-negativity Constraint 2 | X<sub>2</sub> ≥ 0 |
+
+</details>
 
 ###### Preparation Code
 ```
