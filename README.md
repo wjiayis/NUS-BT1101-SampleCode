@@ -1,4 +1,5 @@
 # Sample Code for BT1101
+:bulb: Note to users: The organisation of content may be different from that in your lecture notes.
 ## Descriptive Analytics
 ### 1. Data Visualisation
 - [**Base R Graphic**](Subpages/1-1-1.md)
