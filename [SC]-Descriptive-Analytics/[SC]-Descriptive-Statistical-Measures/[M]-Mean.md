@@ -1,5 +1,5 @@
-### Mean
-Preparation Code
+## Mean
+##### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -9,15 +9,18 @@ library(vcd)
 A <- Arthritis
 ```
 
-**Actual Code**
-###### Sample Task: Compute mean age.
+##### Actual Code
+###### Sample Task 1
+>Compute mean age.
 ```
 mean(A$Age)
 ```
-###### Sample Task: Compute mean age for each gender.
+###### Sample Task 2
+>Compute mean age for each gender.
 ```
 A %>% group_by(Sex) %>% summarise(Mean = mean(Age))
 ```
-###### Sample Task: Compute mean age for each mode of treatment, for each gender. (CHECK WORDING)
+###### Sample Task 3
+>Compute mean age, grouping primarily by mode of treatment, and secondarily by gender.
 ```
 A %>% group_by(Treatment, Sex) %>% summarise(Mean = mean(Age)) # group by `Treatment`, then group by `Sex`
