@@ -13,7 +13,7 @@ ceiling(qnorm(0.975)^2*(15^2)/(3^2))
 ### Proportion
 | Implicit Assumptions |
 | --- |
-| :white_medium_square: If unbiased estimator of a population proportion (π) is not given, π=0.5 is used. |
+| :white_medium_square: If sample proportion is unavailable, π=0.5 is used to maximise (π(1-π)). |
 | :white_medium_square: If confidence level (α) is not given, α = 0.95 is used. |
 ##### Actual Code
 ###### Sample Task
