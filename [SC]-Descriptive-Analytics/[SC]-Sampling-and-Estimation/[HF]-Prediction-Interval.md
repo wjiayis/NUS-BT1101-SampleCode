@@ -1,7 +1,7 @@
 ## \[HF\] Prediction Interval
 :bulb: This helper function computes the prediction interval, and performs `transformTukey` if and only if it is required.
 ##### Sample Task
->Develop a 95% prediction interval.
+>Develop the 95% prediction interval for `mtcars$cyl`.
 ###### Actual Code
 1. Helper function. (Must be included. Do not edit.)
 ```
