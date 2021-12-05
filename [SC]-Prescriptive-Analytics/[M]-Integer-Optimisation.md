@@ -1,7 +1,9 @@
 ## Integer Optimisation
 ##### Sample Task 1
 >Maximise profits with the given constraints.
-
+<details>
+  <summary>Expand Constraint Table</summary>
+  
 | Maximise total profit using decision variables</br>X<sub>1</sub> = number of apples to sell, X<sub>2</sub> = whether to sell one orange or not | Profit = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
 | Budget Constraint | 0.1X<sub>1</sub> + 0.2X<sub>2</sub> ≤ 12 |
@@ -11,6 +13,8 @@
 | Non-negativity Constraint (X<sub>2</sub>) | X<sub>2</sub> ≥ 0 |
 | Integer Constraint (X<sub>1</sub>) | X<sub>1</sub> is an integer |
 | Binding Constraint (X<sub>2</sub>) | X<sub>2</sub> is binary |
+
+</details>
 
 ###### Preparation Code
 ```
@@ -52,6 +56,8 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 </br></br></br>
 ##### Sample Task 2
 >Minimise costs with the given constraints.
+<details>
+  <summary>Expand Constraint Table</summary>
 
 | Minimise total cost using decision variables</br>X<sub>1</sub> = number of apples to sell, X<sub>2</sub> = whether to sell one orange or not | Cost = 11X<sub>1</sub> + 12X<sub>2</sub> |
 |---|---|
@@ -62,6 +68,8 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 | Non-negativity Constraint (X<sub>2</sub>) | X<sub>2</sub> ≥ 0 |
 | Integer Constraint (X<sub>1</sub>) | X<sub>1</sub> is an integer |
 | Binding Constraint (X<sub>2</sub>) | X<sub>2</sub> is binary |
+
+</details>
 
 ###### Preparation Code
 ```
