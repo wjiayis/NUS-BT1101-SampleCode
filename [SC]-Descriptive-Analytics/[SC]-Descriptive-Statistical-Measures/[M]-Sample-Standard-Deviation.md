@@ -1,5 +1,5 @@
-### Sample Standard Deviation
-**Actual Code**
+## Sample Standard Deviation
+###### Actual Code
 ```
 sd(mtcars$mpg)
 ```
