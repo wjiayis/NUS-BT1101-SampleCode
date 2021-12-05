@@ -1,5 +1,5 @@
-### [HF] Histogram
-Preparation Code
+### \[HF\]\[Base R\] Histogram
+###### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -10,7 +10,7 @@ library(glue)
 library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
-**Actual Code**
+###### Actual Code
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
 ```
@@ -44,7 +44,7 @@ plot.Histogram <- function(dataset_variable, variable.text_singular, subject.tex
   {plot.Histogram.h(dataset_variable, variable.text_singular, subject.text_plural, histogram.bins, histogram.colour, frequency_table.bins.upper_bound, include_frequency_table,
   histogram.range_of_y_values.multiplication_constant = 1.2)}
 ```
-4. **Inputs**. (Must be included. Edit this.)
+4. Inputs. (Must be included. Edit this.)
 ```
 plot.Histogram(CS$salary, # dataset_variable
                "Salary", # variable.text_singular ----- "Histogram of {subject.text_plural}' {variable.text_singular}"
