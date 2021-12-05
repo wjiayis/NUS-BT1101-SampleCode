@@ -12,6 +12,8 @@ cbind(lCI, uCI)
 ```
 ### For unknown population standard deviation
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval_Mean_Unknown-Population-sd.md)
+###### Sample Task
+>Compute the 95% confidence interval for `mtcars$mpg`.
 ##### Manual Method
 ###### Actual Code
 ```
