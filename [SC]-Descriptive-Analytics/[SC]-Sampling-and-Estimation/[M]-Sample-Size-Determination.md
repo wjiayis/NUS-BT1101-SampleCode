@@ -2,7 +2,7 @@
 ### Mean
 | Implicit Assumptions |
 | --- |
-| :white_medium_square: If confidence level (α) is not given, α = 0.95 is used. |
+| :white_medium_square: Confidence level is assumed to be 95% unless otherwise specified. |
 ##### Actual Code
 ###### Sample Task
 >The distribution for volume is normal with sample mean = 796ml and population standard deviation = 15ml.</br>
@@ -14,7 +14,7 @@ ceiling(qnorm(0.975)^2*(15^2)/(3^2))
 | Implicit Assumptions |
 | --- |
 | :white_medium_square: If sample proportion is unavailable, π=0.5 is used to maximise (π(1-π)). |
-| :white_medium_square: If confidence level (α) is not given, α = 0.95 is used. |
+| :white_medium_square: Confidence level is assumed to be 95% unless otherwise specified. |
 ##### Actual Code
 ###### Sample Task
 >Determine number of voters to poll to ensure a sampling error of at most ± 2%.
