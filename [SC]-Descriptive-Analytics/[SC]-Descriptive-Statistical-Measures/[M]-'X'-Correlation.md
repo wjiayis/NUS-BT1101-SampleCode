@@ -1,17 +1,17 @@
 ## 'X' Correlation
 ### Correlation Value
-Preparation Code
+###### Preparation Code
 ```
 # Sample Data
 library(wooldridge)
 CS <- ceosal1
 ```
-**Actual Code**
+###### Actual Code
 ```
 cor(CS$salary, CS$sales)
 ```
 ### Correlation Table
-Preparation Code
+###### Preparation Code
 ```
 # Functions
 library(psych)
@@ -20,12 +20,12 @@ library(psych)
 library(wooldridge)
 CS <- ceosal1
 ```
-**Actual Code**
+###### Actual Code
 ```
 corr.test(CS[,c("salary", "sales", "roe", "ros")])
 ```
 ### Heat Map for Correlation
-Preparation Code
+###### Preparation Code
 ```
 # Functions
 library(GGally)
@@ -34,7 +34,7 @@ library(GGally)
 library(wooldridge)
 CS <- ceosal1
 ```
-**Actual Code**
+###### Actual Code
 ```
 ggcorr(CS[,c("salary", "sales", "roe", "ros")])
 ```
