@@ -5,6 +5,7 @@
 ```
 # Sample Data
 library(dplyr)
+library(knitr)
 library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
