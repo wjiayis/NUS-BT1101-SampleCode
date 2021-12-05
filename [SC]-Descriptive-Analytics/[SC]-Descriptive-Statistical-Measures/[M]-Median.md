@@ -1,5 +1,5 @@
-### Median
-Preparation Code
+## Median
+##### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -8,16 +8,19 @@ library(dplyr)
 library(vcd)
 A <- Arthritis
 ```
-</br>**Actual Code**
-###### Sample Task: Compute median age.
+##### Actual Code
+###### Sample Task 1
+>Compute median age.
 ```
 median(A$Age)
 ```
-###### Sample Task: Compute median age for each gender.
+###### Sample Task 2
+>Compute median age for each gender.
 ```
 A %>% group_by(Sex) %>% summarise(Median = median(Age))
 ```
-###### Sample Task: Compute median age for each mode of treatment, for each gender. (CHECK WORDING)
+###### Sample Task 3
+>Compute median age, grouping primarily by mode of treatment, and secondarily by gender.
 ```
 A %>% group_by(Treatment, Sex) %>% summarise(Median = median(Age)) # group by `Treatment`, then group by `Sex`
 ```
