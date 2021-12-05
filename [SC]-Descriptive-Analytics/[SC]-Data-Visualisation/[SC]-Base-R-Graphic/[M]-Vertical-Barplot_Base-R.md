@@ -1,4 +1,4 @@
-## [Base R] Vertical Barplot
+## Vertical Barplot
 ### Base R Graphic
 ###### Preparation Code
 ```
