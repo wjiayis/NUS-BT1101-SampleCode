@@ -5,9 +5,9 @@
 ###### Sample Task
 >The distribution for volume is normal with sample mean = 796 and population standard deviation = 15.</br>Compute the 95% confidence interval for the mean volume for population.
 ```
-precision <- qnorm(0.975)*15/sqrt(25)
-lCI <- 796-precision
-uCI <- 796+precision
+margin_of_error <- qnorm(0.975)*15/sqrt(25)
+lCI <- 796 - margin_of_error
+uCI <- 796 + margin_of_error
 cbind(lCI, uCI)
 ```
 ### For unknown population standard deviation
