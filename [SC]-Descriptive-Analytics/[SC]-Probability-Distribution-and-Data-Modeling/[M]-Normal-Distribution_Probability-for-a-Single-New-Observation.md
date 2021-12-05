@@ -1,4 +1,4 @@
-## Normal Distribution, Mean, Standard Deviation &#8594; Probability for A Single New Observation</br>
+## \[ND\] Probability for A Single New Observation</br>
 ### Using Sample Statistics
 **Actual Code**
 ###### Sample Task 1:
