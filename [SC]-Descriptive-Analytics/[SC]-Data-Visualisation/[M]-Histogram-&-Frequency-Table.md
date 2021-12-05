@@ -1,4 +1,4 @@
-## Histogram
+## Histogram & Frequency Table
 ### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Histogram-&-Frequency-Table.md)
 ###### Preparation Code
