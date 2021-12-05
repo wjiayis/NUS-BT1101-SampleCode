@@ -28,6 +28,3 @@ sqrt(mean((fit3.prediction - ap.test)^2))
 plot(fit1, fit1.prediction)
 lines(ap.test, col='blue')
 ```
-###### ggplot2 Graphic (UNDONE)
-```
-```
