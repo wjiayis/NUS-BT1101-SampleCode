@@ -23,6 +23,8 @@
 ### 1. [Linear Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression.md)
 - [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Model-Selection.md)
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Logistic-Regression.md)
+- Confusion Matrix
+- [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
 ### 3. Time Series Forecasting
 - [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
@@ -32,8 +34,6 @@
 - [Summary Visualisation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Summary-Visualisation.md)
 - [**Principal Component Analysis**](Subpages/2-4-2.md)
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
-- Confusion Matrix (UNDONE)
-- [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
 - [Cross-validation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Cross-Validation.md)
 - Regularisation (UNDONE)
 ## Prescriptive Analytics
