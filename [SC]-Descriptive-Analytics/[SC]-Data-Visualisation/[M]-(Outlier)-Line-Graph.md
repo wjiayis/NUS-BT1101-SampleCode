@@ -1,4 +1,4 @@
-## \[Base R\] Line Graph for Outlier Identification
+## \[Outlier Identification\] Line Graph
 ##### Preparation Code
 ```
 # Sample Data
