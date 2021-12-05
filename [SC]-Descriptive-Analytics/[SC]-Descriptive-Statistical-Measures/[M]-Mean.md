@@ -23,4 +23,4 @@ A %>% group_by(Sex) %>% summarise(Mean = mean(Age))
 ###### Sample Task 3
 >Compute mean age, grouping primarily by mode of treatment, and secondarily by gender.
 ```
-A %>% group_by(Treatment, Sex) %>% summarise(Mean = mean(Age)) # group by `Treatment`, then group by `Sex`
+A %>% group_by(Treatment, Sex) %>% summarise(Mean = mean(Age))
