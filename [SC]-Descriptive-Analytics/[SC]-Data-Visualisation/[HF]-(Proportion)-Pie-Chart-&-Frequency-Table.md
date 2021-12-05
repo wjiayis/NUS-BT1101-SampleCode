@@ -1,5 +1,5 @@
-### \[Base R\]\[HF\] Pie Chart for Proportion
-</br>Preparation Code
+## \[HF\]\[Base R\] Pie Chart for Proportion
+###### Preparation Code
 ```
 # Functions
 library(dplyr)
@@ -11,7 +11,7 @@ HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
-</br>**Actual Code**
+###### Actual Code
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
 ```
