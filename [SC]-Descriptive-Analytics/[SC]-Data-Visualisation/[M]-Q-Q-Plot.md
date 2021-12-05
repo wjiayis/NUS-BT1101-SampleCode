@@ -1,4 +1,5 @@
 ## Q-Q Plot
+### Base R Graphic
 ###### Preparation Code
 ```
 # Sample Data
