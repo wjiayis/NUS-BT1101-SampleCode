@@ -8,7 +8,7 @@ library(psych)
 ```
 pairs.panels(iris, lm=TRUE)
 ```
-</br></br></br>
+</br></br>
 ### ggplot2 Graphics
 ###### Preparation Code
 ```
