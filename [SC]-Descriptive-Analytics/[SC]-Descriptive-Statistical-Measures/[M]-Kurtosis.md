@@ -1,10 +1,10 @@
-### Kurtosis
-Preparation Code
-```{r}
+## Kurtosis
+###### Preparation Code
+```
 # Functions
 library(psych)
 ```
-**Actual Code**
-```{r}
+###### Actual Code
+```
 kurtosi(mtcars$mpg)
 ```
