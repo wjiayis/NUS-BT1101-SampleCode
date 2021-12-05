@@ -1,5 +1,5 @@
-### Proportion
-Preparation Code
+## Proportion
+###### Preparation Code
 ```
 # Functions
 library(psych)
@@ -9,7 +9,7 @@ library(wooldridge)
 HEC <- as.data.frame(HairEyeColor)
 ```
 
-**Actual Code**
+###### Actual Code
 ```
 length(HEC$Hair[HEC$Hair == "Brown"])/nrow(HEC)
 ```
