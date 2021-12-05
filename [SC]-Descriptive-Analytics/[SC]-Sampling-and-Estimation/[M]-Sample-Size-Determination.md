@@ -10,6 +10,7 @@ What sample size is needed to reduce the margin of error to at most 3ml, when de
 ```
 ceiling(qnorm(0.975)^2*(15^2)/(3^2))
 ```
+</br></br></br>
 ### Proportion
 | Implicit Assumptions |
 | --- |
