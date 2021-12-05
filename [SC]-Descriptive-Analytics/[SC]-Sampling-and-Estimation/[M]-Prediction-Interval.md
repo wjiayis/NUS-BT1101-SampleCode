@@ -1,8 +1,9 @@
 ## Prediction Interval
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Prediction-Interval.md)
-### Prediction Interval
-#### ***Sample Task: [Normally Distributed Data] Compute the 99% prediction interval.***
-**Actual Code**
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Prediction-Interval.md)
+
+##### Sample Task 1
+>\[Normally Distributed Data\] Compute the 99% prediction interval.
+###### Actual Code
 ```
 mpg.m <- mean(mtcars$mpg)
 mpg.sd <- sd(mtcars$mpg)
@@ -13,12 +14,14 @@ uPI <- mpg.m + (qt(((1-(1 - 0.99)/2)),
                              df = (nrow(mtcars)-1))*mpg.sd*sqrt(1+1/nrow(mtcars)))
 cbind(lPI, uPI)
 ```
-#### ***Sample Task: [lambda > 0] Compute the 95% prediction interval.***
-Preparation Code
+</br></br></br>
+##### Sample Task 2
+>\[lambda > 0\] Compute the 95% prediction interval.
+###### Preparation Code
 ```
 library(rcompanion)
 ```
-**Actual Code**
+###### Actual Code
 ```
 lambda <- transformTukey(mtcars$cyl, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
@@ -38,8 +41,10 @@ uPI <- uPI.t^(1/1.1)
 
 cbind(lPI, uPI)
 ```
-#### ***Sample Task: [lambda < 0] Compute the 90% prediction interval.***
-Preparation Code
+</br></br></br>
+##### Sample Task 3
+>\[lambda < 0\] Compute the 90% prediction interval.
+###### Preparation Code
 ```
 # Functions
 library(rcompanion)
@@ -48,7 +53,7 @@ library(rcompanion)
 library(wooldridge)
 R <- rdchem
 ```
-**Actual Code**
+###### Actual Code
 ```
 lambda <- transformTukey(R$rd, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
@@ -68,8 +73,10 @@ uPI <- uPI.t^(1/-0.05)
 
 cbind(lPI, uPI)
 ```
-#### ***Sample Task: [lambda == 0] Compute the 90% prediction interval.***
-Preparation Code
+</br></br></br>
+##### Sample Task 4
+>\[lambda = 0\] Compute the 90% prediction interval.
+###### Preparation Code
 ```
 # Functions
 library(rcompanion)
@@ -78,7 +85,7 @@ library(rcompanion)
 library(wooldridge)
 R <- rdchem
 ```
-**Actual Code**
+###### Actual Code
 ```
 lambda <- transformTukey(R$salessq, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
