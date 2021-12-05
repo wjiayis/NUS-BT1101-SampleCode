@@ -1,6 +1,6 @@
-## \[Base R\] Line Graph for Time Trend
-
-### Non-time-series Graph
+## \[Time Trend\] Line Graph
+### Base R Graphic
+#### Non-time-series Graph
 ###### Preparation Code
 ```
 # Sample Data
@@ -14,7 +14,7 @@ plot(B$t, B$gas,
      ylab = "Gasoline Production", xlab = "Time Trend")
 lines(B$t, B$gas)
 ```
-### Time-series Graph
+#### Time-series Graph
 ###### Preparation Code
 ```
 # Sample Data
