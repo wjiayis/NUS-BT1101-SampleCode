@@ -11,7 +11,7 @@ library(vcd)
 A <- Arthritis
 ```
 ##### Actual Code
-###### Sample Task 1
+###### \[`describe`\] Sample Task 1
 >Compute median, skew and interquartile range.
 ```
 # Obtain "n", "mean", "sd", "median", "trimmed", "mad", "min", "max", "skew", "kurtosis", "se", "IQR"
@@ -22,7 +22,7 @@ describe(A$Age, IQR=TRUE) %>%
   mutate(across(where(is.double), round, 2)) %>% # Round numbers to 2d.p.
   kable(row.names = FALSE, caption = "Descriptive Statistics for Age")
 ```
-###### Sample Task 2
+###### \[`summary`\] Sample Task 2
 >Compute the first quartile (Q1) and the third quartile (Q3).
 ```
 # Obtain "1st Qu.", "3rd Qu."
@@ -31,7 +31,7 @@ summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
   kable(caption = "Additional Descriptive Statistics for Age",
     col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
 ```
-###### Sample Task 3
+###### \[`describeBy`\] Sample Task 3
 >Compute the mean and median age, grouped by degree of improvement.
 ```
 age.summary <- A$Age %>% describeBy(group = A$Improved, IQR = TRUE,
@@ -42,7 +42,7 @@ age.summary <- age.summary[,c("group1", "mean","median")] # (a) Filter by inclus
 
 kable(age.summary, caption = "Descriptive Statistics for Age")
 ```
-###### Sample Task 4
+###### \[`describeBy`\] Sample Task 4
 >Compute the mean and median age, grouped primarily by mode of treatment and secondarily by gender.
 ```
 age.summary <- describeBy(Age ~ Treatment + Sex, data = A, IQR = TRUE,
@@ -51,4 +51,31 @@ age.summary <- age.summary[,c("group1", "min","max")] # (a) Filter by inclusion
 #age.summary <- age.summary[,-c(1, 4:10, 13:17)] # (b) Filter by deletion
 
 kable(age.summary, caption = "Descriptive Statistics for Age")
+```
+###### \[`summarise`\] Sample Task 5
+>Compute count, skew and kurtosis.
+```
+A %>% summarise(
+        vars = "Age",
+        n = n(),
+        skew = skew(Age),
+        kurtosis = kurtosi(Age))
+```
+###### \[`summarise`\] Sample Task 6
+>Compute the mean and median age, grouped by degree of improvement.
+```
+A %>% group_by(Improved) %>%summarise(
+        vars = "Age",
+        n = n(),
+        mean = mean(Age),
+        median = median(Age))
+```
+###### \[`summarise`\] Sample Task 7
+>Compute the mean and median age, grouped primarily by mode of treatment and secondarily by gender.
+```
+A %>% group_by(Improved, Sex) %>%summarise(
+        vars = "Age",
+        n = n(),
+        mean = mean(Age),
+        median = median(Age))
 ```
