@@ -1,5 +1,5 @@
 ### Sample Variance
-**Actual Code**
+###### Actual Code
 ```
 var(mtcars$mpg)
 ```
