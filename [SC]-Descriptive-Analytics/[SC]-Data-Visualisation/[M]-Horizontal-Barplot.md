@@ -2,9 +2,6 @@
 ### Base R Graphic
 ###### Preparation Code
 ```
-# Functions
-library(ggplot2) # For ggplot2 graphic
-
 # Sample Data
 library(dplyr)
 HEC <- HairEyeColor %>% as.data.frame()
@@ -29,7 +26,7 @@ text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ###### Preparation Code
 ```
 # Functions
-library(ggplot2) # For ggplot2 graphic
+library(ggplot2)
 
 # Sample Data
 library(dplyr)
