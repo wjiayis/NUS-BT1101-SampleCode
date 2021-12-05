@@ -24,7 +24,7 @@
 - [Model Selection]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Model-Selection.md)
 ### 2. [Logistic Regression]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Logistic-Regression.md)
 - [Confusion Matrix]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Confusion-Matrix.md)
-- [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Assessment-of-Classification.md)
+- [Assessment of Classification]([SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Assessment-of-Classification.md)
 ### 3. Time Series Forecasting
 - [Simple Moving Average]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Simple-Moving-Average.md)
 - [Holt-Winters]([SC]-Predictive-Analytics/[SC]-Time-Series-Forecasting/[M]-Holt-Winters.md)
