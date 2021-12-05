@@ -21,4 +21,21 @@ verbmath.moderate_outliers$out
 ```
 G.wo_extreme_outliers_verbmath <- G[-which(G$verbmath %in% verbmath.extreme_outliers$out),]
 ```
+### ggplot2 Graphic
+##### Preparation Code
+```
+# Functions
+library(ggplot2)
+
+# Sample Data
+library(wooldridge)
+G <- gpa2
+```
+##### Actual Code
+###### Sample Task 1
+>Identify moderate outliers (outside 1.5 IQR).
+```
+ggplot(G, aes(y=verbmath)) + 
+  geom_boxplot()
+```
 [^1]: This is one of the many ways to handle outliers.
