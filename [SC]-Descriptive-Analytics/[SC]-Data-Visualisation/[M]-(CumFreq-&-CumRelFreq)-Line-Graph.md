@@ -1,4 +1,4 @@
-## \[Cumulative Frequency and Cumulative Relative Frequency\] Line Graph
+## \[CumFreq & CumRelFreq\] Line Graph
 ### Base R Graphic
 ###### Preparation Code
 ```
