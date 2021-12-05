@@ -1,5 +1,5 @@
-### Skewness
-**Actual Code**
+## Skewness
+###### Actual Code
 ```
 skew(mtcars$mpg)
 ```
