@@ -8,5 +8,8 @@ CS <- ceosal1
 ```
 ###### Actual Code
 ```
+plot(mtcars$mpg)
+```
+```
 plot(y = CS$lsalary, x = CS$lsales)
 ```
