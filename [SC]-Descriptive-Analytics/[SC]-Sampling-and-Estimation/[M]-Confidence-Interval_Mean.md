@@ -1,4 +1,4 @@
-## [ND] Confidence Interval for Mean
+## Confidence Interval for Mean
 ### For known population standard deviation
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval_Mean_Known-Population-sd.md)
 ##### Actual Code
