@@ -1,13 +1,13 @@
 ## Test of Normality
-:white_heart: [_Helper Function Available_](../../[SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-&-Test-of-Normality.md)
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-&-Test-of-Normality.md)
 
 ### Shapiro-wilk test[^1]
-Preparation Code
+###### Preparation Code
 ```
 # Sample Data
 MC <- mtcars
 ```
-**Actual Code**
+###### Actual Code
 ```
 shapiro.test(MC$mpg)
 ```
