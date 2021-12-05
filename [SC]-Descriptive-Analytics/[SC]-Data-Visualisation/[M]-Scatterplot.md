@@ -1,4 +1,5 @@
 ## Scatterplot
+### Base R Graphic
 ###### Preparation Code
 ```
 # Sample Data
