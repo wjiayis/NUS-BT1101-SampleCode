@@ -1,5 +1,5 @@
 ## [Normal Distribution] Confidence Interval for Mean
-### For known standard deviation
+### For known population standard deviation
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval_Mean_Known-Population-sd.md)
 ##### Actual Code
 ###### Sample Task
@@ -10,7 +10,7 @@ lCI <- 796-precision
 uCI <- 796+precision
 cbind(lCI, uCI)
 ```
-### For unknown standard deviation
+### For unknown population standard deviation
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[HF]-Confidence-Interval_Mean_Unknown-Population-sd.md)
 ##### Preparation Code
 ```
