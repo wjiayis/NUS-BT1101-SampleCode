@@ -1,11 +1,11 @@
-### Covariance
-Preparation Code
+## Covariance
+###### Preparation Code
 ```
 # Sample Data
 library(wooldridge)
 CS <- ceosal1
 ```
-**Actual Code**
+###### Actual Code
 ```
 cov(CS$lsalary, CS$lsales)
 ```
