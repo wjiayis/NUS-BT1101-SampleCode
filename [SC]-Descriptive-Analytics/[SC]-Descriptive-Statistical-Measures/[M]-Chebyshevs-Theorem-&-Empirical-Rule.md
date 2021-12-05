@@ -18,7 +18,7 @@ m.lower_bound <- mean(m) - 3*sd(m)
 m.upper_bound <- mean(m) + 3*sd(m)
 # (length(m[m > m.lower_bound & m < m.upper_bound])) / length(m) # For verification (in fact, 100% of data lie within this interval)
 ```
-## Empirical Rule
+### Empirical Rule
 ##### Sample Task 2.1
 >Using empirical rule, obtain an interval in which lies at least 68% of the data.
 ###### Actual Code
