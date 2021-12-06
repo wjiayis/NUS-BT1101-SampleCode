@@ -1,7 +1,7 @@
 ## \[Frequency\] Vertical Barplot
 ### Base R Graphic
 ###### Preparation Code
-```
+```r
 # Sample Data
 library(dplyr)
 HEC <- HairEyeColor %>% as.data.frame()
@@ -9,7 +9,7 @@ HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 ###### Actual Code
-```
+```r
 hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         ylim = c(0,340), # Range of y-values
         main = "Barplot of Frequency of Hair Colour", # Title
@@ -23,7 +23,7 @@ text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
-```
+```r
 # Functions
 library(ggplot2)
 
@@ -34,7 +34,7 @@ HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 ###### Actual Code
-```
+```r
 ggplot(data=HEC, aes(x=Hair, y=Freq)) + # dataset_variable
   geom_bar(stat="identity", fill = "pink") + # Colour
   #geom_text(aes(label=Freq), vjust=-0.3, color = "black", size=3.5) # 'Outside-bars' value labels
