@@ -2,7 +2,7 @@
 ### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Stacked-Barplot-&-Frequency-Table.md)
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 
@@ -14,7 +14,7 @@ M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
 M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
 ```
 ###### Actual Code
-```
+```r
 satisfaction.stacked_barplot.matrix <- M %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 
@@ -39,7 +39,7 @@ text(x = rep(satisfaction.stacked_barplot, each = nrow(H)), y = H,
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(tidyr)
@@ -59,7 +59,7 @@ M <- cbind(Year, M)
 M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
 ###### Actual Code
-```
+```r
 ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
   geom_bar(stat="identity") +
   labs(title = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation") + # Title
