@@ -1,6 +1,6 @@
 ## \[HF\]\[Base R\] Stacked Barplot
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(knitr)
@@ -16,7 +16,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 ###### Actual Code
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
-```
+```r
 plot.StackedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
   
 stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
@@ -45,19 +45,19 @@ text(x = rep(stacked_barplot, each = nrow(H)), y = H,
      label = round(stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 ```
 3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
-```
+```r
 plot.StackedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
 {plot.StackedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
                               barplot.axis_range.multiplication_constant = 1.2)}
 ```
 4. Inputs. (Must be included. Edit this.)
-```
+```r
 plot.StackedBarplot(M, # data_df
                            "Mean Satisfaction for Math, By Year of Graduation", # title.text
                            "Mean Satisfaction") # y_variable.text
 ```
 5. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
-```
+```r
 #                           title.font_size = 1
 #                           categories.font_size = 1
 #                           value_labels.font_size = 1
