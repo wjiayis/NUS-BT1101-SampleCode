@@ -14,12 +14,12 @@ fit <- glm(Survived ~ Sex + Age, family="binomial", titanic_train)
 summary(fit)
 ```
 2. If required, perform prediction.
-##### Sample Task 1:
+##### Sample Task 1
 >Perform prediction on 1 new observation.
 ```
 predict(fit, newdata = data.frame(Sex="male", Age=35))
 ```
-##### Sample Task 2:
+##### Sample Task 2
 >Perform prediction on a test set.
 ```
 predict(fit, newdata = titanic_test)
