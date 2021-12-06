@@ -2,7 +2,7 @@
 ### Base R Graphic
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-Grouped-Barplot-&-Frequency-Table.md)
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(tidyr)
@@ -17,7 +17,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 M.m <- M %>% select(c(`Grade 4`, `Grade 7`)) %>% as.matrix() %>% t()
 ```
 ###### Actual Code
-```
+```r
 satisfaction.grouped_barplot <- barplot(M.m, # dataset_variable
         beside = TRUE,
         ylim = c(0, 70), # Range of y-values
@@ -38,7 +38,7 @@ text(y = M.m, x = satisfaction.grouped_barplot,
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(tidyr)
@@ -58,7 +58,7 @@ M <- cbind(Year, M)
 M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
 ###### Actual Code
-```
+```r
 ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
   geom_bar(stat="identity", position=position_dodge()) +
   labs(title = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation") + # Title
