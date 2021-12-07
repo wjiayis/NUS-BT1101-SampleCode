@@ -13,6 +13,7 @@ plot(mtcars$wt, mtcars$mpg,
 ### ggplot2 Graphic
 ##### Preparation Code
 ```r
+# Functions
 library(ggplot2)
 ```
 ##### Actual Code
