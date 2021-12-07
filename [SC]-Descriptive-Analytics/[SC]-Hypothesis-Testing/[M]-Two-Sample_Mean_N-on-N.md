@@ -8,7 +8,7 @@ setosa <- iris %>% filter(Species == "setosa")
 virginica <- iris %>% filter(Species == "virginica")
 ```
 ##### Actual Code
-- If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
+:bulb: If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
 ###### Sample Hypotheses 1.1:
 >H0: Mean sepal length of (setosa = virginica).</br>
 >H1: Mean sepal length of (setosa ≠ virginica).
@@ -35,7 +35,7 @@ library(dplyr)
 setosa <- iris %>% filter(Species == "setosa")
 ```
 ##### Actual Code
-- If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
+:bulb: If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
 ###### Sample Hypotheses 2.1:
 >H0: Mean sepal length = mean petal length.</br>
 >H1: Mean sepal length ≠ mean petal length.
