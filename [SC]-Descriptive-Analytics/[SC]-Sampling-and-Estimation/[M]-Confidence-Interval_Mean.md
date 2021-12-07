@@ -22,9 +22,9 @@ mpg.mean <- mean(mtcars$mpg)
 mpg.sd <- sd(mtcars$mpg)
 mpg.se <- mpg.sd/sqrt(mpg.n)
 
-margin_of_error <- qt(0.975, df = (mpg.n-1))*mpg.se
-mpg.lCI <- mpg.mean - margin_of_error
-mpg.uCI <- mpg.mean + margin_of_error
+mpg.margin_of_error <- qt(0.975, df = (mpg.n-1))*mpg.se
+mpg.lCI <- mpg.mean - mpg.margin_of_error
+mpg.uCI <- mpg.mean + mpg.margin_of_error
 cbind(mpg.lCI, mpg.uCI)
 ```
 ##### Rmisc Method
