@@ -1,6 +1,7 @@
 ## Confidence Interval for Proportion
 ##### Preparation Code
 ```r
+# Functions
 library(dplyr)
 ```
 ##### Actual Code
