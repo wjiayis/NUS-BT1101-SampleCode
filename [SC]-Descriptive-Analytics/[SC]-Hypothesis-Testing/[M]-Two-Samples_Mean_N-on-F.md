@@ -10,7 +10,7 @@ library(dplyr)
 setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
 ```
 ##### Actual Code
-- If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
+:bulb: If equal variance assumption is present, include an additional keyword argument `var.equal = TRUE`.
 ###### Sample Hypotheses 1:
 >H0: Mean sepal length of (setosa = vesicolor).</br>
 >H1: Mean sepal length of (setosa ≠ vesicolor).
