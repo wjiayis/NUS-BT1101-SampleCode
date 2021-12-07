@@ -60,9 +60,9 @@ M <- M %>% gather("Grade", "Mean Satisfaction for Math", -Year)
 ```
 ###### Actual Code
 ```r
-ggplot(data=M, aes(x=Year, y=`Mean Satisfaction for Math`, fill=Grade)) + # dataset_variable
-  geom_bar(stat="identity", position=position_dodge()) +
+ggplot(data = M, aes(x = Year, y = `Mean Satisfaction for Math`, fill = Grade)) + # dataset_variable
+  geom_bar(stat = "identity", position = position_dodge()) +
   labs(title = "Bar Plot of Mean Satisfaction for Math, By Year of Graduation") + # Title
-  geom_text(aes(label= round(`Mean Satisfaction for Math`, 2)), vjust=1.6, color="black", position = position_dodge(0.9), size=3.5) + # Value labels
-  scale_fill_manual(values=c("pink", "lightblue"))# Colours
+  geom_text(aes(label = round(`Mean Satisfaction for Math`, 2)), vjust = 1.6, color = "black", position = position_dodge(0.9), size = 3.5) + # Value labels
+  scale_fill_manual(values = c("pink", "lightblue"))# Colours
 ```
