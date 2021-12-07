@@ -12,9 +12,10 @@ M <- mtcars %>% select("cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb"
 1. Using the elbow method, determine the number of clusters.
 ```r
 wss <- rep(NA, 10)
-for(k in c(1:10)) {wss[k] = kmeans(M, k, nstart=10)$tot.withinss}
+for(k in c(1:10)) {wss[k] = kmeans(M, k, nstart = 10)$tot.withinss}
 
-plot(wss, type = "b", xlab = "Number of clusters", ylab = "Total within-cluster sum of squares")
+plot(wss, type = "b",
+     xlab = "Number of clusters", ylab = "Total within-cluster sum of squares")
 ```
 2. Perform k-means clustering.
 ```r
