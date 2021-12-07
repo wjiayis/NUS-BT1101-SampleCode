@@ -1,6 +1,6 @@
 ## \[HF\]\[Base R\] Pie Chart for Proportion
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(knitr)
@@ -14,25 +14,24 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ###### Actual Code
 1. Set `{r ..., results="asis", ...}`.
 2. Helper function. (Must be included. Do not edit.)
-```
+```r
 plot.PieChart.Proportion <- function(data_df, subject.text, title.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), include_frequency_table = TRUE){
 
-# Frequency Table
-if(include_frequency_table){
-kable(data_df, caption = glue::glue("Frequency of {subject.text}"),
+  # Frequency Table
+  if(include_frequency_table){kable(data_df, caption = glue::glue("Frequency of {subject.text}"),
       col.name = c(glue::glue("{subject.text}"), "Frequency")) %>% print()}
 
-# Graph
-pie(data_df[[2]],
-    labels = glue::glue("{data_df[[1]]}, {round(100 * data_df[[2]]/sum(data_df[[2]]),2)}%"),
-    col = possible_colours,
-    main = glue::glue("Pie Chart of {subject.text}"),
-    cex.main = title.font_size)}
+  # Graph
+  pie(data_df[[2]],
+      labels = glue::glue("{data_df[[1]]}, {round(100 * data_df[[2]]/sum(data_df[[2]]),2)}%"),
+      col = possible_colours,
+      main = glue::glue("Pie Chart of {subject.text}"),
+      cex.main = title.font_size)}
 ```
 3. Inputs. (Must be included. Edit this.)
 ```
 plot.PieChart.Proportion(HEC, # data_df
-              "Hair Colour") # subject.text
+                         "Hair Colour") # subject.text
 ```
 4. Optional keyword arguments for fine-tuning of output. (If you wish to include some of these, edit the rhs of `=` and add them at the back of your input.)
 ```
