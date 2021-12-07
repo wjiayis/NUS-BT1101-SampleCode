@@ -39,7 +39,9 @@ const.dir <- c("<=","<=",">=")
 const.rhs <- c(12,34,5)
 
 # Run the model
-lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs, int.vec = 1, binary.vec = 2, compute.sens=FALSE)
+lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs,
+                  int.vec = 1, binary.vec = 2,
+                  compute.sens = FALSE)
 
 lp.solution
 lp.solution$solution
@@ -94,7 +96,9 @@ const.dir <- c("<=","<=",">=")
 const.rhs <- c(12,34,5)
 
 # Run the model
-lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs, int.vec = 1, binary.vec = 2, compute.sens=FALSE)
+lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs,
+                  int.vec = 1, binary.vec = 2,
+                  compute.sens = FALSE)
 
 lp.solution
 lp.solution$solution
