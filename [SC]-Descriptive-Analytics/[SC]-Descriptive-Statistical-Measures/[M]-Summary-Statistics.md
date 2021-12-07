@@ -27,7 +27,7 @@ describe(A$Age, IQR = TRUE) %>% # Obtain "n", "mean", "sd", "median", "trimmed",
 summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>% # Obtain "1st Qu.", "3rd Qu."
   as.array() %>% t() %>%
   kable(caption = "Additional Descriptive Statistics for Age",
-    col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
+        col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
 ```
 ###### \[`describeBy`\] Sample Task 3.1
 >Compute the mean and median age, grouped by degree of improvement.
