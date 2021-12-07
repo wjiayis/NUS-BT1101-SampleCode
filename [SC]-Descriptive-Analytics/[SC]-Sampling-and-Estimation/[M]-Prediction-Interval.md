@@ -19,6 +19,7 @@ cbind(lPI, uPI)
 >\[lambda > 0\] Compute the 95% prediction interval.
 ###### Preparation Code
 ```r
+# Functions
 library(rcompanion)
 ```
 ###### Actual Code
