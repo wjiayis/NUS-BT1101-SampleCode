@@ -1,7 +1,7 @@
 ## \[CumFreq & CumRelFreq\] Line Graph
 ### Base R Graphic
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 
@@ -14,7 +14,7 @@ rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_freque
 ```
 #### Cumulative Frequency
 ###### Actual Code
-```
+```r
 # To start at 0
 rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
 
@@ -26,7 +26,7 @@ lines(rd.breaks, rd.cumulative_frequency)
 ```
 #### Cumulative Relative Frequency
 ###### Actual Code
-```
+```r
 # To start at 0
 rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
 
@@ -38,7 +38,7 @@ lines(rd.breaks, rd.cumulative_relative_frequency)
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
-```
+```r
 # Functions
 library(dplyr)
 library(ggplot2)
@@ -52,17 +52,17 @@ rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_freque
 ```
 #### Cumulative Frequency
 ###### Actual Code
-```
+```r
 # To start at 0
 rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
+
 ggplot(mapping=aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_frequency)) +
   geom_line()
 ```
 #### Cumulative Relative Frequency
 ###### Actual Code
-```
+```r
 rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
-plot(rd.cumulative_frequency)
 
 ggplot(mapping=aes(x = 1:length(rd.cumulative_relative_frequency), y = rd.cumulative_relative_frequency)) +
   geom_line()
