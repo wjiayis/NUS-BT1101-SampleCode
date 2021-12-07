@@ -17,13 +17,13 @@
 </details>
 
 ###### Preparation Code
-```
+```r
 # Functions
 library(lpSolve)
 ```
 ###### Actual Code
 1. Run the integer optimisation model.
-```
+```r
 # Define parameters
 objective.fn <- c(11, 22)
 
@@ -45,11 +45,11 @@ lp.solution
 lp.solution$solution
 ```
 2. If required, obtain shadow prices.
-```
+```r
 lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
-```
+```r
 lp.solution$sens.coef.to # Upper bounds to the coefficients
 lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
@@ -72,13 +72,13 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 </details>
 
 ###### Preparation Code
-```
+```r
 # Functions
 library(lpSolve)
 ```
 ###### Actual Code
 1. Run the integer optimisation model.
-```
+```r
 # Define parameters
 objective.fn <- c(11, 22)
 
@@ -100,11 +100,11 @@ lp.solution
 lp.solution$solution
 ```
 2. If required, obtain shadow prices.
-```
+```r
 lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
-```
+```r
 lp.solution$sens.coef.to # Upper bounds to the coefficients
 lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
