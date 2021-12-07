@@ -36,8 +36,8 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 ###### Actual Code
 ```r
-ggplot(data=HEC, aes(x=Freq, y=Hair)) + # dataset_variable
-  geom_bar(stat="identity", fill = "pink") + # Colour
-  #geom_text(aes(label=Freq), hjust=-0.3, color = "black", size=3.5) # 'Outside-bars' value labels
-  geom_text(aes(label=Freq), hjust=1.6, color="black", size=3.5) # 'Within-bars' value labels
+ggplot(data = HEC, aes(x = Freq, y = Hair)) + # dataset_variable
+  geom_bar(stat = "identity", fill = "pink") + # Colour
+  #geom_text(aes(label = Freq), hjust = -0.3, color = "black", size = 3.5) # 'Outside-bars' value labels
+  geom_text(aes(label = Freq), hjust = 1.6, color = "black", size = 3.5) # 'Within-bars' value labels
 ```
