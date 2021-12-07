@@ -5,6 +5,7 @@
 
 ##### Preparation Code
 ```r
+# Sample Data
 library(titanic)
 ```
 ##### Actual Code
