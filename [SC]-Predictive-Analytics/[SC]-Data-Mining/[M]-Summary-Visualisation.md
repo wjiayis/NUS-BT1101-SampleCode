@@ -2,6 +2,7 @@
 ### Base R Graphics
 ###### Preparation Code
 ```r
+# Functions
 library(psych)
 ```
 ###### Actual Code
@@ -12,6 +13,7 @@ pairs.panels(iris, lm = TRUE)
 ### ggplot2 Graphics
 ###### Preparation Code
 ```r
+# Functions
 library(GGally)
 ```
 ###### Actual Code
