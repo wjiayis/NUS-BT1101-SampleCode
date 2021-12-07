@@ -42,7 +42,7 @@ CS <- ceosal1 %>% filter(salary < 1000)
 ##### Histogram of Count
 ###### Actual Code
 ```r
-ggplot(CS, aes(x=salary)) +
-      geom_histogram(fill="pink", color = "black") +
-      labs(title="Histogram of Frequency of CEOs' Salary")
+ggplot(CS, aes(x = salary)) +
+      geom_histogram(fill = "pink", color = "black") +
+      labs(title = "Histogram of Frequency of CEOs' Salary")
 ```
