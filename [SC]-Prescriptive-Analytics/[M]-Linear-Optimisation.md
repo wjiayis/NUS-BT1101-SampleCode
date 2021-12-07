@@ -16,13 +16,13 @@
 </details>
 
 ###### Preparation Code
-```
+```r
 # Functions
 library(lpSolve)
 ```
 ###### Actual Code
 1. Run the linear optimisation model.
-```
+```r
 # Define parameters
 objective.fn <- c(11, 22)
 
@@ -39,17 +39,18 @@ const.dir <- c("<=","<=",">=",">=")
 const.rhs <- c(12,34,5,5)
 
 # Run the model
-lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs, compute.sens=TRUE)
+lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs,
+                  compute.sens=TRUE)
 
 lp.solution
 lp.solution$solution
 ```
 2. If required, obtain shadow prices.
-```
+```r
 lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
-```
+```r
 lp.solution$sens.coef.to # Upper bounds to the coefficients
 lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
@@ -71,13 +72,13 @@ lp.solution$sens.coef.from # Lower bounds to the coefficients
 </details>
 
 ###### Preparation Code
-```
+```r
 # Functions
 library(lpSolve)
 ```
 ###### Actual Code
 1. Run the linear optimisation model.
-```
+```r
 objective.fn <- c(11, 22)
 
 const.mat <- (matrix(
@@ -98,11 +99,11 @@ lp.solution
 lp.solution$solution
 ```
 2. If required, obtain shadow prices.
-```
+```r
 lp.solution$duals
 ```
 3. If required, conduct sensitivity analysis.
-```
+```r
 lp.solution$sens.coef.to # Upper bounds to the coefficients
 lp.solution$sens.coef.from # Lower bounds to the coefficients
 ```
