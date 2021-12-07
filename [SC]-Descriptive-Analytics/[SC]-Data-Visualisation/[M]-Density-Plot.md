@@ -14,5 +14,5 @@ library(ggplot2)
 ```r
 ggplot(mtcars, aes(mpg))+
       geom_density() +
-      labs(title="Density Plot of Miles/(US) gallon")
+      labs(title = "Density Plot of Miles/(US) gallon")
 ```
