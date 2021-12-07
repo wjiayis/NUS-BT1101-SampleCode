@@ -14,8 +14,7 @@ A <- Arthritis
 ###### \[`describe`\] Sample Task 1.1
 >Compute median, skew and interquartile range.
 ```r
-# Obtain "n", "mean", "sd", "median", "trimmed", "mad", "min", "max", "skew", "kurtosis", "se", "IQR"
-describe(A$Age, IQR = TRUE) %>%
+describe(A$Age, IQR = TRUE) %>% # Obtain "n", "mean", "sd", "median", "trimmed", "mad", "min", "max", "skew", "kurtosis", "se", "IQR"
   mutate(vars = "Age") %>%
   select(c(vars, median, skew, IQR)) %>% # (a) Filter by inclusion
   #select(-c(n, mean, sd, trimmed, mad, min, max, kurtosis, se)) %>% # (b) Filter by deletion
@@ -25,8 +24,7 @@ describe(A$Age, IQR = TRUE) %>%
 ###### \[`summary`\] Sample Task 2.1
 >Compute the first quartile (Q1) and the third quartile (Q3).
 ```r
-# Obtain "1st Qu.", "3rd Qu."
-summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>%
+summary(A$Age)[c("1st Qu.", "3rd Qu.")] %>% # Obtain "1st Qu.", "3rd Qu."
   as.array() %>% t() %>%
   kable(caption = "Additional Descriptive Statistics for Age",
     col.names = c("First Quartile (Q1)", "Third Quartile (Q3)"))
