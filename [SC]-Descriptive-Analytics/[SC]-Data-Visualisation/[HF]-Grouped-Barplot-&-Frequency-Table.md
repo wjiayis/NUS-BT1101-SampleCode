@@ -42,9 +42,14 @@ plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.fo
 ```
 3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```r
-plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1, categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1, possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"), legend.position = "PRESET", include_frequency_table = TRUE)
-{plot.GroupedBarplot.h(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, include_frequency_table,
-                              barplot.axis_range.multiplication_constant = 1.2)}
+plot.GroupedBarplot <- function(data_df, title.text, y_variable.text, title.font_size = 1,
+                                categories.font_size = 1, value_labels.font_size = 1, legend.font_size = 1,
+                                possible_colours = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1", "darkolivegreen2"),
+                                legend.position = "PRESET", include_frequency_table = TRUE)
+        {plot.GroupedBarplot.h(data_df, title.text, y_variable.text, title.font_size,
+                               categories.font_size, value_labels.font_size, legend.font_size,
+                               possible_colours, legend.position, include_frequency_table,
+                               barplot.axis_range.multiplication_constant = 1.2)}
 ```
 4. Inputs. (Must be included. Edit this.)
 ```r
