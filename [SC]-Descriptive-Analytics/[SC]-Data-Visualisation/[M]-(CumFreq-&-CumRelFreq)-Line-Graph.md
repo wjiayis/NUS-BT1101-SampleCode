@@ -15,8 +15,7 @@ rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_freque
 #### Cumulative Frequency
 ###### Actual Code
 ```r
-# To start at 0
-rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
+rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency) # To start at 0
 
 plot(rd.breaks, rd.cumulative_frequency,
      main = "Line Graph of Cumulative Frequency of R&D spending, millions",
@@ -27,8 +26,7 @@ lines(rd.breaks, rd.cumulative_frequency)
 #### Cumulative Relative Frequency
 ###### Actual Code
 ```r
-# To start at 0
-rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
+rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency) # To start at 0
 
 plot(rd.breaks, rd.cumulative_relative_frequency,
      main = "Line Graph of Cumulative Frequency of R&D spending, millions",
