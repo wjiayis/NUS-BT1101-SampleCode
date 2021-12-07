@@ -16,8 +16,8 @@ CS <- ceosal1 %>% filter(salary < 1000)
 ```r
 # Graph
 histogram <- hist(CS$salary,
-     ylim = c(0,28),
-     main = "Histogram of Frequency of CEOs' Salary",
+     ylim = c(0,28), # Range of y-values
+     main = "Histogram of Frequency of CEOs' Salary", # Title
      xlab = "Salary",
      ylab = "Number of CEOs",
      label = TRUE,
@@ -43,6 +43,6 @@ CS <- ceosal1 %>% filter(salary < 1000)
 ###### Actual Code
 ```r
 ggplot(CS, aes(x=salary)) +
-  geom_histogram(fill="pink", color = "black") +
-  labs(title="Histogram of Frequency of CEOs' Salary")
+      geom_histogram(fill="pink", color = "black") +
+      labs(title="Histogram of Frequency of CEOs' Salary")
 ```
