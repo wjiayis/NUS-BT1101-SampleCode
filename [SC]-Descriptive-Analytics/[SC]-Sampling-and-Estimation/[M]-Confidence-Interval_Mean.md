@@ -4,7 +4,7 @@
 ##### Actual Code
 ###### Sample Task
 >The distribution for volume is normal with sample mean = 796 and population standard deviation = 15.</br>Compute the 95% confidence interval for the mean volume for population.
-```
+```r
 margin_of_error <- qnorm(0.975)*15/sqrt(25)
 lCI <- 796 - margin_of_error
 uCI <- 796 + margin_of_error
@@ -16,23 +16,23 @@ cbind(lCI, uCI)
 >Compute the 95% confidence interval for `mtcars$mpg`.
 ##### Manual Method
 ###### Actual Code
-```
+```r
 mpg.n <- nrow(mtcars)
 mpg.mean <- mean(mtcars$mpg)
 mpg.sd <- sd(mtcars$mpg)
 mpg.se <- mpg.sd/sqrt(mpg.n)
-margin_of_error <- qt(0.975, df=(mpg.n-1))*mpg.se
+margin_of_error <- qt(0.975, df = (mpg.n-1))*mpg.se
 mpg.lCI <- mpg.mean - margin_of_error
 mpg.uCI <- mpg.mean + margin_of_error
 cbind(mpg.lCI, mpg.uCI)
 ```
 ##### Rmisc Method
 ###### Preparation Code
-```
+```r
 library(Rmisc)
 ```
 ###### Actual Code
-```
+```r
 mpg.ci <- CI(mtcars$mpg, ci = 0.95)
 mpg.ci <- cbind(mpg.ci[3],mpg.ci[1])
 colnames(mpg.ci) <- c("lCI", "uCI")
