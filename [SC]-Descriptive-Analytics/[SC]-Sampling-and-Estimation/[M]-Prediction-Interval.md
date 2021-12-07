@@ -4,7 +4,7 @@
 ##### Sample Task 1
 >\[Normally Distributed Data\] Compute the 99% prediction interval.
 ###### Actual Code
-```
+```r
 mpg.m <- mean(mtcars$mpg)
 mpg.sd <- sd(mtcars$mpg)
 
@@ -18,11 +18,11 @@ cbind(lPI, uPI)
 ##### Sample Task 2
 >\[lambda > 0\] Compute the 95% prediction interval.
 ###### Preparation Code
-```
+```r
 library(rcompanion)
 ```
 ###### Actual Code
-```
+```r
 lambda <- transformTukey(mtcars$cyl, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
 mtcars$cyl.t <- transformTukey(mtcars$cyl)
@@ -45,7 +45,7 @@ cbind(lPI, uPI)
 ##### Sample Task 3
 >\[lambda < 0\] Compute the 90% prediction interval.
 ###### Preparation Code
-```
+```r
 # Functions
 library(rcompanion)
 
@@ -54,7 +54,7 @@ library(wooldridge)
 R <- rdchem
 ```
 ###### Actual Code
-```
+```r
 lambda <- transformTukey(R$rd, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
 R$rd.t <- transformTukey(R$rd)
@@ -77,7 +77,7 @@ cbind(lPI, uPI)
 ##### Sample Task 4
 >\[lambda = 0\] Compute the 90% prediction interval.
 ###### Preparation Code
-```
+```r
 # Functions
 library(rcompanion)
 
@@ -86,7 +86,7 @@ library(wooldridge)
 R <- rdchem
 ```
 ###### Actual Code
-```
+```r
 lambda <- transformTukey(R$salessq, quiet = TRUE, plotit = FALSE, returnLambda = TRUE)
 lambda
 R$salessq.t <- transformTukey(R$salessq)
