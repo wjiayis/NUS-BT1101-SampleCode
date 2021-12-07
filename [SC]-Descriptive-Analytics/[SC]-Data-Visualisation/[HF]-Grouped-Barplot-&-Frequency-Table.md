@@ -17,29 +17,28 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 2. Helper function. (Must be included. Do not edit.)
 ```r
 plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
-  
-grouped_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
+  grouped_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
 
-if(include_frequency_table){kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()}
+  if(include_frequency_table){kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()}
 
-grouped_barplot <- barplot(grouped_barplot.matrix,
-        beside = TRUE,
-        ylim = c(0, max(grouped_barplot.matrix)*barplot.axis_range.multiplication_constant),
-        names.arg = data_df[[1]],
-        main = glue::glue("Grouped Barplot of {title.text}"),
-        ylab = glue::glue("{y_variable.text}"),
-        cex.main = title.font_size,
-        cex.names = categories.font_size,
-        col = possible_colours[1:ncol(data_df)-1])
+  grouped_barplot <- barplot(grouped_barplot.matrix,
+          beside = TRUE,
+          ylim = c(0, max(grouped_barplot.matrix)*barplot.axis_range.multiplication_constant),
+          names.arg = data_df[[1]],
+          main = glue::glue("Grouped Barplot of {title.text}"),
+          ylab = glue::glue("{y_variable.text}"),
+          cex.main = title.font_size,
+          cex.names = categories.font_size,
+          col = possible_colours[1:ncol(data_df)-1])
 
-if(legend.position == "PRESET"){
-legend.position <- ifelse(max(grouped_barplot.matrix[,1]) > max(grouped_barplot.matrix[,-1]), "topright", "topleft")}
-legend(legend.position,
-       fill = possible_colours[1:ncol(data_df)-1],
-       colnames(data_df)[2:ncol(data_df)],
-       cex = legend.font_size)
+  if(legend.position == "PRESET"){
+        legend.position <- ifelse(max(grouped_barplot.matrix[,1]) > max(grouped_barplot.matrix[,-1]), "topright", "topleft")}
+        legend(legend.position,
+               fill = possible_colours[1:ncol(data_df)-1],
+               colnames(data_df)[2:ncol(data_df)],
+               cex = legend.font_size)
 
-text(y = grouped_barplot.matrix, x = grouped_barplot, label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
+  text(y = grouped_barplot.matrix, x = grouped_barplot, label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 ```
 3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```r
