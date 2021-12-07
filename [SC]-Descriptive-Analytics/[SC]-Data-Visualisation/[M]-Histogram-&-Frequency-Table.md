@@ -20,7 +20,7 @@ histogram <- hist(CS$salary,
      main = "Histogram of Frequency of CEOs' Salary", # Title
      xlab = "Salary",
      ylab = "Number of CEOs",
-     label = TRUE,
+     label = TRUE, # Value labels
      col = "pink")
 
 # Frequency Table
