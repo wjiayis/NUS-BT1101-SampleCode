@@ -11,7 +11,7 @@ B <- barium
 ```r
 plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
-     ylab = "Gasoline Production", xlab = "Time Trend", type="n")
+     ylab = "Gasoline Production", xlab = "Time Trend", type = "n")
 lines(B$t, B$gas)
 ```
 #### For time-series data
@@ -39,7 +39,7 @@ B <- barium
 ```
 ###### Actual Code
 ```r
-ggplot(B, aes(x=t, y=gas)) +
+ggplot(B, aes(x = t, y = gas)) +
   geom_line()
 ```
 #### For time-series data
@@ -55,6 +55,6 @@ B$bchlimp.ts <- ts(B$bchlimp, frequency = 12, start = c(1981,1))
 ```
 ###### Actual Code
 ```r
-ggplot(B, aes(x=t, y=bchlimp.ts)) +
+ggplot(B, aes(x = t, y = bchlimp.ts)) +
   geom_line()
 ```
