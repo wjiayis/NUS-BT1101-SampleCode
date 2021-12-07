@@ -56,7 +56,7 @@ rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_freque
 # To start at 0
 rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
 
-ggplot(mapping=aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_frequency)) +
+ggplot(mapping = aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_frequency)) +
   geom_line()
 ```
 #### Cumulative Relative Frequency
@@ -64,6 +64,6 @@ ggplot(mapping=aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_freq
 ```r
 rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
 
-ggplot(mapping=aes(x = 1:length(rd.cumulative_relative_frequency), y = rd.cumulative_relative_frequency)) +
+ggplot(mapping = aes(x = 1:length(rd.cumulative_relative_frequency), y = rd.cumulative_relative_frequency)) +
   geom_line()
 ```
