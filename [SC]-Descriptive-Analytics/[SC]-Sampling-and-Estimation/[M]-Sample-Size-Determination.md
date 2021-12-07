@@ -7,7 +7,7 @@
 ###### Sample Task
 >The distribution for volume is normal with sample mean = 796ml and population standard deviation = 15ml.</br>
 What sample size is needed to reduce the margin of error to at most 3ml, when developing a 95% confidence interval for the mean volume for population?
-```
+```r
 ceiling(qnorm(0.975)^2*(15^2)/(3^2))
 ```
 </br></br></br>
@@ -19,6 +19,6 @@ ceiling(qnorm(0.975)^2*(15^2)/(3^2))
 ##### Actual Code
 ###### Sample Task
 >Determine number of voters to poll to ensure a sampling error of at most ± 2%.
-```
+```r
 ceiling(qnorm(0.975)^2*((0.5)*(1-0.5))/(0.02)^2)
 ```
