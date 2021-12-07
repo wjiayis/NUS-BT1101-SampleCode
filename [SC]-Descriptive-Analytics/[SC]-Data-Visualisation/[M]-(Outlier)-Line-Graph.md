@@ -17,8 +17,8 @@ lines(B$t, B$gas)
 
 gas.upper_limit3 <- mean(B$gas) + 3*sd(B$gas)
 gas.lower_limit3 <- mean(B$gas) - 3*sd(B$gas)
-abline(h = gas.upper_limit3, col = 2) # Horizontal blue line
-abline(h = gas.lower_limit3, col = 2) # Horizontal blue line
+abline(h = gas.upper_limit3, col = 4) # Horizontal blue line
+abline(h = gas.lower_limit3, col = 4) # Horizontal blue line
 ```
 ###### Sample Task 2
 >Identify outliers using the second empirical rule.
@@ -30,8 +30,8 @@ lines(B$t, B$gas)
 
 gas.upper_limit3 <- mean(B$gas) + 1.5*sd(B$gas)
 gas.lower_limit3 <- mean(B$gas) - 1.5*sd(B$gas)
-abline(h = gas.upper_limit3, col = 4) # Horizontal red line
-abline(h = gas.lower_limit3, col = 4) # Horizontal red line
+abline(h = gas.upper_limit3, col = 2) # Horizontal red line
+abline(h = gas.lower_limit3, col = 2) # Horizontal red line
 ```
 ### ggplot2 Graphic
 ##### Preparation Code
