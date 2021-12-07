@@ -16,9 +16,9 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ```r
 pie(HEC$Freq,
     labels = glue::glue("{HEC$Hair}, {round(100 * HEC$Freq/sum(HEC$Freq),2)}%"),
-    col = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1"),
     main = "Pie Chart of Frequency of Hair Colour",
-    cex.main = 0.9)
+    cex.main = 0.9,
+    col = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1"))
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
@@ -35,8 +35,8 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 ```
 ###### Actual Code
 ```r
-ggplot(HEC, aes(x="", y=Freq, fill=Hair)) +
+ggplot(HEC, aes(x = "", y = Freq, fill = Hair)) +
         geom_bar(width = 1, stat = "identity") +
-        coord_polar("y", start=0) +
-        scale_fill_manual(values=c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1"))
+        coord_polar("y", start = 0) +
+        scale_fill_manual(values = c("plum2", "lightgoldenrod1", "pink", "lightsteelblue1"))
 ```
