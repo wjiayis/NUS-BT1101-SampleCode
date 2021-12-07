@@ -5,7 +5,7 @@
 library(dplyr)
 
 M <- mtcars %>% select("cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
-pca1 <- prcomp(M, center=T, scale=T)
+pca1 <- prcomp(M, center = TRUE, scale = TRUE)
 
 M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
@@ -23,7 +23,7 @@ summary(fit)
 ```r
 plot(fit, 1)
 plot(fit, 2)
-abline(a=0, b=0)
+abline(a = 0, b = 0)
 ```
 4. If required, obtain prediction and/or residuals.
 ```r
