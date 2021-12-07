@@ -2,7 +2,7 @@
 ###### Preparation Code
 ```r
 # Functions
-library(factoextra) # For `fviz_cluster
+library(factoextra) # For `fviz_cluster()` (Optional Step 3)
 
 # Sample Data
 library(dplyr)
