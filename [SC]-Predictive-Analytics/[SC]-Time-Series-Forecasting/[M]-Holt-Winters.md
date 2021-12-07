@@ -2,8 +2,8 @@
 ##### Preparation Code
 ```r
 # Take 10 years for fitting, last 2 years for evaluation
-ap.train <- window(AirPassengers, start=1949, end=1958.917) # ts object
-ap.test <- window(AirPassengers, start=1959, end=1960.917) # ts object
+ap.train <- window(AirPassengers, start = 1949, end = 1958.917) # ts object
+ap.test <- window(AirPassengers, start = 1959, end = 1960.917) # ts object
 ```
 ##### Actual Code
 1. Run `HoltWinters` with different specifications.
@@ -26,5 +26,5 @@ sqrt(mean((fit3.prediction - ap.test)^2))
 ###### Base R Graphic
 ```r
 plot(fit1, fit1.prediction)
-lines(ap.test, col='blue')
+lines(ap.test, col = 'blue')
 ```
