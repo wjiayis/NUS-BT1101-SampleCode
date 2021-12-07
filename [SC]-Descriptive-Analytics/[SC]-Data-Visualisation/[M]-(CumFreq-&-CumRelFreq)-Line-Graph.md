@@ -57,7 +57,9 @@ rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_freque
 rd.cumulative_frequency <- c(0,rd.frequency_table$cumulative_frequency)
 
 ggplot(mapping = aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_frequency)) +
-  geom_line()
+  geom_line() +
+  labs(title="Line Graph of Cumulative Frequency of R$rd",
+        x ="R&D spending, millions", y = "Cumulative Frequency")
 ```
 #### Cumulative Relative Frequency
 ###### Actual Code
@@ -65,5 +67,7 @@ ggplot(mapping = aes(x = 1:length(rd.cumulative_frequency), y = rd.cumulative_fr
 rd.cumulative_relative_frequency <- c(0,rd.frequency_table$cumulative_relative_frequency)
 
 ggplot(mapping = aes(x = 1:length(rd.cumulative_relative_frequency), y = rd.cumulative_relative_frequency)) +
-  geom_line()
+  geom_line() +
+  labs(title="Line Graph of Cumulative Relative Frequency of R$rd",
+        x ="R&D spending, millions", y = "Cumulative Relative Frequency")
 ```
