@@ -40,7 +40,7 @@ const.rhs <- c(12,34,5,5)
 
 # Run the model
 lp.solution <- lp("max", objective.fn, const.mat, const.dir, const.rhs,
-                  compute.sens=TRUE)
+                  compute.sens = TRUE)
 
 lp.solution
 lp.solution$solution
@@ -94,7 +94,7 @@ const.dir <- c("<=","<=",">=",">=")
 const.rhs <- c(12,34,5,5)
 
 lp.solution <- lp("min", objective.fn, const.mat, const.dir, const.rhs,
-                  compute.sens=TRUE)
+                  compute.sens = TRUE)
 
 lp.solution
 lp.solution$solution
