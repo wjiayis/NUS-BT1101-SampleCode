@@ -10,7 +10,9 @@ library(dplyr)
 mpg.n <- nrow(mtcars)
 mpg.25 <- mtcars %>% filter(mpg>25)
 mpg.p25 <- nrow(mpg.25)/mpg.n
-mpg.lCI <- mpg.p25 + (qnorm(0.025)*sqrt(mpg.p25*(1-mpg.p25)/mpg.n))
-mpg.uCI <- mpg.p25 - (qnorm(0.025)*sqrt(mpg.p25*(1-mpg.p25)/mpg.n))
+
+mpg.margin_of_error <- (qnorm(0.975)*sqrt(mpg.p25*(1-mpg.p25)/mpg.n))
+mpg.lCI <- mpg.p25 - mpg.margin_of_error
+mpg.uCI <- mpg.p25 + mpg.margin_of_error
 print(cbind(mpg.lCI, mpg.uCI),digits = 3)
 ```
