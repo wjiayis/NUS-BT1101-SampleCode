@@ -8,5 +8,5 @@ CS <- ceosal1
 ###### Actual Code
 ```r
 CS$salary.imp <- CS$salary
-CS$salary.imp[CS$salary >= 10000]<- mean(CS$salary)
+CS$salary.imp[CS$salary >= 10000] <- mean(CS$salary)
 ```
