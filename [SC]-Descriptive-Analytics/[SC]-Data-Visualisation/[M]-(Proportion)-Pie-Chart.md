@@ -26,7 +26,6 @@ pie(HEC$Freq,
 # Functions
 library(dplyr)
 library(ggplot2)
-library(glue)
 
 # Sample Data
 HEC <- HairEyeColor %>% as.data.frame()
