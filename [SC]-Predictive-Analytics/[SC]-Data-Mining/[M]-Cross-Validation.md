@@ -13,6 +13,7 @@ mtcars$partitionNum <- sample(1:3, size = nrow(mtcars),
                           prob = c(0.6,0.2,0.2), replace = T)
 mtcars$partition <- factor(mtcars$partitionNum, levels = c(1,2,3),
                        labels = c("Train", "Valid", "Test"))
+                       
 mtcars_train <- mtcars %>% filter(partition == "Train")
 mtcars_valid <- mtcars %>% filter(partition == "Valid")
 mtcars_test <- mtcars %>% filter(partition == "Test")
