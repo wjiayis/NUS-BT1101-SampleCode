@@ -6,8 +6,9 @@ calculate.ConfidenceInterval <- function(dataset_variable, confidence_level.deci
   m <- mean(dataset_variable)
   sd <- sd(dataset_variable)
 
-  lCI <- mean(dataset_variable) + qt(((1 - confidence_level.decimal)/2), df=length(dataset_variable)-1)*sd(dataset_variable)/sqrt(length(dataset_variable))
-  uCI <- mean(dataset_variable) - qt(((1 - confidence_level.decimal)/2), df=length(dataset_variable)-1)*sd(dataset_variable)/sqrt(length(dataset_variable))
+  margin_of_error <- qt(((1 - confidence_level.decimal)/2), df=length(dataset_variable)-1)*sd(dataset_variable)/sqrt(length(dataset_variable))
+  lCI <- mean(dataset_variable) + margin_of_error
+  uCI <- mean(dataset_variable) - margin_of_error
   cbind(lCI, uCI)}
 ```
 2. Inputs. (Must be included. Edit this.)
