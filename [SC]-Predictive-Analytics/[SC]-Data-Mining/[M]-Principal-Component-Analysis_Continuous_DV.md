@@ -13,7 +13,7 @@ M <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
 1.  Run the principal component analysis.
 ```r
 pca1 <- prcomp(M, # Ensure that it only contains continuous variables
-               center=T, scale=T)
+               center = T, scale = T)
 summary(pca1)
 ```
 ###### Sample Task 2.1
