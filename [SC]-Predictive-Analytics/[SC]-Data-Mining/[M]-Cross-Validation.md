@@ -9,6 +9,7 @@ library(dplyr)
 ###### Actual Code
 ```r
 set.seed(1) # For reproducibility
+
 mtcars$partitionNum <- sample(1:3, size = nrow(mtcars),
                           prob = c(0.6,0.2,0.2), replace = T)
 mtcars$partition <- factor(mtcars$partitionNum, levels = c(1,2,3),
