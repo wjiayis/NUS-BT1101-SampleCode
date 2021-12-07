@@ -38,10 +38,10 @@ lines(rd.breaks, rd.cumulative_relative_frequency)
 ###### Preparation Code
 ```r
 # Functions
-library(dplyr)
 library(ggplot2)
 
 # Sample Data
+library(dplyr)
 library(wooldridge)
 R <- rdchem
 rd.breaks <- seq(0, 1500, by = 100)
