@@ -3,12 +3,12 @@
 
 ### Shapiro-wilk test[^1]
 ###### Preparation Code
-```
+```r
 # Sample Data
 MC <- mtcars
 ```
 ###### Actual Code
-```
+```r
 shapiro.test(MC$mpg)
 ```
 ### Graphical Methods[^1]
