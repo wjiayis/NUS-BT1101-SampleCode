@@ -19,7 +19,7 @@ qplot(seq_along(mtcars$mpg), mtcars$mpg) +
 ```
 ###### Two Variables
 ```r
-ggplot(mtcars, aes(y = mpg， x = wt)) +
+ggplot(mtcars, aes(y = mpg, x = wt)) +
   geom_point() +
   labs(title = "Scatterplot for `mtcars$mpg` on `mtcars$wt`")
 ```
