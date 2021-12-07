@@ -8,8 +8,8 @@ library(dplyr)
 # Sample Data
 library(wooldridge)
 R <- rdchem
-rd.breaks <- seq(0, 1500, by=100)
-rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
+rd.breaks <- seq(0, 1500, by = 100)
+rd.cut <- cut(R$rd, rd.breaks, right = FALSE)
 rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_frequency = cumsum(Freq), cumulative_relative_frequency = cumulative_frequency/nrow(R))
 ```
 #### Cumulative Frequency
@@ -46,8 +46,8 @@ library(ggplot2)
 # Sample Data
 library(wooldridge)
 R <- rdchem
-rd.breaks <- seq(0, 1500, by=100)
-rd.cut <- cut(R$rd, rd.breaks, right=FALSE)
+rd.breaks <- seq(0, 1500, by = 100)
+rd.cut <- cut(R$rd, rd.breaks, right = FALSE)
 rd.frequency_table <- table(rd.cut) %>% transform() %>% mutate(cumulative_frequency = cumsum(Freq), cumulative_relative_frequency = cumulative_frequency/nrow(R))
 ```
 #### Cumulative Frequency
