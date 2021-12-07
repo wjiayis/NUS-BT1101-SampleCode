@@ -3,9 +3,9 @@
 ```r
 # Sample Data
 library(dplyr)
+
 M <- mtcars %>% select("cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
 pca1 <- prcomp(M, center=T, scale=T)
-summary(pca1)
 
 M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
