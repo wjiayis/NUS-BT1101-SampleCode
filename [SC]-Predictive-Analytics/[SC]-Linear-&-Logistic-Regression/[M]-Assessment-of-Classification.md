@@ -33,6 +33,6 @@ false_positive <- 3
 false_negative <- 4
 precision <- true_positive / (true_positive + false_positive)
 recall <- true_positive / (true_positive + false_negative)
-f_score <- (2*precision*recall) / (precision+recall)
+f_score <- (2 * precision * recall) / (precision + recall)
 f_score
 ```
