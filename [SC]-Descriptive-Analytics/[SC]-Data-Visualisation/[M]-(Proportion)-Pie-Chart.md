@@ -24,10 +24,10 @@ pie(HEC$Freq,
 ###### Preparation Code
 ```r
 # Functions
-library(dplyr)
 library(ggplot2)
 
 # Sample Data
+library(dplyr)
 HEC <- HairEyeColor %>% as.data.frame()
 HEC <- HEC[c("Hair", "Freq")]
 HEC <- aggregate(Freq~Hair, HEC, sum)
