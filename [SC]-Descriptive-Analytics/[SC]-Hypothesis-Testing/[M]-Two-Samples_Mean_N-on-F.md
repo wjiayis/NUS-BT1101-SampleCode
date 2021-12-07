@@ -4,7 +4,7 @@
 | :---: |
 | :white_medium_square: Factor variable only 2 levels. |
 ##### Preparation Code
-```
+```r
 # Sample Data
 library(dplyr)
 setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
@@ -14,18 +14,18 @@ setosa_and_vesicolor <- iris %>% filter(Species != "virginica")
 ###### Sample Hypotheses 1:
 >H0: Mean sepal length of (setosa = vesicolor).</br>
 >H1: Mean sepal length of (setosa ≠ vesicolor).
-```
+```r
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species)
 ```
 ###### Sample Hypotheses 2:
 >H0: Mean sepal length of (setosa ≥ vesicolor).</br>
 >H1: Mean sepal length of (setosa < vesicolor).
-```
+```r
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "less")
 ```
 ###### Sample Hypotheses 3:
 >H0: Mean sepal length of (setosa ≤ vesicolor).</br>
 >H1: Mean sepal length of (setosa > vesicolor).
-```
+```r
 t.test(setosa_and_vesicolor$Sepal.Length ~ setosa_and_vesicolor$Species, alternative = "greater")
 ```
