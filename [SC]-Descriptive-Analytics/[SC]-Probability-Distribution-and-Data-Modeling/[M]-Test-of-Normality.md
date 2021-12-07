@@ -2,14 +2,9 @@
 :white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Probability-Distribution-and-Data-Modeling/[HF]-Outlier-Identification-&-Test-of-Normality.md)
 
 ### Shapiro-wilk test[^1]
-###### Preparation Code
-```r
-# Sample Data
-MC <- mtcars
-```
 ###### Actual Code
 ```r
-shapiro.test(MC$mpg)
+shapiro.test(mtcars$mpg)
 ```
 ### Graphical Methods[^1]
 1. [Density Plot](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Density-Plot.md)
