@@ -3,6 +3,7 @@
 ```r
 # Functions
 library(dplyr)
+library(glue)
 
 # Sample Data
 library(wooldridge)
