@@ -19,7 +19,7 @@ M <- M %>% mutate(
 fit <- lm(cyl ~ pc1+pc2+pc3+pc4, M)
 summary(fit)
 ```
-2. If required, examine its residual plots.
+2. Examine its residual plots.
 ```r
 plot(fit, 1)
 plot(fit, 2)
