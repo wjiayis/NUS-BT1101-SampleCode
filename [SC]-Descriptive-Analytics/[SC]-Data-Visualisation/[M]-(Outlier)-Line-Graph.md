@@ -50,11 +50,11 @@ B <- barium
 gas.upper_limit3 <- mean(B$gas) + 3*sd(B$gas)
 gas.lower_limit3 <- mean(B$gas) - 3*sd(B$gas)
 
-ggplot(B, aes(x=t, y=gas)) +
+ggplot(B, aes(x = t, y = gas)) +
         geom_line() +
-        geom_hline(yintercept=gas.upper_limit3, colour = "blue") +
-        geom_hline(yintercept=gas.lower_limit3, colour = "blue") +
-        labs(title="Line Graph of Gasoline Production Over Time")
+        geom_hline(yintercept = gas.upper_limit3, colour = "blue") +
+        geom_hline(yintercept = gas.lower_limit3, colour = "blue") +
+        labs(title = "Line Graph of Gasoline Production Over Time")
 ```
 ###### Sample Task 2
 >Identify outliers using the second empirical rule.
@@ -62,9 +62,9 @@ ggplot(B, aes(x=t, y=gas)) +
 gas.upper_limit2 <- mean(B$gas) + 2*sd(B$gas)
 gas.lower_limit2 <- mean(B$gas) - 2*sd(B$gas)
 
-ggplot(B, aes(x=t, y=gas)) +
+ggplot(B, aes(x = t, y = gas)) +
         geom_line() +
-        geom_hline(yintercept=gas.upper_limit2, colour = "red") +
-        geom_hline(yintercept=gas.lower_limit2, colour = "red") +
-        labs(title="Line Graph of Gasoline Production Over Time")
+        geom_hline(yintercept = gas.upper_limit2, colour = "red") +
+        geom_hline(yintercept = gas.lower_limit2, colour = "red") +
+        labs(title = "Line Graph of Gasoline Production Over Time")
 ```
