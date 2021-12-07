@@ -62,7 +62,7 @@ A %>% summarise(
 ###### \[`summarise`\] Sample Task 4.2
 >Compute the mean and median age, grouped by degree of improvement.
 ```r
-A %>% group_by(Improved) %>%summarise(
+A %>% group_by(Improved) %>% summarise(
         vars = "Age",
         n = n(),
         mean = mean(Age),
@@ -71,7 +71,7 @@ A %>% group_by(Improved) %>%summarise(
 ###### \[`summarise`\] Sample Task 4.3
 >Compute the mean and median age, grouped primarily by mode of treatment and secondarily by gender.
 ```r
-A %>% group_by(Improved, Sex) %>%summarise(
+A %>% group_by(Improved, Sex) %>% summarise(
         vars = "Age",
         n = n(),
         mean = mean(Age),
