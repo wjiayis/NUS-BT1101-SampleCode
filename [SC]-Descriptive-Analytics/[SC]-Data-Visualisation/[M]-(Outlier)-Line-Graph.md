@@ -1,7 +1,7 @@
 ## \[Outlier Identification\] Line Graph
 ### Base R Graphic
 ##### Preparation Code
-```
+```r
 # Sample Data
 library(wooldridge)
 B <- barium
@@ -9,7 +9,7 @@ B <- barium
 ##### Actual Code
 ###### Sample Task 1
 >Identify outliers using the third empirical rule.
-```
+```r
 plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
      ylab = "Gasoline Production", xlab = "Time Trend")
@@ -22,7 +22,7 @@ abline(h = gas.lower_limit3, col=2)
 ```
 ###### Sample Task 2
 >Identify outliers using the second empirical rule.
-```
+```r
 plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
      ylab = "Gasoline Production", xlab = "Time Trend")
@@ -35,7 +35,7 @@ abline(h = gas.lower_limit3, col=4)
 ```
 ### ggplot2 Graphic
 ##### Preparation Code
-```
+```r
 # Functions
 library(ggplot2)
 
@@ -46,7 +46,7 @@ B <- barium
 ##### Actual Code
 ###### Sample Task 1
 >Identify outliers using the third empirical rule.
-```
+```r
 gas.upper_limit3 <- mean(B$gas) + 3*sd(B$gas)
 gas.lower_limit3 <- mean(B$gas) - 3*sd(B$gas)
 
@@ -58,7 +58,7 @@ ggplot(B, aes(x=t, y=gas)) +
 ```
 ###### Sample Task 2
 >Identify outliers using the second empirical rule.
-```
+```r
 gas.upper_limit2 <- mean(B$gas) + 2*sd(B$gas)
 gas.lower_limit2 <- mean(B$gas) - 2*sd(B$gas)
 
