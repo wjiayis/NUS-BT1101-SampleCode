@@ -4,7 +4,7 @@
 >At 95% confidence level,</br>
 >H0: Mean population mpg = 19.</br>
 >H1: Mean population mpg ≠ 19.
-```
+```r
 t.test(mtcars$mpg,
        alternative = "two.sided",
        mu = 19,
@@ -14,7 +14,7 @@ t.test(mtcars$mpg,
 >At 90% confidence level,</br>
 >H0: Mean population mpg ≥ 19.</br>
 >H1: Mean population mpg < 19.
-```
+```r
 t.test(mtcars$mpg,
        alternative = "less",
        mu = 19,
@@ -24,7 +24,7 @@ t.test(mtcars$mpg,
 > At 99% confidence level,</br>
 >H0: Mean population mpg ≤ 15.</br>
 >H1: Mean population mpg > 15.
-```
+```r
 t.test(mtcars$mpg,
        alternative = "greater",
        mu = 15,
