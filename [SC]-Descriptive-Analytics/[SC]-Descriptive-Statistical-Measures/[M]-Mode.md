@@ -3,6 +3,6 @@
 ##### Actual Code
 ###### Sample Task
 >Compute mode `mtcars$mpg`.
-```
+```r
 names(table(mtcars$mpg))[table(mtcars$mpg)==max(table(mtcars$mpg))]
 ```
