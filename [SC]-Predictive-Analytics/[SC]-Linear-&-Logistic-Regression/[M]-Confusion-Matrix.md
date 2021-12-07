@@ -5,7 +5,7 @@
 library(dplyr)
 M_train <- mtcars %>% filter(mpg <= 24)
 M_test <- mtcars %>% filter(mpg > 24)
-fit <- glm(am ~ mpg + cyl, family = "binomial", M_train) # am is binary, mpg and cyl are continuous
+fit <- glm(am ~ mpg + cyl, family = "binomial", M_train) # `am` is binary, `mpg` and `cyl` are continuous
 ```
 ###### Actual Code
 ```r
