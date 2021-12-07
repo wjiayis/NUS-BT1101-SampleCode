@@ -10,30 +10,30 @@
 ###### [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
 
 ###### Simple Linear Regression
-```
+```r
 fit <- lm(mpg ~ hp, mtcars)
 summary(fit)
 ```
 ###### Multiple Linear Regression (w/o Interaction)
-```
+```r
 fit <- lm(Petal.Length ~ Species + Sepal.Length, iris)
 summary(fit)
 ```
 ###### Multiple Linear Regression (w Interaction)
-```
+```r
 fit <- lm(Petal.Length ~ Species * Sepal.Length + Sepal.Width, iris)
 #fit <- lm(Petal.Length ~ Species * Sepal.Length, iris)
 summary(fit)
 ```
 
 2. Examine its residual plots.
-```
+```r
 plot(fit, 1)
 plot(fit, 2)
-abline(a=0, b=0)
+abline(a = 0, b = 0)
 ```
 3. If required, obtain prediction and/or residuals.
-```
+```r
 iris$predicted <- predict(fit)
 iris$residuals <- residuals(fit)
 ```
