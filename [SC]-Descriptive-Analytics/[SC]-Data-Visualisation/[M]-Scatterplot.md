@@ -11,7 +11,11 @@ plot(mtcars$wt, mtcars$mpg,
      main = "Scatterplot for `mtcars$mpg` on `mtcars$wt`")
 ```
 ### ggplot2 Graphic
-###### Actual Code
+##### Preparation Code
+```r
+library(ggplot2)
+```
+##### Actual Code
 ###### One Variable
 ```r
 qplot(seq_along(mtcars$mpg), mtcars$mpg) +
