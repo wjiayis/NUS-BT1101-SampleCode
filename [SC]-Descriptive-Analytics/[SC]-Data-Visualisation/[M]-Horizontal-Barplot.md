@@ -18,7 +18,7 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         names.arg = c("Black", "Brown", "Red", "Blond"), # y-axis labels
         las = 1, # [Orientation] y-axis labels
         cex.names = 0.9, # [Font size] y-axis labels
-        col="pink") # Colour
+        col = "pink") # Colour
 
 text(y = hair_colour.barplot, x = HEC$Freq, label = HEC$Freq, pos = 4, cex = 1)
 ```
