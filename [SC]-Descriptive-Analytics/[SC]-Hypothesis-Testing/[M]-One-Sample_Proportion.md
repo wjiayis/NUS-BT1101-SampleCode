@@ -12,7 +12,7 @@ library(dplyr)
 # z-statistic
 mpg.17 <- mtcars %>% filter(mpg > 17)
 mpg.p17 <- nrow(mpg.17) / nrow(mtcars)
-z <- (mpg.p17 - 0.18) / sqrt(0.18*(1-0.18)/nrow(mtcars))
+z <- (mpg.p17-0.18) / sqrt(0.18*(1-0.18)/nrow(mtcars))
 z
 
 # Critical Value
