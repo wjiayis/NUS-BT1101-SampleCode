@@ -18,31 +18,30 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
 2. Helper function. (Must be included. Do not edit.)
 ```r
 plot.StackedBarplot.h <- function(data_df, title.text, y_variable.text, title.font_size, categories.font_size, value_labels.font_size, legend.font_size, possible_colours, legend.position, barplot.axis_range.multiplication_constant, include_frequency_table){
-  
-stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
+  stacked_barplot.matrix <- data_df %>% select(-1) %>% as.matrix() %>% t()
 
-if(include_frequency_table){kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()}
+  if(include_frequency_table){kable(data_df, caption = glue::glue("Table of {title.text}")) %>% print()}
 
-stacked_barplot <- barplot(stacked_barplot.matrix,
-        beside = FALSE,
-        ylim = c(0, max(colSums(stacked_barplot.matrix))*barplot.axis_range.multiplication_constant),
-        names.arg = data_df[[1]],
-        main = glue::glue("Stacked Barplot of {title.text}"),
-        ylab = glue::glue("{y_variable.text}"),
-        cex.main = title.font_size,
-        cex.names = categories.font_size,
-        col = possible_colours[1:ncol(data_df)-1])
+  stacked_barplot <- barplot(stacked_barplot.matrix,
+          beside = FALSE,
+          ylim = c(0, max(colSums(stacked_barplot.matrix))*barplot.axis_range.multiplication_constant),
+          names.arg = data_df[[1]],
+          main = glue::glue("Stacked Barplot of {title.text}"),
+          ylab = glue::glue("{y_variable.text}"),
+          cex.main = title.font_size,
+          cex.names = categories.font_size,
+          col = possible_colours[1:ncol(data_df)-1])
 
-if(legend.position == "PRESET"){
-legend.position <- ifelse(max(stacked_barplot.matrix[,1]) > max(stacked_barplot.matrix[,-1]), "topright", "topleft")}
-legend(legend.position,
-       fill = possible_colours[1:ncol(data_df)-1],
-       colnames(data_df)[2:ncol(data_df)],
-       cex = legend.font_size)
+  if(legend.position == "PRESET"){
+    legend.position <- ifelse(max(stacked_barplot.matrix[,1]) > max(stacked_barplot.matrix[,-1]), "topright", "topleft")}
+    legend(legend.position,
+           fill = possible_colours[1:ncol(data_df)-1],
+           colnames(data_df)[2:ncol(data_df)],
+           cex = legend.font_size)
 
-H <- apply(stacked_barplot.matrix, 2L, cumsum) - stacked_barplot.matrix
-text(x = rep(stacked_barplot, each = nrow(H)), y = H,
-     label = round(stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
+  H <- apply(stacked_barplot.matrix, 2L, cumsum) - stacked_barplot.matrix
+  text(x = rep(stacked_barplot, each = nrow(H)), y = H,
+       label = round(stacked_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 ```
 3. Hyperparameter. (Must be included. Edit only if the helper function is not producing the right output. Alert me if you have to edit this.)
 ```r
