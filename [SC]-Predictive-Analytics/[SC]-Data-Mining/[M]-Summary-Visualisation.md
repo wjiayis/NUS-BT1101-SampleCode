@@ -6,7 +6,7 @@ library(psych)
 ```
 ###### Actual Code
 ```r
-pairs.panels(iris, lm=TRUE)
+pairs.panels(iris, lm = TRUE)
 ```
 </br></br>
 ### ggplot2 Graphics
