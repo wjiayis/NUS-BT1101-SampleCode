@@ -46,3 +46,10 @@ ggplot(CS, aes(x = salary)) +
       geom_histogram(fill = "pink", color = "black") +
       labs(title = "Histogram of Frequency of CEOs' Salary")
 ```
+##### Histogram of Proportion of Total
+###### Actual Code
+```r
+ggplot(CS, aes(x = salary, y = ..density..)) +
+      geom_histogram(fill = "pink", color = "black") +
+      labs(title = "Histogram of Frequency of CEOs' Salary")
+```
