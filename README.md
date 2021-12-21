@@ -1,4 +1,4 @@
-# Sample Code for BT1101
+# \[BT1101\] Sample Code
 :bulb: Note to users: The organisation of content may be slightly different from that in your lecture notes.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
