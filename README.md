@@ -1,4 +1,8 @@
 # \[BT1101\] Sample Code
+#### :bulb: Notes to users:
+1. The organisation of content may be slightly different from that in your lecture notes.
+2. The content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make new versions of the repository. Alternatively, fork this repository and adapt it.
+3. Labelling convention: `[M]` stands for 'manual' (i.e., example codes with manual inputs), `[HF]` stands for 'helper function'.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
 ### 2. Data Tabulation and Frequencies
