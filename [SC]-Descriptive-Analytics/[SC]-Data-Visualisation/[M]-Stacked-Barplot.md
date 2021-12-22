@@ -12,6 +12,7 @@ M <- mathpnl %>% select(c(math4, math7, y92, y93, y94, y95))
 M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
                         ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
 M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year) %>% summarise(Satisfaction.Grade_4 = mean(math4, na.rm=TRUE), Satisfaction.Grade_7 = mean(math7, na.rm=TRUE))
+
 satisfaction.stacked_barplot.matrix <- M %>%
   select(c(Satisfaction.Grade_4, Satisfaction.Grade_7)) %>% as.matrix() %>% t()
 ```
