@@ -1,4 +1,4 @@
-## \[HF\]\[Base R\] Histogram
+## \[HF\]\[Base R\] Histogram of Count
 ###### Preparation Code
 ```r
 # Functions
