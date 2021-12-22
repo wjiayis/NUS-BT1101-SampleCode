@@ -1,8 +1,7 @@
 # \[BT1101\] Sample Code
 #### :bulb: Notes to users
-- The organisation of content may be slightly different from that in your lecture notes.
-- The content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make new versions of the repository. Alternatively, fork this repository and adapt it.
-- Abbreviations and terms used
+- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make new versions of the repository. Alternatively, fork this repository and adapt it.
+- Abbreviations and terms used:
   - `[M]` stands for 'manual' (i.e., example codes with manual inputs)
   - `[HF]` stands for 'helper function'.
   - `Preparation Code` refers code that is included just so you can to view a sample output.
