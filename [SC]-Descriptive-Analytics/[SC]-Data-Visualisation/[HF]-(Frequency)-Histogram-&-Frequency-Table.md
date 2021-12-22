@@ -1,4 +1,4 @@
-## \[HF\]\[Base R\] Histogram of Count
+## \[HF\]\[Base R\]\[Frequency\] Histogram & Frequency Table
 ###### Preparation Code
 ```r
 # Functions
