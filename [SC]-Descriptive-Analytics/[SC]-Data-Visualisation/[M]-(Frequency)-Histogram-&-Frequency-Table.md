@@ -1,6 +1,6 @@
-## Histogram & Frequency Table
+## \[Frequency\] Histogram & Frequency Table
 ### Base R Graphic
-:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Count)-Histogram-&-Frequency-Table.md)
+:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Frequency)-Histogram-&-Frequency-Table.md)
 ###### Preparation Code
 ```r
 # Functions
@@ -11,7 +11,6 @@ library(dplyr)
 library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
-##### Histogram of Count
 ###### Actual Code
 ```r
 # Graph
@@ -39,17 +38,9 @@ library(dplyr)
 library(wooldridge)
 CS <- ceosal1 %>% filter(salary < 1000)
 ```
-##### Histogram of Count
 ###### Actual Code
 ```r
 ggplot(CS, aes(x = salary)) +
-      geom_histogram(fill = "pink", color = "black") +
-      labs(title = "Histogram of Frequency of CEOs' Salary")
-```
-##### Histogram of Proportion of Total
-###### Actual Code
-```r
-ggplot(CS, aes(x = salary, y = ..density..)) +
       geom_histogram(fill = "pink", color = "black") +
       labs(title = "Histogram of Frequency of CEOs' Salary")
 ```
