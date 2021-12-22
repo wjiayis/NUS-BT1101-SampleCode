@@ -47,6 +47,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, Year) %>% group_by(Year) %>% s
 ```r
 ggplot(data = M, aes(x = Year, y = Mean)) + # dataset_variable
   geom_bar(stat = "identity", fill = "pink") + # Colour
+  labs(title = "Bar Plot of Mean Satisfaction") + # Title
   #geom_text(aes(label = round(Mean,2)), vjust = -0.3, color = "black", size = 3.5) # 'Outside-bars' value labels
   geom_text(aes(label = round(Mean,2)), vjust = 1.6, color = "black", size = 3.5) # 'Within-bars' value labels
 ```
