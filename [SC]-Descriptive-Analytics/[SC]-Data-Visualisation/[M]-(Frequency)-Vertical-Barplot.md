@@ -14,6 +14,8 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         ylim = c(0,340), # Range of y-values
         main = "Barplot of Frequency of Hair Colour", # Title
         cex.main = 1.1, # [Font size] Title
+        ylab = "Frequency of Hair Colour", # y-axis label
+        xlab = "Hair Colour", # x-axis label
         names.arg = c("Black", "Brown", "Red", "Blond"), # x-axis labels
         las = 1, # [Orientation] x-axis labels
         cex.names = 0.9, # [Font size] x-axis labels
