@@ -1,4 +1,4 @@
-## [Frequency] Horizontal Barplot
+## \[Frequency\] Horizontal Barplot
 ### Base R Graphic
 ###### Preparation Code
 ```r
