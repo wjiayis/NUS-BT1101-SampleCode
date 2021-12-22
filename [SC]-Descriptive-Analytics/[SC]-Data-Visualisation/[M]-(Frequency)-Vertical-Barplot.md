@@ -21,7 +21,7 @@ hair_colour.barplot <- barplot(HEC$Freq, # dataset_variable
         cex.names = 0.9, # [Font size] x-axis labels
         col="pink") # Colour
 
-text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1)
+text(y = HEC$Freq, x = hair_colour.barplot, label = HEC$Freq, pos = 3, cex = 1) # Value labels
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
