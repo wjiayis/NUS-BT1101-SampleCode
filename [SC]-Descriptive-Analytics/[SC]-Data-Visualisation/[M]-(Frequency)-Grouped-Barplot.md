@@ -5,6 +5,7 @@
 ```r
 # Functions
 library(dplyr)
+library(tidyr)
 library(knitr)
 
 # Sample Data
