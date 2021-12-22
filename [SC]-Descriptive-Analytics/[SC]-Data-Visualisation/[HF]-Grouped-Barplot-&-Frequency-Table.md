@@ -33,10 +33,10 @@ plot.GroupedBarplot.h <- function(data_df, title.text, y_variable.text, title.fo
 
   if(legend.position == "PRESET"){
         legend.position <- ifelse(max(grouped_barplot.matrix[,1]) > max(grouped_barplot.matrix[,-1]), "topright", "topleft")}
-        legend(legend.position,
-               fill = possible_colours[1:ncol(data_df)-1],
-               colnames(data_df)[2:ncol(data_df)],
-               cex = legend.font_size)
+  legend(legend.position,
+         fill = possible_colours[1:ncol(data_df)-1],
+         colnames(data_df)[2:ncol(data_df)],
+         cex = legend.font_size)
 
   text(y = grouped_barplot.matrix, x = grouped_barplot, label = round(grouped_barplot.matrix,2), pos = 3, cex = value_labels.font_size)}
 ```
