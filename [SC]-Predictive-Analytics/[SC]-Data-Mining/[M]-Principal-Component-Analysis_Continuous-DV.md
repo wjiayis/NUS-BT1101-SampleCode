@@ -41,7 +41,7 @@ M <- M %>% mutate(
 M <- M %>% mutate(
   pc1 = pca1$x[,"PC1"],
   pc2 = pca1$x[,"PC2"],
-  pc3 = pca1$x[,"PC3"]) # In this case: cumulative proportion = 0.92094
+  pc3 = pca1$x[,"PC3"]) # Cumulative proportion = 0.92094 (in this case)
 ```
 ###### Sample Task 4.3
 > Using the elbow method, extract sufficient principal components.
