@@ -3,6 +3,8 @@
 | :---: |
 | :white_medium_square: Dependent variable either a factor with 2 levels or numeric with values 0 and 1 only. |
 
+###### [Logistic Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Logistic-Regression-with-Principal-Components.md)
+
 ##### Preparation Code
 ```r
 # Sample Data
