@@ -1,5 +1,5 @@
 ## Linear Regression with Principal Components
-:bulb: The logic is identical to that of regular logistic regression.
+:bulb: The logic is identical to that of regular linear regression.
 ###### Preparation Code
 ```r
 # Sample Data
