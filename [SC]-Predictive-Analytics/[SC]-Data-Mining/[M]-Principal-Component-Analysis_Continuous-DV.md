@@ -7,7 +7,7 @@ library(ggbiplot) # For Sample Task 2.1
 
 # Sample Data
 library(dplyr)
-M <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb")
+M <- select(mtcars, "cyl", "disp", "hp", "drat", "wt", "qsec", "gear", "carb") # Do not include DV
 ```
 ##### Actual Code
 1.  Run the principal component analysis.
