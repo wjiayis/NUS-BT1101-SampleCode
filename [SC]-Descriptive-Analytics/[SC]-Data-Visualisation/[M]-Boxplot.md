@@ -17,7 +17,7 @@ verbmath.moderate_outliers <- boxplot(G$verbmath, range = 1.5, main = "Boxplot t
 verbmath.moderate_outliers$out
 ```
 ###### Sample Task 2
->Remove extreme outliers (outside 3 IQR).[^1]
+>Remove extreme outliers (outside 3 IQR).
 ```r
 G.wo_extreme_outliers_verbmath <- G[-which(G$verbmath %in% verbmath.extreme_outliers$out),]
 ```
@@ -49,4 +49,3 @@ ggplot(G, aes(x = ethnicity, y = verbmath)) +
   geom_boxplot() +
   labs(title = "Boxplot to Examine Distribution of Moderate Outliers (outside 1 IQR)")
 ```
-[^1]: This is one of the many ways to handle outliers.
