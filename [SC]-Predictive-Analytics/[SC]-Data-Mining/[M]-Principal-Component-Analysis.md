@@ -43,10 +43,6 @@ M <- M %>% mutate(
   pc2 = pca1$x[,"PC2"],
   pc3 = pca1$x[,"PC3"]) # Cumulative proportion = 0.92094 (in this case)
 ```
-###### Sample Task 4.3
-> Using the elbow method, extract sufficient principal components.
-```r
-```
 5. Incorporate the principal components into regression models.
 - Continuous DV &#8594; [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
 - Binary DV &#8594; [Logistic Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Logistic-Regression-with-Principal-Components.md)
