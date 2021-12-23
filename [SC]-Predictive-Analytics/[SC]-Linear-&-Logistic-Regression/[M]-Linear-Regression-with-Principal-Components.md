@@ -1,4 +1,5 @@
 ## Linear Regression with Principal Components
+:bulb: The logic is identical to that of regular logistic regression.
 ###### Preparation Code
 ```r
 # Sample Data
@@ -25,7 +26,7 @@ plot(fit, 1)
 plot(fit, 2)
 abline(a = 0, b = 0)
 ```
-4. If required, obtain prediction and/or residuals.
+3. If required, obtain prediction and/or residuals.
 ```r
 M$predicted <- predict(fit)
 M$residuals <- residuals(fit)
