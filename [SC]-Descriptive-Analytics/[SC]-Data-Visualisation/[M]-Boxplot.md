@@ -36,14 +36,14 @@ G$ethnicity <- ifelse(gpa2$black == 1, "Black",
 ```
 ##### Actual Code
 ###### Sample Task 1
->Identify moderate outliers (outside 1.5 IQR) for `verbmath`.
+>Identify moderate outliers (outside 1 IQR) for `verbmath`.
 ```r
 ggplot(G, aes(y = verbmath)) + 
   geom_boxplot() +
   labs(title = "Boxplot to Examine Distribution of Moderate Outliers (outside 1.5 IQR)")
 ```
 ###### Sample Task 2
-> Identify moderate outliers (outside 1.5 IQR) for `verbmath` for each `ethnicity`.
+> Identify moderate outliers (outside 1 IQR) for `verbmath` for each `ethnicity`.
 ```r
 ggplot(G, aes(x = ethnicity, y = verbmath)) + 
   geom_boxplot() +
