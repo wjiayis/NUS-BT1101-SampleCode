@@ -1,4 +1,4 @@
-## \[Continuous DV\] Principal Component Analysis
+## Principal Component Analysis
 ##### Preparation Code
 ```r
 # Functions
@@ -47,4 +47,6 @@ M <- M %>% mutate(
 > Using the elbow method, extract sufficient principal components.
 ```r
 ```
-5. [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
+5. Incorporate the principal components into regression models.
+- Continuous DV &#8594; [Linear Regression with Principal Components](../../[SC]-Predictive-Analytics/[SC]-Linear-&-Logistic-Regression/[M]-Linear-Regression-with-Principal-Components.md)
+- Binary DV &#8594; [Logistic Regression with Principal Components]()
