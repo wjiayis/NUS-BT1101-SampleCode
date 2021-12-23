@@ -41,7 +41,6 @@
 - [Principal Component Analysis]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Principal-Component-Analysis.md)
 - [k-means Clustering]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-k-means-Clustering.md)
 - [Cross-validation]([SC]-Predictive-Analytics/[SC]-Data-Mining/[M]-Cross-Validation.md)
-- Regularisation
 ## Prescriptive Analytics
 ### 1. [Linear Optimisation]([SC]-Prescriptive-Analytics/[M]-Linear-Optimisation.md)
 ### 2. [Integer Optimisation]([SC]-Prescriptive-Analytics/[M]-Integer-Optimisation.md)
