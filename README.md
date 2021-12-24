@@ -1,6 +1,7 @@
-# \[BT1101\] Sample Code
+# BT1101 Sample Code
+<img alt="R" src="https://img.shields.io/badge/r-%23276DC3.svg?&style=for-the-badge&logo=r&logoColor=white"/> <img alt="LaTeX" src="https://img.shields.io/badge/latex%20-%23008080.svg?&style=for-the-badge&logo=latex&logoColor=white"/>
+-
 #### :bulb: Notes to users
-- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make new versions of the repository. Alternatively, fork this repository and adapt it.
 - Abbreviations and terms used:
   - `[SC]` stands for 'sample code' (folders containing sample code markdowns)
   - `[M]` stands for 'manual' (example codes with manual inputs)
@@ -8,6 +9,9 @@
   - `[ND]` stands for 'normal distribution'.
   - `Preparation Code` refers code that is included just so you can to view a sample output.
   - `Actual Code` refers to code required to perform the function.
+
+- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make new versions of the repository. Alternatively, fork this repository and adapt it.
+- For all commits before 2022: I apologise for the nonsensical commit history.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
 ### 2. Data Tabulation and Frequencies
