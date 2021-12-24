@@ -27,7 +27,7 @@ P <- prminwge
 ```r
 plot(P$prgnp,
      ylim = c(0, 5000),
-     main = "Line Graph of Imports over Time",
+     main = "Line Graph of Gross National Income over Time",
      ylab = "Gross National Income", xlab = "Time Trend", type = "n")
 lines(P$prgnp, col = "lightblue")  
 lines(P$usgnp, col = "pink")
@@ -51,6 +51,7 @@ plot(B$bchlimp.ts)
 ```
 ### ggplot2 Graphic
 #### For non-time-series data
+##### Single Line
 ###### Preparation Code
 ```r
 # Functions
@@ -64,6 +65,24 @@ B <- barium
 ```r
 ggplot(B, aes(x = t, y = gas)) +
   geom_line()
+```
+##### Multiple Lines
+###### Preparation Code
+```r
+# Functions
+library(ggplot2)
+
+# Sample Data
+library(dplyr)
+library(babynames)
+B <- babynames %>% 
+  filter(name %in% c("Ashley", "Patricia", "Helen")) %>%
+  filter(sex=="F")
+```
+###### Actual Code
+```r
+ggplot(B, aes(x=year, y=n, group=name, color=name)) +
+    geom_line()
 ```
 #### For time-series data
 ###### Preparation Code
