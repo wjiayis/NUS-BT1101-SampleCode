@@ -11,7 +11,7 @@
   - `Actual Code` refers to code required to perform the function.
 
 - The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make relevant changes. Alternatively, fork this repository and adapt it.
-- For all commits before 2022: I apologise for the nonsensical commit history.
+- For all commits made before 2022: I apologise for the nonsensical commit history.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
 ### 2. Data Tabulation and Frequencies
