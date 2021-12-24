@@ -1,6 +1,5 @@
 ## Pie Chart for Proportion
 ### Base R Graphic
-:white_heart: [Helper Function Available](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[HF]-(Proportion)-Pie-Chart-&-Frequency-Table.md)
 ###### Preparation Code
 ```r
 # Functions
