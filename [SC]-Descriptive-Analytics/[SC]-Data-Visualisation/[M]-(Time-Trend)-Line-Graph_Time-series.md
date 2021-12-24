@@ -26,8 +26,8 @@ P$usgnp.ts <- ts(P$usgnp, start = c(1950,1))
 ```r
 plot(P$prgnp.ts,
      ylim = c(0, 5000),
-     main = "Line Graph of Gross National Income over Time",
-     ylab = "Gross National Income", xlab = "Year", type = "n")
+     main = "Line Graph of Gross National Product over Time",
+     ylab = "Gross National Product", xlab = "Year", type = "n")
 lines(P$prgnp.ts, col = "lightblue")  
 lines(P$usgnp.ts, col = "pink")
 legend("topleft",
