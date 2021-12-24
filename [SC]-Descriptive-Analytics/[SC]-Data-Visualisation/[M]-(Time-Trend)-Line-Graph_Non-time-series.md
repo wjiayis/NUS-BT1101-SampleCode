@@ -28,8 +28,8 @@ P <- prminwge
 ```r
 plot(P$prgnp,
      ylim = c(0, 5000),
-     main = "Line Graph of Gross National Income over Time",
-     ylab = "Gross National Income", xlab = "Time Trend", type = "n")
+     main = "Line Graph of Gross National Product over Time",
+     ylab = "Gross National Product", xlab = "Time Trend", type = "n")
 lines(P$prgnp, col = "lightblue")  
 lines(P$usgnp, col = "pink")
 legend("topleft",
