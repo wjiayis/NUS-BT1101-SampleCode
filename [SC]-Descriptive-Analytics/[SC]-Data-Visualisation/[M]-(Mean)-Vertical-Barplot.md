@@ -42,7 +42,8 @@ library(wooldridge)
 M <- mathpnl %>% select(c(math4, y92, y93, y94, y95))
 M$Year <- ifelse(M$y92 == 1, "1992", ifelse(M$y93 == 1, "1993",
                    ifelse(M$y94 == 1, "1994", ifelse(M$y95 == 1, "1995", NA))))
-M <- M %>% filter(!is.na(Year)) %>% select(math4, Year) %>% group_by(Year) %>% summarise(Mean = mean(math4, na.rm=TRUE))
+M <- M %>% filter(!is.na(Year)) %>% select(math4, Year) %>% group_by(Year) %>%
+     summarise(Mean = mean(math4, na.rm=TRUE), sd = sd(math4, na.rm=TRUE))
 ```
 ###### Actual Code
 ```r
