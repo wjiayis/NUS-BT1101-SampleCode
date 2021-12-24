@@ -22,7 +22,7 @@
 - [**Individual**](Subpages/1-4-1-1.md) and [Summary]([SC]-Descriptive-Analytics/[SC]-Descriptive-Statistical-Measures/[M]-Summary-Statistics.md) Statistics
 - [**Outlier Handling**](Subpages/1-4-2.md)
 ### 5. Sampling and Estimation
-- [\[ND\] Probability for the Mean of n New Observations]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[M]-Normal-Distribution_Probability-for-the-Mean-of-n-New-Observations.md)
+- [\[ND\] Probability for the Mean of _n_ New Observations]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[M]-Normal-Distribution_Probability-for-the-Mean-of-n-New-Observations.md)
 - [**Interval Estimates**](Subpages/1-5-2.md)
 - [\[Sampling Error\] Sample Size Determination]([SC]-Descriptive-Analytics/[SC]-Sampling-and-Estimation/[M]-Sample-Size-Determination.md)
 ### 6. [Hypothesis Testing](Subpages/1-6.md)
