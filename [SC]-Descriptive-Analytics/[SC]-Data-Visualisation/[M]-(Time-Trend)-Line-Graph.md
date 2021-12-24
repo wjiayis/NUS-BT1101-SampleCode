@@ -1,6 +1,7 @@
 ## \[Time Trend\] Line Graph
 ### Base R Graphic
 #### For non-time-series data
+##### Single Line
 ###### Preparation Code
 ```r
 # Sample Data
@@ -13,6 +14,28 @@ plot(B$t, B$gas,
      main = "Line Graph of Gasoline Production Over Time",
      ylab = "Gasoline Production", xlab = "Time Trend", type = "n")
 lines(B$t, B$gas)
+```
+##### Multiple Lines
+###### Preparation Code
+```r
+# Sample Data
+library(dplyr)
+library(wooldridge)
+P <- prminwge
+```
+###### Actual Code
+```r
+plot(P$prgnp,
+     ylim = c(0, 5000),
+     main = "Line Graph of Imports over Time",
+     ylab = "Gross National Income", xlab = "Time Trend", type = "n")
+lines(P$prgnp, col = "lightblue")  
+lines(P$usgnp, col = "pink")
+legend("topleft",
+       legend = c("Puerto Rico", "United States"),
+       col = c("lightblue", "pink"),
+       lty = 1,
+       cex = 0.8)
 ```
 #### For time-series data
 ###### Preparation Code
