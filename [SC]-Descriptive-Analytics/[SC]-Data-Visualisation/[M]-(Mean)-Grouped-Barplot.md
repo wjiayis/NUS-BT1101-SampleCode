@@ -54,13 +54,11 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
        summarise(grade4_mean = mean(math4, na.rm=TRUE), grade7_mean = mean(math7, na.rm=TRUE),
                  grade4_sd = sd(math4, na.rm=TRUE), grade7_sd = sd(math7, na.rm=TRUE))
 
-  # Matrix for mean
 M.mean <- M %>% select(c(grade4_mean, grade7_mean)) %>% as.data.frame()
 Year <- c("1992", "1993", "1994", "1995")
 M.mean <- cbind(Year, M.mean)
 M.mean <- M.mean %>% gather("Grade", "Mean", -Year)
 
-  # Matrix for sd
 M.sd <- M %>% select(c(grade4_sd, grade7_sd)) %>% as.data.frame()
 M.sd <- cbind(Year, M.sd)
 M.sd <- M.sd %>% gather("Grade", "sd", -Year)
