@@ -5,6 +5,7 @@
   - `[SC]` stands for 'sample code' (folders containing sample code markdowns)
   - `[M]` stands for 'manual' (example codes with manual inputs)
   - `[HF]` stands for 'helper function'.
+  - `[ND]` stands for 'normal distribution'.
   - `Preparation Code` refers code that is included just so you can to view a sample output.
   - `Actual Code` refers to code required to perform the function.
 ## Descriptive Analytics
