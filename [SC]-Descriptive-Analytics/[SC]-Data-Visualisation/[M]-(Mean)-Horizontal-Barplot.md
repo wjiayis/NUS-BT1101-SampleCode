@@ -32,7 +32,7 @@ satisfaction.barplot <- barplot(M$Mean, # dataset_variable
 # Error bars
 arrows(y0 = satisfaction.barplot, x0 = M$Mean-M$sd,
        y1 = satisfaction.barplot, x1 = M$Mean+M$sd,
-       code=3, angle=90, length=0.1, col = "grey55")
+       code = 3, angle = 90, length = 0.1, col = "grey55")
 
 # Value labels
 text(x = M$Mean, y = satisfaction.barplot, label = round(M$Mean,3), pos = 4, cex = 1)
