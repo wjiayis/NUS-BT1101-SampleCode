@@ -55,7 +55,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, math7, Year) %>% group_by(Year
                  grade4_sd = sd(math4, na.rm=TRUE), grade7_sd = sd(math7, na.rm=TRUE))
 
 M.mean <- M %>% select(c(grade4_mean, grade7_mean)) %>% as.data.frame()
-Year <- c("1992", "1993", "1994", "1995")
+Year <- c("1992", "1993", "1994", "1995") # x-axis labels
 M.mean <- cbind(Year, M.mean)
 M.mean <- M.mean %>% gather("Grade", "Mean", -Year)
 
