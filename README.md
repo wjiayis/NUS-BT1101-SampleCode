@@ -45,3 +45,5 @@
 ## Prescriptive Analytics
 ### 1. [Linear Optimisation]([SC]-Prescriptive-Analytics/[M]-Linear-Optimisation.md)
 ### 2. [Integer Optimisation]([SC]-Prescriptive-Analytics/[M]-Integer-Optimisation.md)
+## Content Removed From Syllabus
+TBC.
