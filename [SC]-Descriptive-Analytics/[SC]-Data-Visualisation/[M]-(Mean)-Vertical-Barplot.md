@@ -17,7 +17,7 @@ M <- M %>% filter(!is.na(Year)) %>% select(math4, Year) %>% group_by(Year) %>%
 ###### Actual Code
 ```r
 satisfaction.barplot <- barplot(M$Mean, # dataset_variable
-        ylim = c(0,70), # Range of y-values
+        ylim = c(0,80), # Range of y-values
         main = "Barplot of Mean Satisfaction", # Title
         cex.main = 1.1, # [Font size] Title
         ylab = "Mean Satisfaction", # y-axis label
@@ -27,7 +27,13 @@ satisfaction.barplot <- barplot(M$Mean, # dataset_variable
         cex.names = 0.9, # [Font size] x-axis labels
         col="pink") # Colour
 
-text(y = M$Mean, x = satisfaction.barplot, label = round(M$Mean,3), pos = 3, cex = 1) # Value labels
+# Error bars
+arrows(x0 = satisfaction.barplot, y0 = M$Mean-M$sd,
+       x1 = satisfaction.barplot, y1 = M$Mean+M$sd,
+       code=3, angle=90, length=0.1, col = "grey55")
+
+# Value labels
+text(y = M$Mean, x = satisfaction.barplot, label = round(M$Mean,3), pos = 3, cex = 1)
 ```
 ### ggplot2 Graphic
 ###### Preparation Code
