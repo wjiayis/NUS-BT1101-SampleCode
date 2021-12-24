@@ -1,6 +1,5 @@
-## \[Time Trend\] Line Graph
+## \[Time Trend\]\[Non-time-series\] Line Graph
 ### Base R Graphic
-#### For non-time-series data
 ##### Single Line
 ###### Preparation Code
 ```r
@@ -15,6 +14,8 @@ plot(B$t, B$gas,
      ylab = "Gasoline Production", xlab = "Time Trend", type = "n")
 lines(B$t, B$gas)
 ```
+<br>
+
 ##### Multiple Lines
 ###### Preparation Code
 ```r
@@ -37,20 +38,9 @@ legend("topleft",
        lty = 1,
        cex = 0.8)
 ```
-#### For time-series data
-###### Preparation Code
-```r
-# Sample Data
-library(wooldridge)
-B <- barium
-B$bchlimp.ts <- ts(B$bchlimp, frequency = 12, start = c(1981,1))
-```
-###### Actual Code
-```r
-plot(B$bchlimp.ts)
-```
+<br>
+
 ### ggplot2 Graphic
-#### For non-time-series data
 ##### Single Line
 ###### Preparation Code
 ```r
@@ -66,6 +56,8 @@ B <- barium
 ggplot(B, aes(x = t, y = gas)) +
   geom_line()
 ```
+<br>
+
 ##### Multiple Lines
 ###### Preparation Code
 ```r
@@ -83,20 +75,4 @@ B <- babynames %>%
 ```r
 ggplot(B, aes(x=year, y=n, group=name, color=name)) +
     geom_line()
-```
-#### For time-series data
-###### Preparation Code
-```r
-# Functions
-library(ggplot2)
-
-# Sample Data
-library(wooldridge)
-B <- barium
-B$bchlimp.ts <- ts(B$bchlimp, frequency = 12, start = c(1981,1))
-```
-###### Actual Code
-```r
-ggplot(B, aes(x = t, y = bchlimp.ts)) +
-  geom_line()
 ```
