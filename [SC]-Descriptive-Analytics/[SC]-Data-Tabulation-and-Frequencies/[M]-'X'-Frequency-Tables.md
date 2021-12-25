@@ -46,7 +46,7 @@ improvement.frequency_table <- table(A$Improved) %>% as.data.frame()
 kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency"))
 ```
-</br></br></br>
+<br><br>
 ##### Sample Task 2
 <table>
 <tr><th> FROM </th><th> TO </th></tr>
@@ -84,7 +84,7 @@ HEC <- aggregate(Freq~Hair, HEC, sum)
 kable(HEC, caption = "Frequency Table of Hair Colour",
       col.names = c("Hair Colour", "Frequency"))
 ```
-</br></br></br>
+<br><br>
 ##### Sample Task 3: Compute frequency of \[a continuous variable\]
 ###### Preparation Code
 ```r
@@ -104,7 +104,8 @@ rd.frequency_table <- table(rd.cut) %>% transform()
 rd.frequency_table
 ```
 [Method 2: Histogram Frequency Table](../../[SC]-Descriptive-Analytics/[SC]-Data-Visualisation/[M]-Histogram-&-Frequency-Table.md)
-</br></br></br>
+
+<br><br><br>
 ### Relative Frequency Table
 ##### Task
 
@@ -140,7 +141,7 @@ improvement.frequency_table$relative_frequency <- improvement.frequency_table$fr
 kable(improvement.frequency_table, caption = "Frequency Table of Improvement",
       col.names = c("Improvement", "Frequency", "Relative Frequency"))
 ```
-</br></br></br>
+<br><br><br>
 ### Cumulative Frequency and Cumulative Relative Frequency Table
 ##### Task
 <table>
