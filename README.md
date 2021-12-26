@@ -12,7 +12,7 @@
   - `Actual Code` refers to code required to perform the function.
 
 - If you have difficulties obtaining your desired output, observe the sample input carefully and mimic its structure.
-- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make relevant changes. Alternatively, fork this repository and adapt it.
+- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make relevant edits. Alternatively, fork this repository and adapt it.
 - With regard to all commits made before 2022: I apologise for the nonsensical commit history. I wasn't using Git.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
