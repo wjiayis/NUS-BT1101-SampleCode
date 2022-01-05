@@ -8,7 +8,7 @@
   - `[M]` stands for 'manual' (example codes with manual inputs)
   - `[HF]` stands for 'helper function'.
   - `[ND]` stands for 'normal distribution'.
-  - `Preparation Code` refers code that is included just so you can to view a sample output.
+  - `Preparation Code` refers to code that is included just so you can to view a sample output.
   - `Actual Code` refers to code required to perform the function.
 
 - If you have difficulties obtaining your desired output, observe the sample input carefully and mimic its structure.
