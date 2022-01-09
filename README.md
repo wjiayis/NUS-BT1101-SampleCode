@@ -1,7 +1,5 @@
 # BT1101 Sample Code
-
-## <img alt="R" src="https://img.shields.io/badge/r-%23276DC3.svg?&style=for-the-badge&logo=r&logoColor=white"/>
-
+![](https://img.shields.io/badge/language-R-pink.svg)
 #### :bulb: Notes to users
 - Abbreviations and terms used:
   - `[SC]` stands for 'sample code' (folders containing sample code markdowns)
