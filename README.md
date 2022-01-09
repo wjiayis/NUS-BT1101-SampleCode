@@ -2,15 +2,15 @@
 ![](https://img.shields.io/badge/language-R-pink.svg)
 #### :bulb: Notes to users
 - Abbreviations and terms used:
-  - `[SC]` stands for 'sample code' (folders containing sample code markdowns)
-  - `[M]` stands for 'manual' (example codes with manual inputs)
+  - `[SC]` stands for 'sample code' (folder containing sample code files).
+  - `[M]` stands for 'manual' (example code which involves manual input, i.e., is not a helper function).
   - `[HF]` stands for 'helper function'.
   - `[ND]` stands for 'normal distribution'.
   - `Preparation Code` refers to code that is included just so you can to view a sample output.
   - `Actual Code` refers to code required to perform the function.
 
-- If you have difficulties obtaining your desired output, observe the sample input carefully and mimic its structure.
-- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes and I will make relevant edits. Alternatively, fork this repository and adapt it.
+- If you have difficulties obtaining your desired output, observe the sample input carefully and mimic its structure. If there is a mistake in this repository, please let me know (by submitting an `issue` with label `bug`).
+- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes (by submitting an `issue` with label `syllabus update`) and I will make relevant edits. Alternatively, fork this repository and adapt it.
 - With regard to all commits made before 2022: I apologise for the nonsensical commit history. I wasn't using Git.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
