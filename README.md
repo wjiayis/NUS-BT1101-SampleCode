@@ -1,5 +1,7 @@
 # BT1101 Sample Code
-![](https://img.shields.io/badge/language-R-pink.svg)
+![](https://img.shields.io/badge/syllabus-AY2122Sem1-yellow.svg) ![](https://img.shields.io/badge/language-R-pink.svg)
+>This repository's Collaborators are [Prof. Sharon](https://www.comp.nus.edu.sg/disa/bio/tansl/) and [Prof. Zhai](https://www.comp.nus.edu.sg/disa/bio/zhaiyd/).[^1]
+[^1]: The professors do not endorse this repository.
 #### :bulb: Notes to users
 - Abbreviations and terms used:
   - `[SC]` stands for 'sample code' (folder containing sample code files).
@@ -10,7 +12,6 @@
   - `Actual Code` refers to code required to perform the function.
 
 - If you have difficulties obtaining your desired output, observe the sample input carefully and mimic its structure. If there is a mistake in this repository, please let me know (by submitting an `issue` with label `bug`).
-- The organisation of content may be slightly different from that in your lecture notes. In addition, the content is optimised for AY21/22 Semester 1's syllabus. Feel free to update me on syllabus changes (by submitting an `issue` with label `syllabus update`) and I will make relevant edits. Alternatively, fork this repository and adapt it.
 - With regard to all commits made before 2022: I apologise for the nonsensical commit history. I wasn't using Git.
 ## Descriptive Analytics
 ### 1. [Data Visualisation](Subpages/1-1.md)
@@ -49,5 +50,3 @@
 ## Prescriptive Analytics
 ### 1. [Linear Optimisation]([SC]-Prescriptive-Analytics/[M]-Linear-Optimisation.md)
 ### 2. [Integer Optimisation]([SC]-Prescriptive-Analytics/[M]-Integer-Optimisation.md)
-## Content Removed From Syllabus
-TBC.
