@@ -1,7 +1,6 @@
 # BT1101 Sample Code
 ![](https://img.shields.io/badge/syllabus-AY2122Sem1-yellow.svg) ![](https://img.shields.io/badge/language-R-pink.svg)
->This repository's Collaborators are [Prof. Sharon](https://www.comp.nus.edu.sg/disa/bio/tansl/) and [Prof. Zhai](https://www.comp.nus.edu.sg/disa/bio/zhaiyd/).[^1]
-[^1]: The professors do not endorse this repository.
+>This repository's Collaborators are [Prof. Sharon Tan](https://www.comp.nus.edu.sg/disa/bio/tansl/) and [Prof. Zhai Yingda](https://www.comp.nus.edu.sg/disa/bio/zhaiyd/).
 #### :bulb: Notes to users
 - Abbreviations and terms used:
   - `[SC]` stands for 'sample code' (folder containing sample code files).
